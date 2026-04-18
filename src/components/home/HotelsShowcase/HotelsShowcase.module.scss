@@ -1,0 +1,318 @@
+@use "@/styles/tokens" as *;
+
+/* Dark editorial “portfolio” band — distinct from canvas sections above/below */
+.section {
+  position: relative;
+  padding: clamp(4rem, 12vw, 7.5rem) 0;
+  background:
+    radial-gradient(ellipse 90% 55% at 15% 20%, rgba(176, 125, 75, 0.14), transparent 55%),
+    radial-gradient(ellipse 70% 45% at 88% 75%, rgba(201, 162, 122, 0.08), transparent 50%),
+    linear-gradient(165deg, #0a0908 0%, #12100e 45%, #0f0e0c 100%);
+  color: rgba(255, 252, 246, 0.92);
+  overflow: hidden;
+}
+
+.texture {
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.header {
+  max-width: 38rem;
+  margin-bottom: clamp(2.5rem, 6vw, 3.75rem);
+}
+
+.eyebrow {
+  margin: 0 0 0.85rem;
+  font-size: $text-xs;
+  font-weight: 600;
+  letter-spacing: $tracking-widest;
+  text-transform: uppercase;
+  color: $color-accent-soft;
+}
+
+.title {
+  margin: 0 0 1.1rem;
+  font-size: clamp(1.85rem, 3.6vw, 2.65rem);
+  font-weight: 600;
+  line-height: $leading-snug;
+  letter-spacing: $tracking-tight;
+  color: rgba(255, 252, 246, 0.96);
+}
+
+.lead {
+  margin: 0;
+  font-family: $font-sans;
+  font-size: $text-md;
+  font-weight: 400;
+  line-height: $leading-loose;
+  letter-spacing: $tracking-wide;
+  color: rgba(255, 252, 246, 0.58);
+}
+
+[dir="rtl"] .header {
+  text-align: right;
+}
+
+[dir="rtl"] .title,
+[dir="rtl"] .hotelName {
+  font-family: $font-arabic, $font-sans, sans-serif;
+}
+
+.carouselRoot {
+  position: relative;
+  margin-top: 0.35rem;
+  padding-inline: clamp(2.35rem, 5vw, 3.5rem);
+}
+
+/* Embla viewport + track */
+.emblaViewport {
+  overflow: hidden;
+}
+
+.emblaContainer {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-inline: -0.55rem;
+}
+
+.emblaSlide {
+  flex: 0 0 33.333333%;
+  min-width: 0;
+  padding: 0 0.55rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1320px) {
+  .emblaSlide {
+    flex: 0 0 25%;
+  }
+}
+
+@media (max-width: 899px) {
+  .emblaSlide {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 559px) {
+  .emblaSlide {
+    flex: 0 0 100%;
+  }
+}
+
+.carouselArrow {
+  position: absolute;
+  top: 38%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0;
+  border: 1px solid rgba(255, 252, 246, 0.22);
+  border-radius: 50%;
+  background: rgba(12, 11, 10, 0.92);
+  color: rgba(255, 252, 246, 0.92);
+  cursor: pointer;
+  transition:
+    border-color 0.25s $ease-out-expo,
+    background 0.25s $ease-out-expo;
+
+  &:hover {
+    border-color: rgba(201, 162, 122, 0.5);
+    background: rgba(22, 20, 18, 0.96);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-accent-soft;
+    outline-offset: 2px;
+  }
+}
+
+.carouselArrowPrev {
+  inset-inline-start: 0;
+}
+
+.carouselArrowNext {
+  inset-inline-end: 0;
+}
+
+.carouselArrowIcon {
+  font-size: 1.4rem;
+  line-height: 1;
+  font-weight: 400;
+  margin-top: -0.1em;
+}
+
+@media (max-width: 559px) {
+  .carouselRoot {
+    padding-inline: clamp(2rem, 8vw, 2.35rem);
+  }
+
+  .carouselArrow {
+    top: 32%;
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+
+  .carouselArrowIcon {
+    font-size: 1.2rem;
+  }
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.cardLink {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  text-decoration: none;
+  color: inherit;
+  border-radius: $radius-lg;
+  background: rgba(255, 252, 246, 0.03);
+  border: 1px solid rgba(255, 252, 246, 0.08);
+  overflow: hidden;
+  transition:
+    border-color 0.35s $ease-out-expo,
+    box-shadow 0.35s $ease-out-expo,
+    transform 0.35s $ease-out-expo;
+
+  &:hover {
+    border-color: rgba(201, 162, 122, 0.35);
+    box-shadow: 0 28px 70px rgba(0, 0, 0, 0.45);
+    transform: translateY(-4px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-accent-soft;
+    outline-offset: 3px;
+  }
+}
+
+.watermark {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.75rem;
+  z-index: 2;
+  font-family: $font-sans;
+  font-size: clamp(3rem, 8vw, 4.25rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: $tracking-tighter;
+  color: rgba(255, 252, 246, 0.07);
+  pointer-events: none;
+  user-select: none;
+}
+
+[dir="rtl"] .watermark {
+  right: auto;
+  left: 0.75rem;
+}
+
+.visual {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  min-height: 200px;
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 92% 100%, 0 100%);
+}
+
+.img {
+  object-fit: cover;
+}
+
+.visualShade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 7, 6, 0.1) 0%, rgba(8, 7, 6, 0.55) 100%);
+  pointer-events: none;
+}
+
+.meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 1.15rem 1.15rem 1.35rem;
+}
+
+.hotelName {
+  margin: 0;
+  font-size: clamp(1.15rem, 2.2vw, 1.35rem);
+  font-weight: 600;
+  line-height: $leading-snug;
+  letter-spacing: $tracking-snug;
+  color: rgba(255, 252, 246, 0.95);
+}
+
+.essence {
+  margin: 0;
+  flex: 1;
+  font-family: $font-sans;
+  font-size: $text-sm;
+  line-height: $leading-relaxed;
+  letter-spacing: $tracking-wide;
+  color: rgba(255, 252, 246, 0.55);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
+  font-size: $text-xs;
+  font-weight: 600;
+  letter-spacing: $tracking-widest;
+  text-transform: uppercase;
+  color: $color-accent-soft;
+}
+
+.ctaArrow {
+  transition: transform 0.3s $ease-out-expo;
+}
+
+.cardLink:hover .ctaArrow {
+  transform: translateX(4px);
+}
+
+[dir="rtl"] .essence,
+[dir="rtl"] .hotelName {
+  text-align: right;
+}
+
+[dir="rtl"] .cardLink:hover .ctaArrow {
+  transform: translateX(-4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cardLink:hover {
+    transform: none;
+  }
+
+  .cardLink:hover .ctaArrow {
+    transform: none;
+  }
+}

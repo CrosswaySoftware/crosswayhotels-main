@@ -1,0 +1,156 @@
+{
+  "Common": {
+    "breadcrumbHome": "Home",
+    "readMore": "Read more",
+    "readMoreArrow": "Read more →",
+    "noPostsInArchive": "No posts in this archive."
+  },
+  "Metadata": {
+    "aboutUs": "About Us",
+    "careers": "Careers",
+    "partnerWithUs": "Partner With Us",
+    "newsAndUpdates": "News and Updates",
+    "brochure": "Brochure",
+    "feedback": "Feedback",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms Of Use",
+    "team": "Team",
+    "crossway": "Crossway",
+    "lifotel": "Lifotel",
+    "lifotelSuites": "Lifotel Suites",
+    "tagAwards": "Awards",
+    "tagEvent": "Event",
+    "tagUpdates": "Updates",
+    "categoryEvents": "Events",
+    "categoryPressReleases": "Press releases",
+    "categoryFoodForThought": "Food for thought",
+    "contactUs": "Contact Us"
+  },
+  "Forms": {
+    "staticSiteNote": "This site is a static front-end rebuild. Form submissions are disabled. Please email <mail></mail> with the same details.",
+    "fieldName": "Name",
+    "fieldEmail": "Email",
+    "fieldAddress": "Address",
+    "fieldPosition": "Applying for position",
+    "fieldMobile": "Mobile number",
+    "fieldResume": "Résumé (PDF)",
+    "fieldSubject": "Subject",
+    "fieldComment": "Your comment",
+    "submit": "Submit"
+  },
+  "AboutUs": {
+    "heroEyebrow": "Crossway Hotels and Resorts",
+    "heroTitle": "We make your stay more comfortable",
+    "heroLead": "Warm service, considered spaces, and locations that work for how you travel.",
+    "storyEyebrow": "Our story",
+    "storyTitle": "About us",
+    "introLead": "Crossway Hotels and Resorts brings you great hotels at fabulous locations offering customer friendly services. Great food and beverage selections and some amazing spas to liven up your stays at most of our hotels, and all this comes at a great price.",
+    "introBody": "Welcome to Crossway Hotels and Resorts.",
+    "passionEyebrow": "The Crossway standard",
+    "passionTitle": "Service is our passion",
+    "passionLead": "Every touchpoint is designed to feel calm, clear, and genuinely cared for—without noise or clutter.",
+    "passionWhereLabel": "Where you stay",
+    "passionHostLabel": "How we host",
+    "passion_where_0": "Personalized service and wide range of amenities",
+    "passion_where_1": "Comfortable Stay with our Well Equipped Rooms",
+    "passion_where_2": "Perfect place for family gatherings & Business meetings",
+    "passion_where_3": "Wide range of authentic and seasonal cuisines",
+    "passion_host_0": "We offer Exquisite food and beverage selections",
+    "passion_host_1": "Spa therapy to Rejuvenate your body and soul",
+    "passion_host_2": "Our staffs are well-trained to provide every guest with personal attention",
+    "passion_host_3": "Free access to the fitness club",
+    "passionCaption": "Hospitality, considered."
+  },
+  "Careers": {
+    "title": "Careers",
+    "formAria": "Careers application",
+    "position_0": "HouseKeeping",
+    "position_1": "Laundry",
+    "position_2": "Kitchen",
+    "position_3": "Kitchen stewarding department",
+    "position_4": "Food & beverage department",
+    "position_5": "Front office",
+    "position_6": "Boutique",
+    "position_7": "Spa",
+    "position_8": "Site Engineer",
+    "position_9": "Site Supervisor"
+  },
+  "Feedback": {
+    "title": "Feedback",
+    "formAria": "Feedback"
+  },
+  "Brochure": {
+    "breadcrumb": "Brochure",
+    "pageTitle": "Download Brochures",
+    "cardHotelsLead": "Crossway Hotels & Resorts Brochure",
+    "cardBrandLead": "Crossway Brand Brochure",
+    "downloadCta": "Download Brochure"
+  },
+  "News": {
+    "breadcrumb": "News and Updates",
+    "moreStories": "More stories"
+  },
+  "BlogPosts": {
+    "categoryLabel_events": "Events",
+    "categoryLabel_press-releases": "Press releases",
+    "categoryLabel_food-for-thought": "Food for thought",
+    "excellent_hospitality_services": {
+      "title": "CROSSWAY HOSPITALITY – HTC NATIONAL AWARD OF EXCELLENCE 2019",
+      "excerpt": "We are pleased to announce that we have been awarded as MOST PROMISING HOTEL BRAND at the INDIA TRAVEL AWARDS…",
+      "date": ""
+    },
+    "crossway_hotels_and_resorts_bags_the_most_promising_hotel_chain_at_the_india_travel_awards_south_2019": {
+      "title": "Crossway Hotels and Resorts Bags the Most Promising Hotel Chain at the India Travel Awards South 2019",
+      "excerpt": "CROSSWAY® Hotels and Resorts was awarded the MOST PROMISING HOTEL CHAIN at the recently concluded INDIA TRAVEL AWARDS SOUTH 2019.",
+      "date": "June 27, 2021"
+    },
+    "6314_2": {
+      "title": "Crossway Hotels to manage beach resort near Chennai",
+      "excerpt": "Hospitality player Crossway Hotels & Resorts will soon start managing a mid-segment beach resort near here…",
+      "date": "June 8, 2021"
+    },
+    "ride_bar_open_now_at_days_hotel_chennai_omr": {
+      "title": "Ride Bar Open now at Days Hotel Chennai OMR",
+      "excerpt": "The Newest Bar in town is open now..!! The unmissable Ride Bar is officially open! with the IPL T20 live stream along with booze and refreshments.",
+      "date": "March 15, 2020"
+    }
+  },
+  "BrandCrossway": {
+    "breadcrumb": "Crossway",
+    "title": "CROSSWAY HOTELS AND RESORTS",
+    "subtitle": "Upperscale / Luxury Brand",
+    "p1": "Crossway Hotels and Resorts was established to redefine the paradigm of hospitality and service culture. We offer our customers with a comfortable stay and relaxing atmosphere at our hotels. Our skilled and trained staffs are trained to deliver a warm, attentive and a personalized service to every customer. We go beyond just offering a comfortable stay. We create our hotels that offer our guests with the best location possible with an uncompromising service. With vibrant locations come our distinctive features that makes our guest’s stay more delightful with modern interiors with a great bed and shower experience, rejuvenating spas and exceptional food and beverages selections.",
+    "p2": "An extraordinary brand for the extraordinary you! This brand is the perfect blend of service and luxury. Our staff here are well-trained to provide every guest with personal attention and offer all them with the best of service. The luxury feel, the interiors, the service, and the amenities, everything about this Signature brand will leave you guests in a mesmerizing state."
+  },
+  "BrandLifotel": {
+    "breadcrumb": "Lifotel",
+    "title": "Lifotel By Crossway",
+    "subtitle": "Wellness Life Style Brand",
+    "p1": "Lifotel is a concept that brings one closer to living life the natural way without Alcohol! Lifotel is one place that will relax your mind in the true sense and offer you with a serene atmosphere to work and spend quality time with your loved ones.",
+    "p2": "Lifotel is a collection of hotels and resorts with the objective to promote customers to stay here and celebrate life in the right way either with your family or your colleagues. It helps individuals to spend time away from the monotonous life, it gives the guests the time to involve in physical activities, fitness exercises, nutritious foods and healthy drinks.",
+    "p3": "Here, we offer the right space, the calm surrounding and the perfect atmosphere to relax, unwind and re energize oneself. Our Signature Spas will help to rejuvenate and bring back our guest’s balance in place. It is a great place to host events and meetings to celebrate life and also to help an organisation to take key decisions in an alcohol free environment.",
+    "ctaDiscover": "Discover More"
+  },
+  "BrandLifotelSuites": {
+    "breadcrumb": "Lifotel Suites",
+    "title": "Lifotel Suites",
+    "subtitle": "Non Alcoholic Serviced Residences",
+    "p1": "Lifotel Suites are serviced residences situated at great locations . These suites are built with modern and contemporary interiors, to offer our guests a feeling of being at home. Come here and relax to make your holiday or business trips more homely, as we provide you with spacious rooms, quality living, cooking space and laundry services. A perfect place to live and feel the warmth of being at home! Recommended for longer stays as well.",
+    "ctaDiscover": "Discover More"
+  },
+  "Team": {
+    "pageTitle": "Meet our team",
+    "readBio": "Read biography",
+    "prakash_name": "Yangya Prakash Chandran",
+    "prakash_role": "CEO, Founder",
+    "prakash_bio_0": "A hospitality professional with more than 25+ years of experience in the entire gamut of Hotel operations and good academic and professional experience in reputed 5-star hotels and resorts in India, Africa and Middle East.",
+    "prakash_bio_1": "As a hospitality professional he has been responsible for opening properties like Le Royal Meridien Chennai and Commonwealth Resort Convention Centre, Uganda, Africa. He also been a key participant in key training programmes like Leadership skills conducted by INCON Consultants, Dubai and HACCP course accredited by Royal Institute of Public Health, UK.",
+    "prakash_bio_2": "Prakash has opened Days Hotel Chennai OMR, a Wyndham hotel and Ramada Chennai Egmore, Prakash has worked with Makaseb Group, Saudi Arabia , responsible for 50 plus hotels in Saudi Arabia and GCC countries.",
+    "prakash_bio_3": "Prakash with his Crossway Hospitality Services sine 2013 has been involved in consulting huge number of projects and also managing properties like Days Hotel Chennai ,Saaral Residency,KKinn etc.",
+    "sulekha_name": "Sulekha Mridha",
+    "sulekha_role": "HR Manager",
+    "sulekha_bio_0": "A Hotel Management Graduate with 20+ years of experience, 14 years expertise in Rooms Division and 3 years in Hotel Operations. She hails from the Andaman Nicobar Islands and has working experience in reputed 5 star hotels in various cities across India.",
+    "sulekha_bio_1": "Sulekha has been a part of Preopening teas with Days Hotel Chennai OMR as Operations Manager; Front Office Manager Preopening / rebranding – Ramada Chennai Egmore; Front Office Manager Preopening- Matthan Hotel Bangalore and Front Office Manager Preopening- Oakwood Premier Prestige Bangalore.",
+    "sulekha_bio_2": "In addition she has worked with The Zuri White Sands Goa Resort & Casino; The Lalit Grand Palace Srinagar; Royal Orchid Hotels, The Park Chennai , Taj Connemara Chennai and Savera Hotel Chennai."
+  }
+}

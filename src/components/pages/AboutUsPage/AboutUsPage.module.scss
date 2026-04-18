@@ -1,0 +1,286 @@
+@use "@/styles/tokens" as *;
+
+$card-line: rgba(20, 18, 16, 0.08);
+
+.hero {
+  position: relative;
+  min-height: min(58vh, 560px);
+  padding: clamp(4rem, 16vw, 9rem) 1.25rem clamp(3rem, 10vw, 5rem);
+  display: flex;
+  align-items: flex-end;
+  background: $color-canvas-deep center / cover no-repeat;
+  color: $color-white;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(105deg, rgba(8, 7, 6, 0.72) 0%, rgba(8, 7, 6, 0.38) 48%, rgba(8, 7, 6, 0.22) 100%);
+  }
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  max-width: $container-max;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.heroEyebrow {
+  font-size: $text-xs;
+  font-weight: 600;
+  letter-spacing: $tracking-widest;
+  text-transform: uppercase;
+  color: $color-accent-soft;
+  margin: 0 0 0.85rem;
+}
+
+.hero h1 {
+  margin: 0 0 1rem;
+  max-width: 22ch;
+  font-size: clamp(1.85rem, 4.2vw, 2.75rem);
+  font-weight: 600;
+  line-height: $leading-snug;
+  letter-spacing: $tracking-tight;
+  text-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.heroLead {
+  margin: 0;
+  max-width: 36rem;
+  font-size: clamp($text-base, 2vw, $text-md);
+  line-height: $leading-relaxed;
+  letter-spacing: $tracking-wide;
+  color: rgba(255, 252, 246, 0.88);
+}
+
+.sectionIntro {
+  padding: $space-section 0;
+  background: $color-canvas;
+}
+
+.introGrid {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: grid;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  align-items: center;
+
+  @media (min-width: 900px) {
+    grid-template-columns: 1fr 1.05fr;
+    gap: 3.5rem;
+  }
+}
+
+.introVisualWrap {
+  position: relative;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  min-height: min(48vh, 440px);
+  box-shadow: $shadow-soft;
+}
+
+.introVisual {
+  position: absolute;
+  inset: 0;
+  background: #ccc center / cover no-repeat;
+  transform: scale(1.02);
+  transition: transform 1.2s $ease-out-expo;
+}
+
+.introVisualWrap:hover .introVisual {
+  transform: scale(1.05);
+}
+
+.introFrame {
+  position: absolute;
+  inset: 1rem;
+  border: 1px solid rgba(255, 252, 246, 0.35);
+  border-radius: calc(#{$radius-lg} - 10px);
+  pointer-events: none;
+}
+
+.introProse {
+  @media (min-width: 900px) {
+    padding-inline-end: 0.5rem;
+  }
+}
+
+.introLead {
+  margin: 0 0 1rem;
+  color: $color-ink-muted;
+  font-size: $text-md;
+  line-height: $leading-loose;
+  letter-spacing: $tracking-wide;
+}
+
+.introBody {
+  margin: 0;
+  color: $color-ink;
+  font-size: $text-md;
+  font-weight: 500;
+  line-height: $leading-relaxed;
+  letter-spacing: $tracking-wide;
+}
+
+[dir="rtl"] .introLead,
+[dir="rtl"] .introBody {
+  text-align: right;
+}
+
+.sectionPassion {
+  padding: $space-section 0;
+  background: linear-gradient(180deg, #e8e4db 0%, $color-canvas 55%, $color-canvas 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 252, 246, 0.5);
+}
+
+.passionGrid {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: grid;
+  gap: clamp(2.25rem, 5vw, 3.5rem);
+  align-items: start;
+
+  @media (min-width: 960px) {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 3rem;
+    align-items: stretch;
+  }
+}
+
+.passionCopy {
+  min-width: 0;
+}
+
+.passionLead {
+  margin: 0 0 2rem;
+  max-width: 38rem;
+  color: $color-ink-muted;
+  font-size: $text-md;
+  line-height: $leading-loose;
+  letter-spacing: $tracking-wide;
+}
+
+.passionGroups {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.passionGroup {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(20, 18, 16, 0.1);
+
+  &:first-child {
+    padding-top: 0;
+    border-top: none;
+  }
+}
+
+.groupLabel {
+  margin: 0 0 1.15rem;
+  font-size: $text-xs;
+  font-weight: 600;
+  letter-spacing: $tracking-widest;
+  text-transform: uppercase;
+  color: $color-accent;
+}
+
+.statementList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.statement {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem 1.15rem;
+  align-items: start;
+  padding: 1.05rem 1.15rem 1.1rem 1.2rem;
+  background: rgba(255, 254, 249, 0.72);
+  border: 1px solid $card-line;
+  border-radius: $radius-md;
+  box-shadow: $shadow-lift;
+  border-inline-start: 3px solid $color-accent;
+
+  @media (min-width: 640px) {
+    padding: 1.15rem 1.25rem 1.2rem 1.35rem;
+    gap: 1rem 1.35rem;
+  }
+}
+
+.statementIndex {
+  font-size: $text-xs;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: $tracking-widest;
+  color: $color-accent;
+  line-height: $leading-snug;
+  padding-top: 0.2rem;
+}
+
+.statementText {
+  margin: 0;
+  font-size: $text-sm;
+  line-height: $leading-relaxed;
+  letter-spacing: $tracking-wide;
+  color: $color-ink;
+}
+
+[dir="rtl"] .statement {
+  border-inline-start: none;
+  border-inline-end: 3px solid $color-accent;
+}
+
+[dir="rtl"] .statementText,
+[dir="rtl"] .passionLead {
+  text-align: right;
+}
+
+.passionFigure {
+  margin: 0;
+  position: relative;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  box-shadow: $shadow-soft;
+  min-height: min(52vh, 520px);
+}
+
+.passionPhoto {
+  position: absolute;
+  inset: 0;
+  background: #888 center / cover no-repeat;
+  transform: scale(1.02);
+  transition: transform 1.2s $ease-out-expo;
+}
+
+.passionFigure:hover .passionPhoto {
+  transform: scale(1.06);
+}
+
+.passionCaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 1.25rem 1.5rem;
+  font-size: $text-xs;
+  font-weight: 600;
+  letter-spacing: $tracking-widest;
+  text-transform: uppercase;
+  color: rgba(255, 252, 246, 0.92);
+  background: linear-gradient(180deg, transparent, rgba(8, 7, 6, 0.75));
+}
+
+[dir="rtl"] .passionCaption {
+  text-align: right;
+}

@@ -1,0 +1,151 @@
+@use "@/styles/tokens" as *;
+
+// Band distinct from page canvas (#e6e2d8) and neighbouring gradients — calm editorial slab
+$essence-bg: #ebe7df;
+$essence-card: #f7f5f0;
+$essence-card-border: rgba(20, 18, 16, 0.07);
+
+.section {
+  padding: $space-section 0;
+  background: $essence-bg;
+  // Soft top/bottom seams into neighbours without repeating the same tone
+  box-shadow:
+    inset 0 1px 0 rgba(255, 252, 246, 0.65),
+    inset 0 -1px 0 rgba(20, 18, 16, 0.04);
+}
+
+.inner {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.head {
+  max-width: 40rem;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin-bottom: 3rem;
+  }
+}
+
+.eyebrow {
+  font-size: $text-xs;
+  font-weight: 600;
+  letter-spacing: $tracking-widest;
+  line-height: $leading-normal;
+  text-transform: uppercase;
+  color: $color-accent;
+  margin: 0 0 1rem;
+}
+
+.title {
+  font-family: $font-sans;
+  font-size: clamp(1.65rem, 3.1vw, 2.35rem);
+  font-weight: 600;
+  line-height: $leading-snug;
+  letter-spacing: $tracking-tight;
+  color: $color-ink;
+  margin: 0 0 1.1rem;
+}
+
+.rule {
+  width: 3.5rem;
+  height: 2px;
+  margin: 0 auto 1.35rem;
+  background: linear-gradient(90deg, $color-accent, $color-accent-soft);
+  border-radius: 1px;
+}
+
+.lead {
+  margin: 0 auto;
+  max-width: 36rem;
+  color: $color-ink-muted;
+  font-size: $text-md;
+  line-height: $leading-loose;
+  letter-spacing: $tracking-wide;
+}
+
+[dir="rtl"] .head {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+
+  @media (min-width: 640px) and (max-width: 1023px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.35rem;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+}
+
+.card {
+  position: relative;
+  padding: 1.5rem 1.35rem 1.6rem;
+  border-radius: $radius-lg;
+  background: $essence-card;
+  border: 1px solid $essence-card-border;
+  box-shadow: 0 10px 36px rgba(8, 7, 6, 0.05);
+  min-height: 100%;
+  transition: box-shadow 0.35s $ease-out-expo, transform 0.35s $ease-out-expo;
+
+  // Full-width tan accent along the top edge (reference layout)
+  background:
+    linear-gradient(90deg, $color-accent 0%, $color-accent-soft 100%) top / 100% 3px no-repeat,
+    $essence-card;
+  padding-top: 1.45rem;
+
+  &:hover {
+    box-shadow: 0 16px 44px rgba(8, 7, 6, 0.08);
+    transform: translateY(-2px);
+  }
+}
+
+.index {
+  display: block;
+  font-size: $text-xs;
+  font-weight: 600;
+  letter-spacing: $tracking-widest;
+  font-variant-numeric: tabular-nums;
+  color: $color-accent;
+  margin-bottom: 0.75rem;
+}
+
+.cardTitle {
+  font-family: $font-sans;
+  font-size: $text-lg;
+  font-weight: 600;
+  line-height: $leading-snug;
+  letter-spacing: $tracking-snug;
+  color: $color-ink;
+  margin: 0 0 0.7rem;
+}
+
+.body {
+  margin: 0;
+  color: $color-ink-muted;
+  font-size: $text-sm;
+  line-height: $leading-relaxed;
+  letter-spacing: $tracking-wide;
+}
+
+[dir="rtl"] .body,
+[dir="rtl"] .cardTitle,
+[dir="rtl"] .index {
+  text-align: right;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card:hover {
+    transform: none;
+  }
+}

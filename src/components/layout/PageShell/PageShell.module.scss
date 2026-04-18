@@ -1,0 +1,15 @@
+@use "@/styles/tokens" as *;
+
+.wrap {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 2.5rem) 1.25rem clamp(3rem, 8vw, 4rem);
+}
+
+.narrow {
+  max-width: 40rem;
+}
+
+.wide {
+  max-width: 72rem;
+}

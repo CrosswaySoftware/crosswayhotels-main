@@ -1,0 +1,78 @@
+@use "@/styles/tokens" as *;
+
+.grid {
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: $color-white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: $shadow-card;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
+
+.imageLink {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 10;
+  background: #ddd;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.body {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.meta {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $color-text-muted;
+  margin-bottom: 0.35rem;
+}
+
+.title {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+  line-height: 1.35;
+
+  a:hover {
+    color: $color-navy-deep;
+  }
+}
+
+.excerpt {
+  font-size: 14px;
+  color: $color-text-muted;
+  flex: 1;
+  margin: 0 0 1rem;
+}
+
+.read {
+  font-size: 13px;
+  font-weight: 600;
+  color: $color-navy-deep;
+
+  &:hover {
+    color: $color-gold-hover;
+  }
+}

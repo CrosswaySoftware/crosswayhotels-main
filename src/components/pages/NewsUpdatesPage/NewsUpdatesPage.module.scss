@@ -1,0 +1,72 @@
+@use "@/styles/tokens" as *;
+
+.featured {
+  position: relative;
+  min-height: 420px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  color: $color-white;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: $shadow-card;
+}
+
+.featuredBg {
+  position: absolute;
+  inset: 0;
+  background: #333 center / cover no-repeat;
+}
+
+.featuredOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.85));
+}
+
+.featuredInner {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 1.5rem;
+  max-width: 40rem;
+}
+
+.featuredTitle {
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
+  margin: 0 0 0.75rem;
+
+  a {
+    color: $color-white !important;
+
+    &:hover {
+      color: $color-gold !important;
+    }
+  }
+}
+
+.excerpt {
+  font-size: 15px;
+  opacity: 0.92;
+  margin-bottom: 1.25rem;
+}
+
+.read {
+  display: inline-block;
+  padding: 0.65rem 1.25rem;
+  background: $color-gold;
+  color: #000 !important;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  &:hover {
+    filter: brightness(1.05);
+    color: #000 !important;
+  }
+}
+
+.subhead {
+  margin: 0 0 1.5rem;
+  font-size: 1.25rem;
+}

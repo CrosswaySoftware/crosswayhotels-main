@@ -1,0 +1,94 @@
+@use "@/styles/tokens" as *;
+
+.head {
+  text-align: center;
+  padding: clamp(2rem, 6vw, 4rem) 0 2rem;
+}
+
+.title {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  gap: 0;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  min-height: 420px;
+  display: grid;
+  align-items: stretch;
+}
+
+.cardA {
+  background: linear-gradient(90deg, rgba(255, 207, 109, 0.95), #ffcf6d);
+}
+
+.cardB {
+  position: relative;
+  color: $color-white;
+  background: #3452ff center / cover no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(52, 82, 255, 0.82);
+  }
+}
+
+.cardInner {
+  position: relative;
+  z-index: 1;
+  padding: clamp(2rem, 5vw, 3.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 22rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.cardInnerCenter {
+  text-align: center;
+  max-width: 20rem;
+}
+
+.lead {
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+}
+
+.download {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  background: $color-navy-deep;
+  color: $color-white !important;
+  font-weight: 600;
+  font-size: 13px;
+
+  &:hover {
+    opacity: 0.92;
+    color: $color-white !important;
+  }
+}
+
+.downloadLight {
+  background: $color-white;
+  color: #000 !important;
+  border: 2px solid $color-white;
+
+  &:hover {
+    background: transparent;
+    color: $color-white !important;
+  }
+}

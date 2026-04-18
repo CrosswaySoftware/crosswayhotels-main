@@ -1,0 +1,82 @@
+@use "@/styles/tokens" as *;
+
+.section {
+  position: relative;
+  padding: clamp(3.5rem, 10vw, 6rem) 0;
+  background: $color-canvas-deep;
+  color: $color-white;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 55% at 20% 20%, rgba(176, 125, 75, 0.22), transparent 55%),
+      radial-gradient(ellipse 70% 50% at 85% 80%, rgba(201, 162, 122, 0.12), transparent 50%);
+    pointer-events: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(8, 7, 6, 0.2) 0%, transparent 35%, transparent 65%, rgba(8, 7, 6, 0.35) 100%);
+    pointer-events: none;
+  }
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  max-width: min(720px, 92vw);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  text-align: center;
+}
+
+.quoteMark {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
+  line-height: 1;
+  color: rgba(201, 162, 122, 0.55);
+  margin-bottom: 0.25rem;
+  user-select: none;
+}
+
+.blockquote {
+  margin: 0;
+}
+
+.quote {
+  margin: 0 0 1.75rem;
+  font-family: $font-sans;
+  font-size: clamp(1.2rem, 2.4vw, 1.5rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: $leading-relaxed;
+  letter-spacing: $tracking-wide;
+  color: rgba(255, 254, 249, 0.92);
+}
+
+.rule {
+  width: 4rem;
+  height: 2px;
+  margin: 0 auto 1.25rem;
+  background: linear-gradient(90deg, transparent, $color-accent-soft, transparent);
+  border-radius: 1px;
+}
+
+.line {
+  margin: 0;
+  font-size: $text-xs;
+  font-weight: 600;
+  letter-spacing: $tracking-widest;
+  text-transform: uppercase;
+  color: rgba(255, 254, 249, 0.55);
+}
+
+[dir="rtl"] .quote {
+  font-style: normal;
+}

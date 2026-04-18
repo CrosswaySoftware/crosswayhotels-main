@@ -1,0 +1,130 @@
+@use "@/styles/tokens" as *;
+
+.section {
+  padding: $space-section 0;
+  background: $color-canvas-deep;
+  color: $color-white;
+}
+
+.inner {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.75rem;
+  margin-top: 0.5rem;
+
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+.reveal {
+  perspective: 1200px;
+}
+
+.tilt {
+  height: 100%;
+  min-height: 340px;
+  border-radius: $radius-lg;
+  transition: transform 0.5s $ease-out-expo;
+
+  &:hover,
+  &:focus-within {
+    transform: translateY(-8px);
+  }
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  border-radius: $radius-lg;
+  transform-style: preserve-3d;
+  transition: transform 0.85s $ease-out-expo;
+  box-shadow: $shadow-soft;
+
+  .tilt:hover &,
+  .tilt:focus-within & {
+    transform: rotateY(180deg);
+  }
+}
+
+.face,
+.faceBack {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.face {
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 30%, rgba(8, 7, 6, 0.55) 100%);
+    border-radius: inherit;
+  }
+}
+
+.faceBack {
+  transform: rotateY(180deg);
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background-color: #1a1714;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(176, 125, 75, 0.35), transparent 55%);
+    border-radius: inherit;
+  }
+}
+
+.backInner {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+
+  h3 {
+    font-family: $font-sans;
+    font-size: $text-lg;
+    font-weight: 600;
+    line-height: $leading-snug;
+    letter-spacing: $tracking-wider;
+    text-transform: uppercase;
+    color: $color-white;
+    margin: 0 0 1rem;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.cta {
+  font-size: $text-xs;
+  font-weight: 600;
+  letter-spacing: $tracking-widest;
+  line-height: $leading-normal;
+  text-transform: uppercase;
+  color: $color-accent-soft;
+  border-bottom: 1px solid rgba(201, 162, 122, 0.45);
+  padding-bottom: 0.2rem;
+  transition: color 0.25s $ease-out-expo, border-color 0.25s $ease-out-expo;
+
+  &:hover {
+    color: $color-glow;
+    border-color: $color-glow;
+  }
+}

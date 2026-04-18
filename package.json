@@ -1,0 +1,36 @@
+{
+  "name": "crossway-new",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf .next",
+    "dev": "npm run clean && next dev",
+    "dev:poll": "WATCHPACK_POLLING=true next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "i18n:export": "node scripts/export-translations.mjs"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
+    "framer-motion": "^11.18.0",
+    "next": "^14.2.35",
+    "next-intl": "^3.26.5",
+    "react": "^18.3.1",
+    "react-day-picker": "^9.14.0",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^10.1.0",
+    "sass": "^1.85.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.35",
+    "typescript": "^5.8.2",
+    "xlsx": "^0.18.5"
+  }
+}

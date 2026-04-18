@@ -1,0 +1,89 @@
+@use "@/styles/tokens" as *;
+
+.note {
+  margin: 0 0 1.5rem;
+  padding: 1.1rem 1.25rem;
+  font-size: $text-sm;
+  line-height: $leading-relaxed;
+  letter-spacing: $tracking-wide;
+  color: $color-ink-muted;
+  background: rgba(176, 125, 75, 0.1);
+  border-radius: $radius-md;
+  border: 1px solid rgba(176, 125, 75, 0.22);
+  border-inline-start: 3px solid $color-accent;
+
+  a {
+    color: $color-accent;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(176, 125, 75, 0.35);
+
+    &:hover {
+      color: $color-canvas-deep;
+    }
+  }
+}
+
+.form {
+  max-width: 36rem;
+
+  label {
+    display: block;
+    font-size: $text-xs;
+    font-weight: 600;
+    letter-spacing: $tracking-wider;
+    text-transform: uppercase;
+    color: $color-ink-muted;
+    margin-bottom: 0.45rem;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    margin-bottom: 1.15rem;
+    padding: 0.7rem 0.85rem;
+    border: 1px solid $color-line;
+    font-family: $font-sans;
+    font-size: $text-sm;
+    border-radius: $radius-sm;
+    background: $color-white;
+    color: $color-ink;
+    transition: border-color 0.2s $ease-out-expo, box-shadow 0.2s $ease-out-expo;
+
+    &:focus {
+      outline: none;
+      border-color: $color-accent;
+      box-shadow: 0 0 0 3px rgba(176, 125, 75, 0.15);
+    }
+  }
+
+  textarea {
+    min-height: 160px;
+    resize: vertical;
+  }
+
+  button {
+    padding: 0.85rem 1.65rem;
+    background: linear-gradient(120deg, $color-canvas-deep, #1f1c18);
+    border: none;
+    color: $color-white;
+    font-weight: 600;
+    font-size: $text-xs;
+    letter-spacing: $tracking-widest;
+    text-transform: uppercase;
+    border-radius: $radius-md;
+    cursor: pointer;
+    transition: transform 0.25s $ease-out-expo, box-shadow 0.25s $ease-out-expo;
+
+    &:hover:not(:disabled) {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 32px rgba(8, 7, 6, 0.2);
+    }
+
+    &:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+    }
+  }
+}

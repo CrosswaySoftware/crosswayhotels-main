@@ -1,0 +1,59 @@
+@use "@/styles/tokens" as *;
+
+.left,
+.center {
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+}
+
+.center {
+  text-align: center;
+
+  .rule {
+    margin-inline: auto;
+  }
+}
+
+.eyebrow {
+  font-size: $text-xs;
+  font-weight: 600;
+  letter-spacing: $tracking-widest;
+  line-height: $leading-normal;
+  text-transform: uppercase;
+  color: $color-accent;
+  margin: 0 0 0.85rem;
+}
+
+.title {
+  font-family: $font-sans;
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  font-weight: 600;
+  line-height: $leading-snug;
+  letter-spacing: $tracking-tight;
+  margin: 0 0 1rem;
+  color: $color-ink;
+}
+
+.rule {
+  width: 3.5rem;
+  height: 2px;
+  background: linear-gradient(90deg, $color-accent, $color-accent-soft);
+  border-radius: 1px;
+}
+
+.center .rule {
+  width: 4.5rem;
+}
+
+.onDark {
+  .eyebrow {
+    color: $color-accent-soft;
+  }
+
+  .title {
+    color: $color-white;
+  }
+
+  .rule {
+    background: linear-gradient(90deg, $color-accent-soft, rgba(255, 252, 246, 0.35));
+  }
+}

@@ -1,0 +1,5 @@
+CROSSWAY® Hotels and Resorts was awarded the MOST PROMISING HOTEL CHAIN at the recently concluded INDIA TRAVEL AWARDS SOUTH 2019. The award recognizes the successful launch of its brand with its perfect balance of product and service delivery. CROSSWAY® Hotel group manages six hotels within its first year of operation and around 10 hotels under development.
+
+This high profile event was well attended by several industry leaders which saw celebrations in excellence in performance in the travel industry. The winners of the award where determined by the votes which saw some strict parameters.
+
+CROSSWAY® Hotels and Resorts has developed a good portfolio of brands which includes CROSSWAY® and Lifotel. Lifotel is an alcohol free life style brand and CROSSWAY® offers something from economy, midscale, upscale and signature luxury offerings under its branding. CROSSWAY® Hotels and Resorts will be commencing its international operations from Dubai, UAE and aims at increasing its management portfolio across middle east and South Asia.

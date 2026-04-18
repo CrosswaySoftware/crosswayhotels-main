@@ -1,0 +1,109 @@
+@use "@/styles/tokens" as *;
+
+.section {
+  position: relative;
+  min-height: min(88dvh, 820px);
+  display: flex;
+  align-items: center;
+  padding: 2.5rem 0 3.5rem;
+  overflow: hidden;
+}
+
+.bgWrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.bg {
+  position: absolute;
+  inset: -8%;
+  background-size: cover;
+  background-position: center;
+  animation: ken 28s ease-in-out infinite alternate;
+}
+
+@keyframes ken {
+  from {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.08) translate3d(-1.5%, -1%, 0);
+  }
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(8, 7, 6, 0.82) 0%,
+    rgba(8, 7, 6, 0.45) 42%,
+    rgba(8, 7, 6, 0.25) 100%
+  );
+}
+
+.grain {
+  position: absolute;
+  inset: 0;
+  opacity: 0.07;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.copy {
+  color: $color-white;
+  max-width: 38rem;
+}
+
+.kicker {
+  font-size: $text-xs;
+  font-weight: 600;
+  letter-spacing: $tracking-widest;
+  line-height: $leading-normal;
+  text-transform: uppercase;
+  color: $color-accent-soft;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: $font-sans;
+  font-size: $text-hero;
+  font-weight: 600;
+  line-height: $leading-tight;
+  letter-spacing: $tracking-tight;
+  margin: 0 0 1rem;
+  color: $color-white;
+  text-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.lead {
+  font-size: clamp(#{$text-base}, 1.9vw, #{$text-md});
+  font-weight: 400;
+  line-height: $leading-relaxed;
+  letter-spacing: $tracking-wide;
+  color: rgba(255, 252, 246, 0.82);
+  margin: 0;
+  max-width: 32rem;
+}
+
+.rule {
+  margin-top: 1.75rem;
+  height: 1px;
+  width: 6rem;
+  background: linear-gradient(90deg, $color-accent-soft, transparent);
+  transform-origin: left center;
+}
+
+[dir="rtl"] .rule {
+  transform-origin: right center;
+}

@@ -1,0 +1,39 @@
+@use "@/styles/tokens" as *;
+
+.root {
+  max-width: 52rem;
+  margin: 0 auto;
+  font-size: $text-md;
+  line-height: $leading-loose;
+  letter-spacing: $tracking-wide;
+
+  :global(h2) {
+    font-family: $font-sans;
+    font-size: $text-lg;
+    font-weight: 600;
+    line-height: $leading-snug;
+    letter-spacing: $tracking-wider;
+    text-transform: uppercase;
+    margin: 2rem 0 0.75rem;
+    color: $color-navy-deep;
+  }
+
+  :global(p) {
+    margin-bottom: 1rem;
+    line-height: $leading-loose;
+  }
+
+  :global(ul) {
+    margin: 0 0 1rem 1.25rem;
+    padding: 0;
+  }
+
+  :global(li) {
+    margin-bottom: 0.35rem;
+    line-height: $leading-relaxed;
+  }
+
+  :global(strong) {
+    font-weight: 600;
+  }
+}

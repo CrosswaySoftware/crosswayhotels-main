@@ -1,0 +1,150 @@
+@use "@/styles/tokens" as *;
+
+// Sit below sticky site header (ribbon + bar ≈ variable); clamp keeps mobile/desktop sane
+$sticky-top: clamp(5.5rem, 12vw, 7.5rem);
+
+.wrap {
+  padding: $space-section 0;
+  background: linear-gradient(180deg, $color-canvas 0%, #ded9cf 40%, $color-canvas 100%);
+}
+
+.header {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 1.25rem clamp(2rem, 5vw, 3rem);
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: start;
+  }
+}
+
+.eyebrow {
+  font-size: $text-xs;
+  font-weight: 600;
+  letter-spacing: $tracking-widest;
+  line-height: $leading-normal;
+  text-transform: uppercase;
+  color: $color-accent;
+  margin: 0 0 1rem;
+}
+
+.headline {
+  font-family: $font-sans;
+  font-size: clamp(1.65rem, 3.4vw, 2.65rem);
+  font-weight: 600;
+  line-height: $leading-snug;
+  letter-spacing: $tracking-tight;
+  color: $color-canvas-deep;
+  margin: 0;
+  max-width: 22ch;
+
+  @media (min-width: 768px) {
+    max-width: 28ch;
+  }
+}
+
+.accent {
+  color: $color-accent;
+  font-style: italic;
+  font-weight: 500;
+}
+
+[dir="rtl"] .accent {
+  font-style: normal;
+}
+
+[dir="rtl"] .headline {
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: right;
+  }
+}
+
+.assembly {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  padding-bottom: clamp(4rem, 18vh, 10rem);
+}
+
+.stickyCard {
+  position: sticky;
+  top: $sticky-top;
+  margin-bottom: clamp(2.5rem, 10vh, 5.5rem);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cardInner {
+  display: grid;
+  max-width: 100%;
+  margin: 0 auto;
+  background: $color-white;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  box-shadow: $shadow-soft;
+  border: 1px solid $color-line;
+  min-height: min(480px, 75vh);
+
+  @media (min-width: 880px) {
+    grid-template-columns: 1fr 1fr;
+    min-height: min(420px, 72vh);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(1.75rem, 5vw, 3rem) clamp(1.5rem, 4vw, 3.25rem);
+  text-align: start;
+}
+
+.cardTitle {
+  font-family: $font-sans;
+  font-size: clamp(1.2rem, 2.2vw, 1.45rem);
+  font-weight: 600;
+  line-height: $leading-snug;
+  letter-spacing: $tracking-snug;
+  color: $color-ink;
+  margin: 0 0 1rem;
+}
+
+.cardDesc {
+  margin: 0;
+  font-size: $text-md;
+  line-height: $leading-loose;
+  letter-spacing: $tracking-wide;
+  color: $color-ink-muted;
+}
+
+[dir="rtl"] .content,
+[dir="rtl"] .cardDesc {
+  text-align: right;
+}
+
+.imageBlock {
+  position: relative;
+  min-height: 220px;
+  background: $color-canvas-deep;
+
+  @media (min-width: 880px) {
+    min-height: 0;
+  }
+}
+
+.img {
+  object-fit: cover;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stickyCard {
+    position: relative;
+    top: auto;
+    margin-bottom: 2rem;
+  }
+}

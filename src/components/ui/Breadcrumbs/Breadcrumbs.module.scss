@@ -1,0 +1,20 @@
+@use "@/styles/tokens" as *;
+
+.wrap {
+  font-size: 13px;
+  color: $color-text-muted;
+  margin-bottom: 1.25rem;
+
+  a:hover {
+    color: $color-navy-deep;
+  }
+}
+
+.sep {
+  margin: 0 0.35rem;
+  opacity: 0.5;
+}
+
+.current {
+  color: $color-text;
+}

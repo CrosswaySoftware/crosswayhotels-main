@@ -1,0 +1,26 @@
+@use "@/styles/tokens" as *;
+
+.article {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.heroImg {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.meta {
+  font-size: 13px;
+  color: $color-text-muted;
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,37 @@
+import { routing } from "@/i18n/routing";
+
+type AppLocale = (typeof routing.locales)[number];
+
+/**
+ * Vercel microsite origins (no trailing slash, no locale segment).
+ * Locale is appended at runtime so links match the corporate site language (en · ar · fr).
+ *
+ * History — previous production URLs:
+ * - Crossway Days OMR Chennai → https://crosswaydayshotel.com/
+ * - The Palomar ECR Chennai → https://palomarbycrossway.com/
+ * - Lifotel (property page) → https://lifotel.com/kkinn/ · brand CTAs → https://lifotel.com/
+ * - Revostay Royel Chennai → https://royel.revostay.com/
+ *
+ * History — hardcoded staging examples (all `en`):
+ * - https://crosswaysdays-hotels.vercel.app/en
+ * - https://palomar-five.vercel.app/en
+ * - https://lifotel.vercel.app/en
+ * - https://revostay.vercel.app/en
+ */
+
+export const HOTEL_SITE_ORIGIN_CROSSWAY_DAYS = "https://crosswaysdays-hotels.vercel.app";
+export const HOTEL_SITE_ORIGIN_PALOMAR = "https://palomar-five.vercel.app";
+export const HOTEL_SITE_ORIGIN_LIFOTEL = "https://lifotel.vercel.app";
+export const HOTEL_SITE_ORIGIN_REVOSTAY_ROYEL = "https://revostay.vercel.app";
+
+/** Maps the app locale segment onto microsite URLs (`/en`, `/ar`, `/fr`). Unknown values fall back to the default locale. */
+export function normalizeHotelMicrositeLocale(locale: string): AppLocale {
+  return routing.locales.includes(locale as AppLocale) ? (locale as AppLocale) : routing.defaultLocale;
+}
+
+/** Full URL for a hotel microsite in the visitor's language, e.g. `https://….vercel.app/fr`. */
+export function hotelMicrositeUrl(origin: string, locale: string): string {
+  const loc = normalizeHotelMicrositeLocale(locale);
+  const base = origin.replace(/\/$/, "");
+  return `${base}/${loc}`;
+}

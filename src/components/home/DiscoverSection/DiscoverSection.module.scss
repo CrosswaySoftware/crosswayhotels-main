@@ -1,0 +1,67 @@
+@use "@/styles/tokens" as *;
+
+.section {
+  padding: $space-section 0;
+  background: $color-canvas;
+}
+
+.grid {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: grid;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  align-items: center;
+
+  @media (min-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.visualWrap {
+  position: relative;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  min-height: min(52vh, 520px);
+  box-shadow: $shadow-soft;
+}
+
+.visual {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.02);
+  transition: transform 1.4s $ease-out-expo;
+}
+
+.visualWrap:hover .visual {
+  transform: scale(1.06);
+}
+
+.frame {
+  position: absolute;
+  inset: 1rem;
+  border: 1px solid rgba(255, 252, 246, 0.35);
+  border-radius: calc(#{$radius-lg} - 10px);
+  pointer-events: none;
+}
+
+.prose {
+  p {
+    color: $color-ink-muted;
+    font-size: $text-md;
+    line-height: $leading-loose;
+    letter-spacing: $tracking-wide;
+    text-align: start;
+  }
+}
+
+.last {
+  margin-bottom: 0 !important;
+}
+
+[dir="rtl"] .prose p {
+  text-align: right;
+}
