@@ -1,30 +1,111 @@
 @use "@/styles/tokens" as *;
 
+// Editorial white band — serif headline, gold eyebrow, navy CTA (reference layout)
+$discover-gold: #b5936d;
+
 .section {
   padding: $space-section 0;
-  background: $color-canvas;
+  background: $color-canvas-bright;
 }
 
 .grid {
   max-width: $container-max;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 1.5rem;
   display: grid;
-  gap: clamp(2rem, 5vw, 3.5rem);
+  gap: clamp(1.75rem, 4vw, 3rem);
   align-items: center;
 
   @media (min-width: 900px) {
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(2.25rem, 4.5vw, 3.5rem);
+    align-items: center;
+  }
+
+  @media (max-width: 899px) {
+    .visualWrap {
+      order: -1;
+    }
+  }
+}
+
+.prose {
+  min-width: 0;
+}
+
+.eyebrow {
+  margin: 0 0 1rem;
+  font-family: $font-sans;
+  font-size: $text-xs;
+  font-weight: 600;
+  letter-spacing: $tracking-widest;
+  text-transform: uppercase;
+  color: $discover-gold;
+}
+
+.title {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.85rem, 3.5vw, 2.75rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: $tracking-tight;
+  color: $header-surface;
+}
+
+.rule {
+  width: 3rem;
+  height: 2px;
+  margin: 0 0 1.75rem;
+  background: linear-gradient(90deg, $discover-gold, rgba(181, 147, 109, 0.25));
+  border-radius: 1px;
+}
+
+.prose p {
+  margin: 0 0 1.15rem;
+  font-family: $font-sans;
+  font-size: $text-md;
+  line-height: $leading-loose;
+  letter-spacing: $tracking-wide;
+  color: rgba(20, 18, 16, 0.72);
+  text-align: start;
+}
+
+.last {
+  margin-bottom: 1.75rem !important;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.25rem;
+  padding: 0.72rem 1.65rem;
+  font-family: $font-sans;
+  font-size: $text-xs;
+  font-weight: 600;
+  letter-spacing: $tracking-widest;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: $header-surface;
+  border: 1px solid $header-surface;
+  border-radius: 2px;
+  transition: background 0.2s $ease-out-expo, color 0.2s $ease-out-expo, border-color 0.2s $ease-out-expo;
+
+  &:hover,
+  &:focus-visible {
+    background: #05263d;
+    border-color: #05263d;
+    color: #ffffff;
   }
 }
 
 .visualWrap {
   position: relative;
-  border-radius: $radius-lg;
+  border-radius: clamp(2.25rem, 5vw, 3.5rem);
   overflow: hidden;
-  min-height: min(52vh, 520px);
-  box-shadow: $shadow-soft;
+  min-height: min(48vh, 480px);
+  border: 1px solid $color-line;
+  box-shadow: 0 18px 48px rgba(3, 18, 30, 0.06);
 }
 
 .visual {
@@ -37,31 +118,13 @@
 }
 
 .visualWrap:hover .visual {
-  transform: scale(1.06);
-}
-
-.frame {
-  position: absolute;
-  inset: 1rem;
-  border: 1px solid rgba(255, 252, 246, 0.35);
-  border-radius: calc(#{$radius-lg} - 10px);
-  pointer-events: none;
-}
-
-.prose {
-  p {
-    color: $color-ink-muted;
-    font-size: $text-md;
-    line-height: $leading-loose;
-    letter-spacing: $tracking-wide;
-    text-align: start;
-  }
-}
-
-.last {
-  margin-bottom: 0 !important;
+  transform: scale(1.05);
 }
 
 [dir="rtl"] .prose p {
   text-align: right;
+}
+
+[dir="rtl"] .title {
+  font-family: $font-arabic, serif;
 }

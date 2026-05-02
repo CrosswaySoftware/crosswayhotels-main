@@ -2,8 +2,10 @@
 
 .section {
   padding: $space-section 0;
-  background: $color-canvas-deep;
-  color: $color-white;
+  background: $color-canvas-muted;
+  color: $color-ink;
+  border-top: 1px solid $color-line;
+  border-bottom: 1px solid $color-line;
 }
 
 .inner {
@@ -14,12 +16,12 @@
 
 .grid {
   display: grid;
-  gap: 1.75rem;
-  margin-top: 0.5rem;
+  gap: 2rem;
+  margin-top: 0.75rem;
 
   @media (min-width: 900px) {
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 2.25rem;
   }
 }
 
@@ -47,7 +49,7 @@
   border-radius: $radius-lg;
   transform-style: preserve-3d;
   transition: transform 0.85s $ease-out-expo;
-  box-shadow: $shadow-soft;
+  border: 1px solid $color-line;
 
   .tilt:hover &,
   .tilt:focus-within & {
@@ -80,13 +82,13 @@
   display: grid;
   place-items: center;
   padding: 1.5rem;
-  background-color: #1a1714;
+  background-color: $color-canvas;
 
   &::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(176, 125, 75, 0.35), transparent 55%);
+    background: linear-gradient(135deg, rgba(176, 125, 75, 0.12), transparent 55%);
     border-radius: inherit;
   }
 }
@@ -103,7 +105,7 @@
     line-height: $leading-snug;
     letter-spacing: $tracking-wider;
     text-transform: uppercase;
-    color: $color-white;
+    color: $color-ink;
     margin: 0 0 1rem;
   }
 

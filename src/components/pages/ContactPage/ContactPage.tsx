@@ -59,7 +59,7 @@ export async function ContactPage() {
                   <dd>
                     <a href="tel:+919789877770">{t("officeInPhone1")}</a>
                     <br />
-                    <a href="tel:+916383752850">{t("officeInPhone2")}</a>
+                    <a href="tel:+919751277770">{t("officeInPhone2")}</a>
                   </dd>
                 </div>
               </dl>

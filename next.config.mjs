@@ -9,7 +9,14 @@ const nextConfig = {
     unoptimized: true,
   },
   async redirects() {
-    return [{ source: "/author/crossway", destination: "/", permanent: false }];
+    return [
+      { source: "/author/crossway", destination: "/", permanent: false },
+      {
+        source: "/:locale/experiences/family/:slug*",
+        destination: "/:locale/experiences/accommodations/:slug*",
+        permanent: true,
+      },
+    ];
   },
 };
 

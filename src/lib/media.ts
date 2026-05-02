@@ -7,6 +7,22 @@ export const layout = {
 
 export const home = {
   heroBg: "/images/home/hero.jpg",
+  /** Full-bleed homepage hero carousel — order shown in rotation */
+  heroSlides: [
+    "/images/home/feature-rooms.jpeg",
+    "/images/home/hero.jpg",
+    "/images/home/discover.jpg",
+    "/images/home/feature-dining.jpeg",
+    "/images/home/feature-banquet.jpeg",
+    "/images/home/feature-spa.jpeg",
+    "/images/home/stay-family.jpeg",
+    "/images/home/stay-business.jpeg",
+    "/images/home/stay-food.jpeg",
+    "/images/home/stay-wellness.jpeg",
+    // "/images/home/brand-crossway-front.jpg",
+    // "/images/home/brand-lifotel-front.jpg",
+    // "/images/home/brand-revostay-front.jpg",
+  ] as const,
   discover: "/images/home/discover.jpg",
   perfectStay: {
     family: "/images/home/stay-family.jpeg",

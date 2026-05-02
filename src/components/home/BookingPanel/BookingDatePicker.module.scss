@@ -8,8 +8,7 @@
   padding: 0.65rem;
   background: linear-gradient(165deg, #fffef9 0%, #f2ede6 100%);
   border: 1px solid rgba(20, 18, 16, 0.12);
-  border-radius: $radius-md;
-  box-shadow: $shadow-soft;
+  border-radius: $radius-sm;
   max-width: min(100vw - 2rem, 320px);
 
   [dir="rtl"] & {
@@ -24,7 +23,7 @@
   --rdp-accent-background-color: rgba(232, 212, 188, 0.55);
   --rdp-day-height: 38px;
   --rdp-day-width: 38px;
-  --rdp-day_button-border-radius: 8px;
+  --rdp-day_button-border-radius: #{$radius-sm};
   --rdp-day_button-height: 36px;
   --rdp-day_button-width: 36px;
   --rdp-today-color: #{$color-accent};

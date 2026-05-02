@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans_Arabic, Poppins } from "next/font/google";
+import { DM_Sans, Noto_Sans_Arabic } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -7,10 +7,10 @@ import { SiteShell } from "@/components/layout/SiteShell/SiteShell";
 import { routing } from "@/i18n/routing";
 import "@/styles/globals.scss";
 
-const poppins = Poppins({
+const dmSans = DM_Sans({
   subsets: ["latin", "latin-ext"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-poppins",
+  variable: "--font-dm-sans",
   display: "swap",
 });
 
@@ -67,7 +67,7 @@ export default async function LocaleLayout({
   const dir = locale === "ar" ? "rtl" : "ltr";
 
   return (
-    <html lang={locale} dir={dir} className={`${poppins.variable} ${arabic.variable}`} suppressHydrationWarning>
+    <html lang={locale} dir={dir} className={`${dmSans.variable} ${arabic.variable}`} suppressHydrationWarning>
       <body suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
           <SiteShell>{children}</SiteShell>

@@ -1,6 +1,6 @@
 import { brand, home, news, pages } from "@/lib/media";
 
-export const STAY_CATEGORIES = ["family", "business", "food", "wellness"] as const;
+export const STAY_CATEGORIES = ["accommodations", "business", "food", "wellness"] as const;
 export type StayCategoryId = (typeof STAY_CATEGORIES)[number];
 
 export type PerfectStayInsight = {
@@ -16,7 +16,7 @@ export const PERFECT_STAY_INSIGHTS: Record<StayCategoryId, PerfectStayInsight[]>
     { slug: "lifotel-calm-studio", image: pages.about.family },
     { slug: "ayurveda-ritual", image: home.perfectStay.wellness },
   ],
-  family: [
+  accommodations: [
     { slug: "connecting-suites", image: home.perfectStay.family },
     { slug: "kids-weekend-club", image: pages.about.service },
     { slug: "pool-lawn-days", image: news.beachResort },

@@ -51,7 +51,7 @@ p {
   line-height: $leading-relaxed;
 }
 
-/* Headings — Poppins, one coherent scale */
+/* Headings — DM Sans, one coherent scale */
 h1,
 h2,
 h3,
@@ -104,8 +104,8 @@ h4 {
 }
 
 ::selection {
-  background: $color-ink;
-  color: $color-white;
+  background: rgba(176, 125, 75, 0.2);
+  color: $color-ink;
 }
 
 :focus-visible {

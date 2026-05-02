@@ -15,8 +15,7 @@
   border-radius: $radius-lg;
   overflow: hidden;
   border: 1px solid rgba(20, 18, 16, 0.1);
-  box-shadow: $shadow-soft;
-  background: linear-gradient(145deg, #e8e4de, #d8d4cc);
+  background: linear-gradient(145deg, $color-canvas-muted, #eceae5);
 
   /* Slightly refined map chrome without hurting legibility */
   filter: saturate(0.92) contrast(1.02);

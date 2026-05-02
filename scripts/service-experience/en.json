@@ -1,0 +1,270 @@
+{
+  "ctaBook": "Book your stay",
+  "ctaCall": "Reservations",
+  "ctaContact": "Contact us",
+  "ctaVisitHotel": "Visit hotel site",
+  "accommodations": {
+    "metaTitle": "Accommodations",
+    "heroEyebrow": "Across our hotels",
+    "heroTitle": "Accommodations designed for restorative stays",
+    "heroLead": "Rooms and suites at each property—with consistent comfort, warm service, and booking support when you are ready to reserve.",
+    "intro": "Explore signature room types by property. When you have dates in mind, use our booking engine or speak with reservations on +91 97512 77770—we will guide you to the right hotel and rate.",
+    "itemsHeading": "Featured room types",
+    "props": {
+      "days": {
+        "name": "Crossway Days Hotel OMR Chennai",
+        "location": "245/1, Old Mahabalipuram Road, Padur, Chennai – 603103, Tamil Nadu, India",
+        "items": [
+          {
+            "title": "Deluxe & executive rooms",
+            "desc": "Bright, composed rooms with premium bedding, ergonomic lighting, and calm interiors—ideal for corporate pace on OMR."
+          },
+          {
+            "title": "Suites & extended stays",
+            "desc": "Additional living space and upgraded amenities for longer itineraries, families, and guests who want room to settle in."
+          }
+        ]
+      },
+      "palomar": {
+        "name": "The Palomar by Crossway, ECR, Chennai",
+        "location": "4A2, East Coast Rd, Akkarai, Sholinganallur, Chennai, Tamil Nadu 600119",
+        "items": [
+          {
+            "title": "Boutique rooms & suites",
+            "desc": "Sea-near calm with standout in-room amenities—crafted for leisure breaks and celebrations along ECR."
+          },
+          {
+            "title": "Premium suites",
+            "desc": "Expanded layouts with lounge zones—perfect when you want privacy, hosting space, and a slower coastal rhythm."
+          }
+        ]
+      },
+      "lifotel": {
+        "name": "Lifotel KK INN by Crossway, Chennai",
+        "location": "S.F No.6, 8, Easwaran Kovil St, Senthil Nagar, Urapakkam, Chennai, Tamil Nadu 603210",
+        "items": [
+          {
+            "title": "Deluxe rooms",
+            "desc": "Cosy, efficient rooms with essentials-first comfort—great value for short visits and repeat travellers in South Chennai."
+          },
+          {
+            "title": "Suites & longer-stay layouts",
+            "desc": "More space when you need to stretch out—balanced for business weeks and family stops."
+          }
+        ]
+      },
+      "royel": {
+        "name": "Revostay Royel by Crossway, Chennai",
+        "location": "S.F No.6, 8, Easwaran Kovil St, Senthil Nagar, Urapakkam, Chennai, Tamil Nadu 603210",
+        "items": [
+          {
+            "title": "Contemporary suites",
+            "desc": "Modern suites tuned for extended stays—with kitchen-forward convenience where available and attentive front-desk support."
+          },
+          {
+            "title": "Studio-style comfort",
+            "desc": "Compact layouts that keep nights quiet and mornings simple—ideal when your calendar runs tight."
+          }
+        ]
+      }
+    }
+  },
+  "dining": {
+    "metaTitle": "Dining",
+    "heroEyebrow": "Restaurants & bars",
+    "heroTitle": "Dining across every Crossway address",
+    "heroLead": "From all-day dining and coastal grills to lively bars—each property carries its own flavour while sharing the same instinct for hospitality.",
+    "intro": "Discover signature venues by hotel. Planning an evening or a celebration? Call +91 97512 77770 and our teams will share menus, timings, and private dining options.",
+    "itemsHeading": "Restaurants & bars",
+    "props": {
+      "days": {
+        "name": "Crossway Days Hotel OMR Chennai",
+        "location": "245/1, Old Mahabalipuram Road, Padur, Chennai – 603103, Tamil Nadu, India",
+        "items": [
+          {
+            "title": "Ride Bar & all-day dining",
+            "desc": "High-energy bar nights with live sport and refreshments—paired with dependable all-day menus for busy schedules."
+          },
+          {
+            "title": "Banquet-driven culinary service",
+            "desc": "Kitchen teams experienced in large-format events—ideal when meetings run long and meals need to land on time."
+          }
+        ]
+      },
+      "palomar": {
+        "name": "The Palomar by Crossway, ECR, Chennai",
+        "location": "4A2, East Coast Rd, Akkarai, Sholinganallur, Chennai, Tamil Nadu 600119",
+        "items": [
+          {
+            "title": "Cappella — global cuisine",
+            "desc": "All-day dining with extensive international selections—warm interiors built for families and long, unhurried meals."
+          },
+          {
+            "title": "The Spotted Deer — gastro pub",
+            "desc": "Crafted cocktails, live energy, and a snack menu designed for memorable evenings with friends or colleagues."
+          }
+        ]
+      },
+      "lifotel": {
+        "name": "Lifotel KK INN by Crossway, Chennai",
+        "location": "S.F No.6, 8, Easwaran Kovil St, Senthil Nagar, Urapakkam, Chennai, Tamil Nadu 603210",
+        "items": [
+          {
+            "title": "In-house restaurant",
+            "desc": "Wholesome breakfast spreads and a thoughtful mix of local and regional dishes through the day."
+          },
+          {
+            "title": "Calm dining room service",
+            "desc": "Relaxed seating for professionals and families—ideal before early departures or after long drives."
+          }
+        ]
+      },
+      "royel": {
+        "name": "Revostay Royel by Crossway, Chennai",
+        "location": "S.F No.6, 8, Easwaran Kovil St, Senthil Nagar, Urapakkam, Chennai, Tamil Nadu 603210",
+        "items": [
+          {
+            "title": "All-day restaurant",
+            "desc": "Straightforward, flavour-forward menus that suit extended-stay rhythms and late arrivals."
+          },
+          {
+            "title": "In-room dining support",
+            "desc": "Comfort-first service when you want quiet nights in—ask the desk for chef recommendations and timing."
+          }
+        ]
+      }
+    }
+  },
+  "banquets": {
+    "metaTitle": "Banquets",
+    "heroEyebrow": "Meetings & celebrations",
+    "heroTitle": "Banquets, lawns & meeting spaces",
+    "heroLead": "Host conferences, weddings, and milestone celebrations—with catering teams who understand clock time and guest comfort.",
+    "intro": "Each hotel offers a different scale of halls, boardrooms, and outdoor pockets. Share your guest count and dates—call +91 97512 77770—or book an exploratory visit via Contact us.",
+    "itemsHeading": "Spaces & formats",
+    "props": {
+      "days": {
+        "name": "Crossway Days Hotel OMR Chennai",
+        "location": "245/1, Old Mahabalipuram Road, Padur, Chennai – 603103, Tamil Nadu, India",
+        "items": [
+          {
+            "title": "Meeting floors & breakout zones",
+            "desc": "Day-lit conference rooms that scale from intimate board meetings to larger formats—with technician support where needed."
+          },
+          {
+            "title": "Banquet halls & lawns",
+            "desc": "Celebration-ready venues with curated menus—ideal for receptions, awards nights, and corporate milestones."
+          }
+        ]
+      },
+      "palomar": {
+        "name": "The Palomar by Crossway, ECR, Chennai",
+        "location": "4A2, East Coast Rd, Akkarai, Sholinganallur, Chennai, Tamil Nadu 600119",
+        "items": [
+          {
+            "title": "ZOL Garden & glass house",
+            "desc": "Poolside energy for social functions and brand launches—with multifunctional layouts for ~120 guests."
+          },
+          {
+            "title": "Private lounge hosting",
+            "desc": "Intimate salons for workshops, screenings, and leadership offsites that need discretion."
+          }
+        ]
+      },
+      "lifotel": {
+        "name": "Lifotel KK INN by Crossway, Chennai",
+        "location": "S.F No.6, 8, Easwaran Kovil St, Senthil Nagar, Urapakkam, Chennai, Tamil Nadu 603210",
+        "items": [
+          {
+            "title": "Focused meeting packages",
+            "desc": "Efficient rooms for training sessions, reviews, and smaller gatherings—supported by attentive banquet service."
+          },
+          {
+            "title": "Alcohol-free celebrations",
+            "desc": "Purpose-built for organisations that want clarity and calm—perfect for milestone moments without compromise."
+          }
+        ]
+      },
+      "royel": {
+        "name": "Revostay Royel by Crossway, Chennai",
+        "location": "S.F No.6, 8, Easwaran Kovil St, Senthil Nagar, Urapakkam, Chennai, Tamil Nadu 603210",
+        "items": [
+          {
+            "title": "Compact corporate formats",
+            "desc": "Smart layouts for hybrid meetings and leadership huddles when teams stay on-site."
+          },
+          {
+            "title": "Residential group stays",
+            "desc": "Pair meeting time with suite comfort—ideal for multi-day programmes along GST Road."
+          }
+        ]
+      }
+    }
+  },
+  "wellness": {
+    "metaTitle": "Wellness",
+    "heroEyebrow": "Spa & restoration",
+    "heroTitle": "Wellness rituals across the portfolio",
+    "heroLead": "Spas, thermal circuits, and calm studios—each property offers its own recovery rhythm with therapists trained to honour pace.",
+    "intro": "Whether you need a short contrast circuit before a flight or a slow ritual after a coastal day, our teams can advise on slots and therapies. Reach reservations on +91 97512 77770 for spa desk coordination.",
+    "itemsHeading": "Signature wellness moments",
+    "props": {
+      "days": {
+        "name": "Crossway Days Hotel OMR Chennai",
+        "location": "245/1, Old Mahabalipuram Road, Padur, Chennai – 603103, Tamil Nadu, India",
+        "items": [
+          {
+            "title": "Thermal suite & recovery",
+            "desc": "Contrast therapy and spa-grade recovery tuned for business-travel fatigue and long meeting weeks."
+          },
+          {
+            "title": "Therapist-led rituals",
+            "desc": "Massage sequences focused on sleep quality and mobility—ideal before early departures."
+          }
+        ]
+      },
+      "palomar": {
+        "name": "The Palomar by Crossway, ECR, Chennai",
+        "location": "4A2, East Coast Rd, Akkarai, Sholinganallur, Chennai, Tamil Nadu 600119",
+        "items": [
+          {
+            "title": "Palomar spa sanctuary",
+            "desc": "Sea-near calm with ritual baths, slow massage, and chambers designed for deep exhale."
+          },
+          {
+            "title": "Coastal wellness evenings",
+            "desc": "Twilight-friendly therapies that pair with poolside downtime after humid Chennai days."
+          }
+        ]
+      },
+      "lifotel": {
+        "name": "Lifotel KK INN by Crossway, Chennai",
+        "location": "S.F No.6, 8, Easwaran Kovil St, Senthil Nagar, Urapakkam, Chennai, Tamil Nadu 603210",
+        "items": [
+          {
+            "title": "Calm studio sessions",
+            "desc": "Low-light zones, scent-aware options, and focused chair massage when you want restoration without a full resort day."
+          },
+          {
+            "title": "Movement-forward programmes",
+            "desc": "Stretch-forward menus for travellers who want balance between desk time and recovery."
+          }
+        ]
+      },
+      "royel": {
+        "name": "Revostay Royel by Crossway, Chennai",
+        "location": "S.F No.6, 8, Easwaran Kovil St, Senthil Nagar, Urapakkam, Chennai, Tamil Nadu 603210",
+        "items": [
+          {
+            "title": "In-suite wind-down",
+            "desc": "Quiet rituals that respect extended-stay pace—ideal after long weeks on the road."
+          },
+          {
+            "title": "Ayurveda-forward offerings",
+            "desc": "Traditional sequences with herbal steam and dosha-aware oils when available—ask the spa desk."
+          }
+        ]
+      }
+    }
+  }
+}

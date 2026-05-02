@@ -1,9 +1,9 @@
 // Crossway New — editorial luxury (warm stone, ink, burnished metal)
 
-// Typography — Poppins app-wide; Arabic uses Noto Sans Arabic (see globals)
-$font-sans: var(--font-poppins), system-ui, sans-serif;
-$font-display: var(--font-poppins), system-ui, sans-serif;
-$font-arabic: var(--font-arabic), var(--font-poppins), sans-serif;
+// Typography — DM Sans app-wide; Arabic uses Noto Sans Arabic (see globals)
+$font-sans: var(--font-dm-sans), system-ui, sans-serif;
+$font-display: var(--font-dm-sans), system-ui, sans-serif;
+$font-arabic: var(--font-arabic), var(--font-dm-sans), sans-serif;
 
 // Type scale (rem)
 $text-xs: 0.75rem; // 12px — captions, micro labels
@@ -30,16 +30,19 @@ $tracking-tighter: -0.03em;
 $tracking-tight: -0.02em;
 $tracking-snug: -0.01em;
 $tracking-normal: 0;
-$tracking-wide: 0.015em; // body (Poppins reads well with slight space)
+$tracking-wide: 0.015em; // body (slight tracking pairs well with DM Sans)
 $tracking-wider: 0.06em; // labels, nav
 $tracking-widest: 0.12em; // eyebrow / uppercase UI
 
-$color-canvas: #e6e2d8;
+// Warm paper (avoids flat “hospital white”); cards/shells can read slightly brighter on top
+$color-canvas: #f8f6f1;
+$color-canvas-muted: #efebe3;
+$color-canvas-bright: #fffcf7;
 $color-canvas-deep: #0f0e0c;
 $color-ink: #141210;
-$color-ink-muted: rgba(20, 18, 16, 0.62);
-$color-fog: rgba(255, 252, 246, 0.06);
-$color-line: rgba(20, 18, 16, 0.12);
+$color-ink-muted: rgba(20, 18, 16, 0.6);
+$color-fog: rgba(20, 18, 16, 0.04);
+$color-line: rgba(20, 18, 16, 0.1);
 
 $color-accent: #b07d4b;
 $color-accent-soft: #c9a27a;
@@ -49,18 +52,28 @@ $color-white: #fffef9;
 $color-glass: rgba(15, 14, 12, 0.58);
 $color-panel: rgba(8, 7, 6, 0.88);
 
-$space-section: clamp(4rem, 12vw, 8rem);
-$space-tight: clamp(2rem, 5vw, 3.5rem);
-$container-max: min(1240px, 92vw);
+/* Vertical rhythm between sections — kept intentionally tighter site-wide */
+$space-section: clamp(2.65rem, 5vw, 4.5rem);
+$space-tight: clamp(1.45rem, 3.25vw, 2.35rem);
+$container-max: min(1200px, 90vw);
 $header-h: 76px;
 $ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 
 $radius-sm: 2px;
 $radius-md: 14px;
 $radius-lg: 22px;
+$radius-xl: 40px;
 
-$shadow-soft: 0 28px 80px rgba(8, 7, 6, 0.18);
-$shadow-lift: 0 20px 50px rgba(8, 7, 6, 0.12);
+// Dark chrome (header + first homepage bands) — flat, no gradients
+$header-surface: #03121e;
+$header-ribbon: #020d16;
+$header-elevated: #0a2238;
+$nav-on-dark: rgba(232, 212, 188, 0.88);
+$nav-on-dark-muted: rgba(232, 212, 188, 0.65);
+$nav-on-dark-faint: rgba(255, 252, 247, 0.1);
+
+$shadow-soft: none;
+$shadow-lift: none;
 
 // Legacy names used by inner pages (Brochure, blog, legal, etc.)
 $color-text: $color-ink;

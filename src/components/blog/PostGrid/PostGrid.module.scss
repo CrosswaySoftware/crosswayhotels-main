@@ -2,7 +2,7 @@
 
 .grid {
   display: grid;
-  gap: 1.75rem;
+  gap: 2rem;
   grid-template-columns: 1fr;
 
   @media (min-width: 700px) {
@@ -16,11 +16,12 @@
   background: $color-white;
   border-radius: 4px;
   overflow: hidden;
-  box-shadow: $shadow-card;
-  transition: transform 0.2s ease;
+  border: 1px solid $color-line;
+  transition: transform 0.2s ease, border-color 0.2s ease;
 
   &:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
+    border-color: rgba(176, 125, 75, 0.35);
   }
 }
 

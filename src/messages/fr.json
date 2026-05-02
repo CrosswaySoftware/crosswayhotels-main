@@ -6,6 +6,11 @@
     "fr": "Français"
   },
   "Nav": {
+    "nav_hotels": "Hôtels",
+    "nav_experiences": "Expériences",
+    "nav_offers": "Offres",
+    "nav_about": "À propos",
+    "nav_contact": "Contact",
     "home": "Accueil",
     "about": "À propos",
     "ourHotels": "Nos hôtels",
@@ -14,8 +19,12 @@
     "partner": "Devenir partenaire",
     "news": "Actualités",
     "contact": "Contact",
+    "accommodations": "Hébergement",
+    "dining": "Restauration",
+    "banquets": "Banquets",
+    "wellness": "Bien-être",
     "mailUs": "Écrivez-nous : contact@crosswayhotels.com",
-    "indiaPhone": "Inde : +91 6383752850",
+    "indiaPhone": "Inde : +91 97512 77770",
     "uaePhone": "Émirats : +971 50 385 8270",
     "hotel_palomar": "The Palomar by Crossway, ECR, Chennai",
     "hotel_days": "Crossway Days Hotel OMR Chennai",
@@ -46,24 +55,27 @@
     "link_contact": "Contact"
   },
   "Home": {
-    "heroKicker": "Hospitalité · Sud de l’Inde & Émirats",
+    "heroKicker": "",
     "heroTitle": "Là où le rythme du quotidien rencontre le confort, posé et réfléchi",
     "heroLead": "Des séjours pensés pour les voyageurs qui attendent chaleur, clarté et des emplacements qui fonctionnent.",
-    "discoverEyebrow": "La maison",
-    "discoverTitle": "Crossway, autrement",
-    "discoverP1": "Crossway Hotels and Resorts a été fondé pour redéfinir l’hospitalité et la culture du service. Nous offrons à nos clients un séjour confortable et une atmosphère apaisante dans nos hôtels.",
-    "discoverP2": "Nos équipes qualifiées sont formées pour offrir un service chaleureux, attentif et personnalisé à chaque hôte. Nous allons au-delà d’un simple confort — nous vous plaçons dans les meilleurs emplacements avec un soin sans compromis.",
-    "discoverP3": "Des lieux vivants et des atouts distinctifs : intérieurs modernes, sommeil réparateur, spas régénérants et restauration d’exception.",
+    "heroCtaExplore": "Découvrir les hôtels",
+    "heroCtaBook": "Réserver votre séjour",
+    "discoverEyebrow": "Qui sommes-nous",
+    "discoverTitle": "Une nouvelle référence en hospitalité et séjours hôteliers",
+    "discoverCta": "En savoir plus",
+    "discoverP1": "Crossway Hotels & Resorts a été créé pour redéfinir le paradigme de l’hospitalité et de la culture du service. Nous offrons à nos clients un séjour confortable et une atmosphère apaisante dans nos hôtels.",
+    "discoverP2": "Nos équipes qualifiées sont formées pour offrir un service chaleureux, attentif et personnalisé à chaque hôte. Nous allons au-delà d’un séjour confortable — nous vous plaçons dans les meilleurs emplacements avec des soins sans compromis.",
+    "discoverP3": "Des lieux vivants rencontrent des atouts distinctifs : intérieurs modernes, sommeil réparateur, spas régénérants et restauration d’exception.",
     "perfectEyebrow": "Pour chaque voyage",
-    "perfectTitle": "Des expériences de séjour sélectionnées",
-    "stay_family_title": "Famille",
-    "stay_family_desc": "Des lieux et un service pensés pour les vacances que vous méritez ensemble.",
-    "stay_business_title": "Affaires",
-    "stay_business_desc": "Des espaces et un rythme adaptés au voyageur d’affaires d’aujourd’hui.",
+    "perfectTitle": "Expérience de séjour sélectionnée",
+    "stay_accommodations_title": "Hébergement",
+    "stay_accommodations_desc": "Chambres et suites pensées pour des nuits réparatrices — confort constant, service attentif et détails réfléchis dans tous nos établissements.",
+    "stay_business_title": "Banquets",
+    "stay_business_desc": "Salles de réunion, halls de banquet et espaces plein air — menus et équipes qui orchestrent réceptions et événements sans accroc.",
     "stay_food_title": "Restauration",
-    "stay_food_desc": "Profondeur locale et ouverture internationale — des restaurants qui respectent le lieu où vous êtes.",
+    "stay_food_desc": "Du service toute la journée aux tables de chefs — menus ancrés dans la saveur, la présentation et une hospitalité qui honore le moment.",
     "stay_wellness_title": "Bien-être",
-    "stay_wellness_desc": "Spas primés et soins qui restaurent le corps et la concentration.",
+    "stay_wellness_desc": "Spas et rituels qui invitent au ralenti — soins pensés pour restaurer le corps et la concentration.",
     "featuresEyebrow": "Au cœur du séjour",
     "brandEssenceEyebrow": "L’essence",
     "brandEssenceTitle": "Chaleur, clarté et attention — par conception",
@@ -80,6 +92,14 @@
     "brandVoiceTitle": "Ce que chaque séjour doit faire ressentir",
     "brandVoiceQuote": "Un rythme qui adoucit, des espaces qui respirent et des détails réfléchis — pour que vous vous concentriez sur la raison de votre voyage.",
     "brandVoiceLine": "Crossway Hotels and Resorts",
+    "promiseCol1Title": "Confort réfléchi",
+    "promiseCol1Body": "Des espaces pensés pour le repos, la productivité et la tranquillité d’esprit.",
+    "promiseCol2Title": "Soins authentiques",
+    "promiseCol2Body": "Des équipes à l’écoute qui rendent chaque moment sans effort.",
+    "promiseCol3Title": "Valeur honnête",
+    "promiseCol3Body": "Des expériences de qualité qui dépassent vos attentes.",
+    "promiseCol4Title": "Hospitalité responsable",
+    "promiseCol4Body": "Des choix durables aujourd’hui pour de meilleurs voyages demain.",
     "brandsEyebrow": "Portefeuille",
     "brandsTitle": "Trois expressions. Un standard.",
     "brand_crossway": "CROSSWAY",
@@ -87,8 +107,8 @@
     "brand_revostay": "REVOSTAY",
     "viewMore": "Découvrir",
     "hotelsShowcaseEyebrow": "Nos hôtels",
-    "hotelsShowcaseTitle": "Quatre adresses, un même calme exigeant",
-    "hotelsShowcaseLead": "Chaque établissement a son caractère — et chaque équipe partage la même intuition Crossway : clarté, chaleur et séjours pensés.",
+    "hotelsShowcaseTitle": "Des séjours distinctifs. Des lieux distinctifs.",
+    "hotelsShowcaseLead": "En Inde et aux Émirats, chaque adresse Crossway reflète son territoire — chaleur, clarté et séjours façonnés autour de votre façon de voyager.",
     "hotelShowcaseEssence_days": "Padur sur l’OMR — où le rythme des affaires rencontre des chambres posées, la restauration et des espaces de réunion qui restent humains.",
     "hotelShowcaseEssence_palomar": "Le calme du bord de mer à l’ECR — proximité de la mer, rituels spa réparateurs et intérieurs qui invitent à souffler.",
     "hotelShowcaseEssence_lifotel": "Des séjours intelligents et honnêtes — l’essentiel Lifotel avec un service attentif et des emplacements qui respectent votre agenda.",
@@ -104,9 +124,13 @@
     "checkIn": "Arrivée",
     "checkOut": "Départ",
     "rooms": "Chambres",
-    "adults": "Adultes",
-    "children": "Enfants",
-    "submit": "Réserver",
+    "adults": "Adulte",
+    "children": "Enfant",
+    "adultsCount": "{count, plural, one {# personne} other {# personnes}}",
+    "childrenCount": "{count, plural, one {# enfant} other {# enfants}}",
+    "childrenCountZero": "Aucun enfant",
+    "submit": "Vérifier",
+    "bookHeader": "Réserver",
     "placeholderDate": "JJ-MM-AAAA",
     "childNone": "—"
   },
@@ -132,7 +156,7 @@
     "officeInLine2": "245/1, Old Mahabalipuram Road, Padur",
     "officeInLine3": "Chennai – 603103, Tamil Nadu",
     "officeInPhone1": "+91 9789877770",
-    "officeInPhone2": "+91 6383752850",
+    "officeInPhone2": "+91 97512 77770",
     "officeInMapTitle": "Days Hotel Chennai OMR",
     "officeAeLabel": "Émirats · Bureau de gestion",
     "officeAeCompany": "Crossway Hotel Management LLC",
@@ -158,6 +182,9 @@
   "PerfectStayInsights": {
     "modalEyebrow": "Fil d’aperçus",
     "modalLead": "Chaque vignette est un fil — ouvrez-la pour lire l’histoire complète sur sa page.",
+    "accommodationsModalLead": "Chaque adresse Crossway — touchez un établissement pour ouvrir le guide complet : chambres, lieu et réservation.",
+    "accommodationsPropertiesLabel": "Nos hôtels",
+    "accommodationsCardCta": "Voir le guide",
     "insightsRowLabel": "Sélection",
     "openPicker": "Voir la sélection pour {category}",
     "close": "Fermer",
@@ -181,22 +208,22 @@
     "wellness_ayurveda_ritual_tagline": "Huiles dosha, vapeur aux herbes, praticiens qui respectent la séquence traditionnelle.",
     "wellness_ayurveda_ritual_body": "Rituel en plusieurs étapes, de l’huile tiède au cataplasme, finissant par un thé tranquille et un mot d’après-soin personnalisé.",
     "wellness_ayurveda_ritual_body2": "Groupes réduits et créneaux limités pour garder chaque séance sans hâte.",
-    "family_connecting_suites_title": "Suites communicantes",
-    "family_connecting_suites_tagline": "Intimité de part et d’autre de la porte avec salon partagé—couchers et soirées ciné, réglés.",
-    "family_connecting_suites_body": "Associez une king à une twin ou junior suite pour que les adultes soufflent pendant que les plus jeunes suivent leur propre tempo.",
-    "family_connecting_suites_body2": "Nos équipes préparent lits bébé, clés supplémentaires et ménage décalé pour que la journée reste à vous.",
-    "family_kids_weekend_club_title": "Club week-end enfants",
-    "family_kids_weekend_club_tagline": "Jeux encadrés, boucles extérieures sûres et pauses café sans les parents.",
-    "family_kids_weekend_club_body": "Les matinées de week-end démarrent avec ateliers et jeux de pelouse encadrés pendant un petit-déjeuner sans interruption pour les parents.",
-    "family_kids_weekend_club_body2": "Inscription à l’avance pour des effectifs calmes ; chaque créneau finit par une note de passation sur ce qui a plu.",
-    "family_pool_lawn_days_title": "Journées piscine & pelouse",
-    "family_pool_lawn_days_tagline": "Terrasses ombragées, heures peu profondes, service qui anticipe baignade et goûters.",
-    "family_pool_lawn_days_body": "Piscines surveillées, serviettes, menus qui comprennent les nageurs affamés.",
-    "family_pool_lawn_days_body2": "Ciné pelouse et soirées acoustiques douces en rotation—demandez à la réception le rythme de la semaine.",
-    "family_family_dining_table_title": "Table familiale",
-    "family_family_dining_table_tagline": "Plats grand format, épices douces, chaises hautes sans friction.",
-    "family_family_dining_table_body": "Les chefs dressent une table partagée : grills, pains et desserts qui arrivent ensemble pour que personne n’attende le regard dans le vide.",
-    "family_family_dining_table_body2": "Les notes alimentaires vont en cuisine ; les portions enfants restent généreuses, jamais timides.",
+    "accommodations_connecting_suites_title": "Suites communicantes",
+    "accommodations_connecting_suites_tagline": "Intimité de part et d’autre de la porte avec salon partagé—couchers et soirées ciné, réglés.",
+    "accommodations_connecting_suites_body": "Associez une king à une twin ou junior suite pour que les adultes soufflent pendant que les plus jeunes suivent leur propre tempo.",
+    "accommodations_connecting_suites_body2": "Nos équipes préparent lits bébé, clés supplémentaires et ménage décalé pour que la journée reste à vous.",
+    "accommodations_kids_weekend_club_title": "Club week-end enfants",
+    "accommodations_kids_weekend_club_tagline": "Jeux encadrés, boucles extérieures sûres et pauses café sans les parents.",
+    "accommodations_kids_weekend_club_body": "Les matinées de week-end démarrent avec ateliers et jeux de pelouse encadrés pendant un petit-déjeuner sans interruption pour les parents.",
+    "accommodations_kids_weekend_club_body2": "Inscription à l’avance pour des effectifs calmes ; chaque créneau finit par une note de passation sur ce qui a plu.",
+    "accommodations_pool_lawn_days_title": "Journées piscine & pelouse",
+    "accommodations_pool_lawn_days_tagline": "Terrasses ombragées, heures peu profondes, service qui anticipe baignade et goûters.",
+    "accommodations_pool_lawn_days_body": "Piscines surveillées, serviettes, menus qui comprennent les nageurs affamés.",
+    "accommodations_pool_lawn_days_body2": "Ciné pelouse et soirées acoustiques douces en rotation—demandez à la réception le rythme de la semaine.",
+    "accommodations_family_dining_table_title": "Table familiale",
+    "accommodations_family_dining_table_tagline": "Plats grand format, épices douces, chaises hautes sans friction.",
+    "accommodations_family_dining_table_body": "Les chefs dressent une table partagée : grills, pains et desserts qui arrivent ensemble pour que personne n’attende le regard dans le vide.",
+    "accommodations_family_dining_table_body2": "Les notes alimentaires vont en cuisine ; les portions enfants restent généreuses, jamais timides.",
     "business_executive_lounge_title": "Salon exécutif",
     "business_executive_lounge_tagline": "Impression, café et cabines d’appel—assez calmes pour de vraies décisions.",
     "business_executive_lounge_body": "Viennoiseries le matin, bouchées salées le soir ; bureaux espacés pour le focus, pas le spectacle.",
@@ -256,7 +283,11 @@
     "categoryEvents": "Événements",
     "categoryPressReleases": "Communiqués de presse",
     "categoryFoodForThought": "Réflexions",
-    "contactUs": "Contact"
+    "contactUs": "Contact",
+    "accommodations": "Hébergement",
+    "dining": "Restauration",
+    "banquets": "Banquets",
+    "wellness": "Bien-être"
   },
   "Forms": {
     "staticSiteNote": "Ce site est une reconstruction front-end statique. L’envoi des formulaires est désactivé. Veuillez écrire à <mail></mail> avec les mêmes informations.",
@@ -274,24 +305,31 @@
     "heroEyebrow": "Crossway Hotels and Resorts",
     "heroTitle": "Nous rendons votre séjour plus confortable",
     "heroLead": "Un accueil chaleureux, des espaces pensés et des emplacements adaptés à votre façon de voyager.",
-    "storyEyebrow": "Notre histoire",
-    "storyTitle": "À propos",
-    "introLead": "Crossway Hotels and Resorts vous propose de grands hôtels dans des lieux remarquables, avec des services attentifs. Excellente restauration et spas remarquables pour égayer la plupart de vos séjours—le tout à bon prix.",
-    "introBody": "Bienvenue chez Crossway Hotels and Resorts.",
+    "whoEyebrow": "Qui nous sommes",
+    "whoTitle": "Une nouvelle référence en hospitalité",
+    "whoP1": "Crossway Hotels & Resorts est une marque hôtelière en pleine croissance en Inde : une collection d’hôtels de luxe, de séjours boutique et d’hébergements lifestyle dans des destinations recherchées.",
+    "whoP2": "Un grand hôtel ne se résume pas aux chambres—il s’agit du ressenti que le lieu procure. Chaque adresse Crossway est pensée pour offrir calme, confort et expériences fluides, que vous voyagiez pour affaires, les loisirs ou un séjour prolongé.",
+    "whoP3": "Emplacements stratégiques, design contemporain et service attentif : nous créons des environnements où l’on peut se détendre, se ressourcer et se sentir bien.",
     "passionEyebrow": "Le standard Crossway",
     "passionTitle": "Le service est notre passion",
     "passionLead": "Chaque point de contact est pensé pour la clarté, le calme et un vrai souci du détail—sans bruit ni surcharge.",
-    "passionWhereLabel": "Où vous séjournez",
-    "passionHostLabel": "Comment nous vous accueillons",
+    "pillar_0": "Un service intuitif qui vous place au centre.",
+    "pillar_1": "Une qualité fiable, à chaque fois.",
+    "pillar_2": "Des emplacements premium qui vous connectent.",
+    "pillar_3": "Chaleur et attention dans chaque détail.",
+    "experienceHostingEyebrow": "Expérience & accueil",
+    "whereEyebrow": "Ce que vous vivez",
+    "whereTitle": "Où vous séjournez",
+    "hostEyebrow": "Comment nous vous accueillons",
+    "hostTitle": "Comment nous élevons votre séjour",
     "passion_where_0": "Service personnalisé et large éventail d’équipements",
     "passion_where_1": "Séjour confortable dans des chambres bien équipées",
     "passion_where_2": "Lieu idéal pour les retrouvailles familiales et les réunions professionnelles",
     "passion_where_3": "Large choix de cuisines authentiques et de saison",
     "passion_host_0": "Sélection raffinée de menus restauration et boissons",
     "passion_host_1": "Soins spa pour régénérer corps et esprit",
-    "passion_host_2": "Notre personnel est formé pour accorder une attention personnelle à chaque hôte",
-    "passion_host_3": "Accès gratuit au club de remise en forme",
-    "passionCaption": "Une hospitalité réfléchie."
+    "passion_host_2": "Personnel formé pour une attention personnelle à chaque hôte",
+    "passion_host_3": "Accès gratuit au club de remise en forme"
   },
   "Careers": {
     "title": "Carrières",
@@ -384,5 +422,275 @@
     "sulekha_bio_0": "Diplômée en hôtellerie avec plus de 20 ans d’expérience, dont 14 ans en hébergement et 3 ans en exploitation. Originaire des îles Andaman et Nicobar, elle a travaillé dans des hôtels 5 étoiles dans plusieurs villes indiennes.",
     "sulekha_bio_1": "Elle a participé aux ouvertures du Days Hotel Chennai OMR en tant que directrice des opérations ; réception pour Ramada Chennai Egmore ; réception pour Matthan Hotel Bangalore et Oakwood Premier Prestige Bangalore.",
     "sulekha_bio_2": "Elle a aussi travaillé au Zuri White Sands Goa Resort & Casino, The Lalit Grand Palace Srinagar, Royal Orchid Hotels, The Park Chennai, Taj Connemara Chennai et Savera Hotel Chennai."
+  },
+  "ServiceExperience": {
+    "ctaBook": "Réserver votre séjour",
+    "ctaCall": "Réservations",
+    "ctaContact": "Contact",
+    "ctaVisitHotel": "Voir le site de l’hôtel",
+    "accommodations": {
+      "metaTitle": "Hébergement",
+      "heroEyebrow": "Dans tous nos hôtels",
+      "heroTitle": "Des hébergements pensés pour des nuits réparatrices",
+      "heroLead": "Chambres et suites dans chaque établissement—confort constant, accueil chaleureux et aide à la réservation lorsque vous êtes prêt.",
+      "intro": "Découvrez les types de chambres par établissement. Quand vous avez des dates en tête, utilisez notre moteur de réservation ou appelez le +91 97512 77770 — nous vous orientons vers le bon hôtel et le bon tarif.",
+      "itemsHeading": "Types de chambres mis en avant",
+      "props": {
+        "days": {
+          "name": "Crossway Days Hotel OMR Chennai",
+          "location": "245/1, Old Mahabalipuram Road, Padur, Chennai – 603103, Tamil Nadu, Inde",
+          "items": [
+            {
+              "title": "Chambres deluxe et executive",
+              "desc": "Chambres lumineuses avec literie premium, éclairage ergonomique et intérieurs apaisants—idéales pour le rythme professionnel sur l’OMR."
+            },
+            {
+              "title": "Suites et longs séjours",
+              "desc": "Espace de vie supplémentaire et équipements haut de gamme pour les séjours prolongés, les familles et les besoins d’installer durablement."
+            }
+          ]
+        },
+        "palomar": {
+          "name": "The Palomar by Crossway, ECR, Chennai",
+          "location": "4A2, East Coast Rd, Akkarai, Sholinganallur, Chennai, Tamil Nadu 600119",
+          "items": [
+            {
+              "title": "Chambres et suites boutique",
+              "desc": "Calme proche de la mer avec équipements remarquables—pour les pauses balnéaires et les célébrations sur l’ECR."
+            },
+            {
+              "title": "Suites premium",
+              "desc": "Plans plus vastes avec salons — idéal pour l’intimité, recevoir et ralentir au rythme du littoral."
+            }
+          ]
+        },
+        "lifotel": {
+          "name": "Lifotel KK INN by Crossway, Chennai",
+          "location": "S.F No.6, 8, Easwaran Kovil St, Senthil Nagar, Urapakkam, Chennai, Tamil Nadu 603210",
+          "items": [
+            {
+              "title": "Chambres deluxe",
+              "desc": "Chambres cosy et efficaces — excellent rapport pour les courts séjours et les voyageurs réguliers au sud de Chennai."
+            },
+            {
+              "title": "Suites et longues durées",
+              "desc": "Plus d’espace lorsque vous en avez besoin — équilibre pour semaines professionnelles ou étapes familiales."
+            }
+          ]
+        },
+        "royel": {
+          "name": "Revostay Royel by Crossway, Chennai",
+          "location": "S.F No.6, 8, Easwaran Kovil St, Senthil Nagar, Urapakkam, Chennai, Tamil Nadu 603210",
+          "items": [
+            {
+              "title": "Suites contemporaines",
+              "desc": "Suites modernes pour séjours prolongés — avec cuisine lorsque disponible et équipe à la réception attentive."
+            },
+            {
+              "title": "Confort style studio",
+              "desc": "Plans compacts pour des nuits calmes et des départs matinaux simples lorsque l’agenda est chargé."
+            }
+          ]
+        }
+      }
+    },
+    "dining": {
+      "metaTitle": "Restauration",
+      "heroEyebrow": "Restaurants et bars",
+      "heroTitle": "La restauration à chaque adresse Crossway",
+      "heroLead": "Du service toute la journée aux grills côtiers et aux bars animés — chaque lieu a sa personnalité avec la même exigence d’accueil.",
+      "intro": "Découvrez les lieux phares par hôtel. Pour une soirée ou une fête, appelez le +91 97512 77770 — menus, horaires et salles privées.",
+      "itemsHeading": "Restaurants et bars",
+      "props": {
+        "days": {
+          "name": "Crossway Days Hotel OMR Chennai",
+          "location": "245/1, Old Mahabalipuram Road, Padur, Chennai – 603103, Tamil Nadu, Inde",
+          "items": [
+            {
+              "title": "Ride Bar et restauration du jour",
+              "desc": "Soirées dynamiques avec sport en direct et rafraîchissements — avec menus journée pour les emplois du temps chargés."
+            },
+            {
+              "title": "Service événementiel",
+              "desc": "Équipes cuisine habituées aux grands volumes — lorsque les réunions durent et les repas doivent être ponctuels."
+            }
+          ]
+        },
+        "palomar": {
+          "name": "The Palomar by Crossway, ECR, Chennai",
+          "location": "4A2, East Coast Rd, Akkarai, Sholinganallur, Chennai, Tamil Nadu 600119",
+          "items": [
+            {
+              "title": "Cappella — cuisine globale",
+              "desc": "Restaurant toute la journée avec sélection internationale — intérieurs chaleureux pour familles et longs déjeuners."
+            },
+            {
+              "title": "The Spotted Deer — gastro pub",
+              "desc": "Cocktails créatifs, ambiance live et snacks pour des soirées marquantes entre amis ou collègues."
+            }
+          ]
+        },
+        "lifotel": {
+          "name": "Lifotel KK INN by Crossway, Chennai",
+          "location": "S.F No.6, 8, Easwaran Kovil St, Senthil Nagar, Urapakkam, Chennai, Tamil Nadu 603210",
+          "items": [
+            {
+              "title": "Restaurant sur place",
+              "desc": "Petits-déjeuners complets et sélection locale et régionale tout au long de la journée."
+            },
+            {
+              "title": "Salle à manger calme",
+              "desc": "Sièges détendus pour professionnels et familles — avant départs matinaux ou après longs trajets."
+            }
+          ]
+        },
+        "royel": {
+          "name": "Revostay Royel by Crossway, Chennai",
+          "location": "S.F No.6, 8, Easwaran Kovil St, Senthil Nagar, Urapakkam, Chennai, Tamil Nadu 603210",
+          "items": [
+            {
+              "title": "Restaurant journée",
+              "desc": "Menus directs et savoureux adaptés aux séjours prolongés et aux arrivées tardives."
+            },
+            {
+              "title": "Service en chambre",
+              "desc": "Repas dans le calme lorsque vous préférez la soirée tranquille — demandez conseils au bureau."
+            }
+          ]
+        }
+      }
+    },
+    "banquets": {
+      "metaTitle": "Banquets",
+      "heroEyebrow": "Réunions et célébrations",
+      "heroTitle": "Banquets, pelouses et espaces de réunion",
+      "heroLead": "Conférences, mariages et grandes étapes — avec traiteurs qui maîtrisent le timing et le confort des invités.",
+      "intro": "Chaque hôtel propose une échelle différente de salles, conseils et espaces extérieurs. Partagez effectif et dates — appelez le +91 97512 77770 — ou planifiez une visite via Contact.",
+      "itemsHeading": "Espaces et formats",
+      "props": {
+        "days": {
+          "name": "Crossway Days Hotel OMR Chennai",
+          "location": "245/1, Old Mahabalipuram Road, Padur, Chennai – 603103, Tamil Nadu, Inde",
+          "items": [
+            {
+              "title": "Étages réunion et annexes",
+              "desc": "Salles à lumière du jour, du bureau restreint aux formats plus larges — avec support technique selon besoin."
+            },
+            {
+              "title": "Salles de banquet et pelouses",
+              "desc": "Lieux prêts pour réceptions, soirées de prix et jalons d’entreprise avec menus orchestrés."
+            }
+          ]
+        },
+        "palomar": {
+          "name": "The Palomar by Crossway, ECR, Chennai",
+          "location": "4A2, East Coast Rd, Akkarai, Sholinganallur, Chennai, Tamil Nadu 600119",
+          "items": [
+            {
+              "title": "ZOL Garden et glass house",
+              "desc": "Énergie près de la piscine pour événements sociaux et lancements — configurations jusqu’à env. 120 invités."
+            },
+            {
+              "title": "Salons privés",
+              "desc": "Espaces intimistes pour ateliers, projections et séminaires dirigeants."
+            }
+          ]
+        },
+        "lifotel": {
+          "name": "Lifotel KK INN by Crossway, Chennai",
+          "location": "S.F No.6, 8, Easwaran Kovil St, Senthil Nagar, Urapakkam, Chennai, Tamil Nadu 603210",
+          "items": [
+            {
+              "title": "Formules réunion ciblées",
+              "desc": "Salles efficaces pour formations et petites réunions — avec service banquet attentif."
+            },
+            {
+              "title": "Célébrations sans alcool",
+              "desc": "Pensé pour les organisations qui privilégient clarté et calme — jalons avec sens."
+            }
+          ]
+        },
+        "royel": {
+          "name": "Revostay Royel by Crossway, Chennai",
+          "location": "S.F No.6, 8, Easwaran Kovil St, Senthil Nagar, Urapakkam, Chennai, Tamil Nadu 603210",
+          "items": [
+            {
+              "title": "Formats corporate compacts",
+              "desc": "Plans astucieux pour réunions hybrides et séances dirigeantes lorsque les équipes sont sur place."
+            },
+            {
+              "title": "Groupes résidentiels",
+              "desc": "Combiner journées de travail et confort des suites — utile pour programmes sur plusieurs jours."
+            }
+          ]
+        }
+      }
+    },
+    "wellness": {
+      "metaTitle": "Bien-être",
+      "heroEyebrow": "Spa et récupération",
+      "heroTitle": "Rituels bien-être dans tout le portefeuille",
+      "heroLead": "Spas, circuits thermaux et studios calmes — chaque lieu propose son rythme de récupération avec thérapeutes attentifs.",
+      "intro": "Circuit court avant un vol ou rituel lent après une journée au bord de mer — nos équipes conseillent les créneaux et soins. Réservations +91 97512 77770 pour coordonner avec le spa.",
+      "itemsHeading": "Moments bien-être signature",
+      "props": {
+        "days": {
+          "name": "Crossway Days Hotel OMR Chennai",
+          "location": "245/1, Old Mahabalipuram Road, Padur, Chennai – 603103, Tamil Nadu, Inde",
+          "items": [
+            {
+              "title": "Suite thermale et récupération",
+              "desc": "Contraste et récupération spa pour fatigue de voyage d’affaires et semaines de réunions."
+            },
+            {
+              "title": "Rituels encadrés",
+              "desc": "Séquences massage pour sommeil et mobilité — utiles avant départs matinaux."
+            }
+          ]
+        },
+        "palomar": {
+          "name": "The Palomar by Crossway, ECR, Chennai",
+          "location": "4A2, East Coast Rd, Akkarai, Sholinganallur, Chennai, Tamil Nadu 600119",
+          "items": [
+            {
+              "title": "Sanctuaire spa Palomar",
+              "desc": "Calme maritime, bains rituels et massage lent dans des salons pensés pour lâcher prise."
+            },
+            {
+              "title": "Soirées bien-être littoral",
+              "desc": "Soins « crépuscule » qui prolongent les pauses après les journées chaudes de Chennai."
+            }
+          ]
+        },
+        "lifotel": {
+          "name": "Lifotel KK INN by Crossway, Chennai",
+          "location": "S.F No.6, 8, Easwaran Kovil St, Senthil Nagar, Urapakkam, Chennai, Tamil Nadu 603210",
+          "items": [
+            {
+              "title": "Sessions calm studio",
+              "desc": "Lumière douce, options sans parfum et massage sur chaise lorsque vous voulez du répit sans journée resort."
+            },
+            {
+              "title": "Programmes mouvement",
+              "desc": "Menus étirements pour équilibrer temps d’écran et récupération."
+            }
+          ]
+        },
+        "royel": {
+          "name": "Revostay Royel by Crossway, Chennai",
+          "location": "S.F No.6, 8, Easwaran Kovil St, Senthil Nagar, Urapakkam, Chennai, Tamil Nadu 603210",
+          "items": [
+            {
+              "title": "Détente en suite",
+              "desc": "Rituels discrets qui respectent le rythme des longs séjours après des semaines de route."
+            },
+            {
+              "title": "Offres ayurvéda",
+              "desc": "Séquences traditionnelles, vapeur aux herbes et huiles selon dosha — demandez au spa."
+            }
+          ]
+        }
+      }
+    }
   }
 }

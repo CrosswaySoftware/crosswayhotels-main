@@ -35,7 +35,7 @@ export async function BrandsSection() {
   return (
     <section className={styles.section} id="core-features">
       <div className={styles.inner}>
-        <SectionTitle align="center" variant="onDark" eyebrow={t("brandsEyebrow")}>
+        <SectionTitle align="center" eyebrow={t("brandsEyebrow")}>
           {t("brandsTitle")}
         </SectionTitle>
         <div className={styles.grid}>

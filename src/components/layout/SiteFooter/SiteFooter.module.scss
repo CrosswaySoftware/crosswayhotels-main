@@ -2,18 +2,11 @@
 
 .footer {
   position: relative;
-  background: $color-canvas-deep;
-  color: rgba(255, 252, 246, 0.78);
+  background: $header-surface;
+  color: $nav-on-dark-muted;
   padding: $space-section 0 $space-tight;
   overflow: hidden;
-}
-
-.glow {
-  position: absolute;
-  inset: -40% -20% auto;
-  height: 70%;
-  background: radial-gradient(ellipse at 30% 0%, rgba(176, 125, 75, 0.22), transparent 55%);
-  pointer-events: none;
+  border-top: 1px solid rgba(255, 252, 247, 0.06);
 }
 
 .inner {
@@ -48,11 +41,25 @@
   opacity: 0.95;
 }
 
+.colBrandLead {
+  background: rgba(255, 252, 247, 0.05);
+  border: 1px solid rgba(255, 252, 247, 0.08);
+  padding: 1.25rem 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+  border-radius: $radius-md;
+
+  .logo {
+    margin-bottom: 0;
+    opacity: 1;
+    filter: brightness(1.06);
+  }
+}
+
 .address {
   font-size: $text-sm;
   line-height: $leading-relaxed;
   letter-spacing: $tracking-wide;
-  color: rgba(255, 252, 246, 0.65);
+  color: $nav-on-dark-muted;
   margin-bottom: 0.75rem;
 }
 
@@ -62,6 +69,7 @@
   letter-spacing: $tracking-wide;
   line-height: $leading-normal;
   margin-bottom: 1.25rem;
+  color: $nav-on-dark-muted;
 }
 
 .cta {
@@ -77,24 +85,29 @@
   background: linear-gradient(120deg, $color-accent-soft, $color-glow);
   padding: 0.85rem 1.35rem;
   border-radius: $radius-md;
-  transition: transform 0.35s $ease-out-expo, box-shadow 0.35s $ease-out-expo;
+  border: 1px solid transparent;
+  transition: transform 0.35s $ease-out-expo, border-color 0.35s $ease-out-expo;
 
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 32px rgba(176, 125, 75, 0.35);
+    transform: translateY(-1px);
+    border-color: rgba(176, 125, 75, 0.45);
     color: $color-canvas-deep;
   }
 }
 
 .colTitle {
   font-family: $font-sans;
-  font-size: $text-sm;
+  font-size: $text-xs;
   font-weight: 600;
   letter-spacing: $tracking-wider;
   line-height: $leading-normal;
   text-transform: uppercase;
-  color: $color-accent-soft;
-  margin-bottom: 1rem;
+  color: $nav-on-dark;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 0 0 1rem;
+  padding: 0.65rem 1rem;
+  border-radius: $radius-sm;
+  border: 1px solid rgba(255, 252, 247, 0.06);
 }
 
 .list {
@@ -104,21 +117,26 @@
   font-size: $text-sm;
   line-height: $leading-relaxed;
   letter-spacing: $tracking-wide;
-  color: rgba(255, 252, 246, 0.72);
+  color: $nav-on-dark-muted;
 
   li {
     margin-bottom: 0.35rem;
   }
 
+  a {
+    color: rgba(255, 252, 247, 0.88);
+    transition: color 0.2s $ease-out-expo;
+  }
+
   a:hover {
-    color: $color-glow;
+    color: $color-accent-soft;
   }
 }
 
 .bottom {
   margin-top: 3rem;
   padding-top: 1.75rem;
-  border-top: 1px solid rgba(255, 252, 246, 0.08);
+  border-top: 1px solid rgba(255, 252, 247, 0.1);
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -126,7 +144,7 @@
   font-size: $text-base;
   line-height: $leading-relaxed;
   letter-spacing: $tracking-wide;
-  color: rgba(255, 252, 246, 0.45);
+  color: rgba(255, 252, 247, 0.45);
 
   @media (min-width: 640px) {
     flex-direction: row;
@@ -148,15 +166,15 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid rgba(255, 252, 246, 0.12);
+    border: 1px solid $nav-on-dark-faint;
     font-size: 0.78rem;
-    color: rgba(255, 252, 246, 0.75);
+    color: $nav-on-dark;
     transition: border-color 0.25s $ease-out-expo, color 0.25s $ease-out-expo, background 0.25s $ease-out-expo;
 
     &:hover {
-      border-color: $color-accent-soft;
-      color: $color-glow;
-      background: $color-fog;
+      border-color: rgba(176, 125, 75, 0.55);
+      color: $color-accent-soft;
+      background: rgba(255, 252, 247, 0.06);
     }
   }
 }

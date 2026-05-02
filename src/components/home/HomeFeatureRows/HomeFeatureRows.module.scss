@@ -5,13 +5,13 @@ $sticky-top: clamp(5.5rem, 12vw, 7.5rem);
 
 .wrap {
   padding: $space-section 0;
-  background: linear-gradient(180deg, $color-canvas 0%, #ded9cf 40%, $color-canvas 100%);
+  background: linear-gradient(180deg, $color-canvas 0%, $color-canvas-muted 45%, $color-canvas 100%);
 }
 
 .header {
   max-width: $container-max;
   margin: 0 auto;
-  padding: 0 1.25rem clamp(2rem, 5vw, 3rem);
+  padding: 0 1.25rem clamp(1.35rem, 3.5vw, 2rem);
   text-align: center;
 
   @media (min-width: 768px) {
@@ -66,13 +66,12 @@ $sticky-top: clamp(5.5rem, 12vw, 7.5rem);
   max-width: $container-max;
   margin: 0 auto;
   padding: 0 1.25rem;
-  padding-bottom: clamp(4rem, 18vh, 10rem);
 }
 
 .stickyCard {
   position: sticky;
   top: $sticky-top;
-  margin-bottom: clamp(2.5rem, 10vh, 5.5rem);
+  margin-bottom: clamp(2rem, 6vh, 3.5rem);
 
   &:last-child {
     margin-bottom: 0;
@@ -86,7 +85,6 @@ $sticky-top: clamp(5.5rem, 12vw, 7.5rem);
   background: $color-white;
   border-radius: $radius-lg;
   overflow: hidden;
-  box-shadow: $shadow-soft;
   border: 1px solid $color-line;
   min-height: min(480px, 75vh);
 

@@ -5,7 +5,13 @@ import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import styles from "./LocaleSwitcher.module.scss";
 
-export function LocaleSwitcher({ density = "compact" }: { density?: "compact" | "comfortable" }) {
+export function LocaleSwitcher({
+  density = "compact",
+  variant = "light",
+}: {
+  density?: "compact" | "comfortable";
+  variant?: "light" | "dark";
+}) {
   const t = useTranslations("LocaleSwitcher");
   const locale = useLocale();
   const router = useRouter();
@@ -16,7 +22,7 @@ export function LocaleSwitcher({ density = "compact" }: { density?: "compact" | 
     <label className={styles.root}>
       <span className={styles.sr}>{t("label")}</span>
       <select
-        className={`${styles.select} ${density === "comfortable" ? styles.selectComfortable : ""}`}
+        className={`${styles.select} ${density === "comfortable" ? styles.selectComfortable : ""} ${variant === "dark" ? styles.selectDark : ""}`}
         value={locale}
         aria-label={t("label")}
         onChange={(e) => router.replace(pathname, { locale: e.target.value })}

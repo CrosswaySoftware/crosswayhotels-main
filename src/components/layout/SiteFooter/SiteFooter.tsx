@@ -28,11 +28,12 @@ export async function SiteFooter() {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.glow} aria-hidden />
       <div className={styles.inner}>
         <div className={styles.grid}>
           <div className={styles.colBrand}>
-            <Image src={layout.logoFooter} alt="" width={260} height={58} className={styles.logo} />
+            <div className={styles.colBrandLead}>
+              <Image src={layout.logoFooter} alt="" width={260} height={58} className={styles.logo} />
+            </div>
             <p className={styles.address}>{t("address_uae")}</p>
             <p className={styles.phone}>+97 1503858270</p>
             <Link className={styles.cta} href="/brochure">
@@ -45,7 +46,7 @@ export async function SiteFooter() {
             </h4>
             <p className={styles.address}>{t("address_in")}</p>
             <ul className={styles.list}>
-              <li>+91 6383752850</li>
+              <li>+91 97512 77770</li>
               <li>+91 44 6730 1444</li>
             </ul>
             <ul className={styles.list}>

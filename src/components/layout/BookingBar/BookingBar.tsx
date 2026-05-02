@@ -1,7 +1,8 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { BookingPanel } from "@/components/home/BookingPanel/BookingPanel";
+import styles from "./BookingBar.module.scss";
 
-export async function BookingBar() {
+export async function BookingBar({ dockToHero = false }: { dockToHero?: boolean }) {
   const locale = await getLocale();
   const tb = await getTranslations("Booking");
   const tn = await getTranslations("Nav");
@@ -27,7 +28,7 @@ export async function BookingBar() {
   };
 
   return (
-    <div id="book">
+    <div id="book" className={`${styles.shell} ${dockToHero ? styles.shellDock : ""}`}>
       <BookingPanel key={locale} labels={labels} prominent />
     </div>
   );

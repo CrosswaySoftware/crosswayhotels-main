@@ -34,6 +34,7 @@
   }
 }
 
+/* Mobile: copy sits over the photo (use light text). Desktop split: right column is on paper — use ink. */
 .heroContent {
   position: relative;
   z-index: 2;
@@ -45,21 +46,51 @@
 
   @media (max-width: 899px) {
     margin-top: -200px;
+    text-shadow: 0 1px 3px rgba(8, 7, 6, 0.45);
   }
 
-  h2,
-  h3 {
-    color: $color-white;
+  @media (min-width: 900px) {
+    color: $color-ink;
+    background: $color-page-bg;
+    min-height: min(70vh, 640px);
+    text-shadow: none;
   }
 
   h2 {
     font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 600;
+    letter-spacing: $tracking-tight;
+    margin: 0;
   }
 
   h3 {
     font-size: 1.1rem;
     font-weight: 500;
-    opacity: 0.95;
+    margin: 0.4rem 0 0;
+    line-height: $leading-snug;
+  }
+
+  @media (max-width: 899px) {
+    h2,
+    h3 {
+      color: $color-white;
+    }
+
+    h3 {
+      opacity: 0.92;
+      color: rgba(255, 252, 246, 0.9);
+    }
+  }
+
+  @media (min-width: 900px) {
+    h2 {
+      color: $color-ink;
+    }
+
+    h3 {
+      color: $color-ink-muted;
+      opacity: 1;
+    }
   }
 }
 
@@ -71,8 +102,29 @@
   margin-top: 1rem;
 
   p {
-    color: rgba(255, 255, 255, 0.92);
-    text-align: left;
+    margin: 0 0 1rem;
+    line-height: $leading-relaxed;
+    letter-spacing: $tracking-wide;
+
+    @media (max-width: 899px) {
+      color: rgba(255, 252, 246, 0.92);
+      text-align: start;
+    }
+
+    @media (min-width: 900px) {
+      color: $color-ink-muted;
+      text-align: start;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+[dir="rtl"] .prose p {
+  @media (min-width: 900px) {
+    text-align: right;
   }
 }
 
@@ -80,6 +132,11 @@
   p {
     color: $color-text;
     text-align: justify;
+
+    @media (max-width: 899px) {
+      color: rgba(255, 252, 246, 0.92);
+      text-align: start;
+    }
   }
 }
 

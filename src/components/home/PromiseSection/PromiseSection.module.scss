@@ -1,0 +1,228 @@
+@use "@/styles/tokens" as *;
+
+.section {
+  padding: $space-section 0;
+  background: $color-canvas-bright;
+}
+
+.inner {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.shell {
+  position: relative;
+  overflow: hidden;
+  border-radius: clamp(1.15rem, 2.5vw, 1.75rem);
+  background: $header-surface;
+  border: 1px solid rgba(255, 252, 247, 0.08);
+  box-shadow:
+    0 4px 0 rgba(181, 147, 109, 0.12) inset,
+    0 32px 64px rgba(3, 18, 30, 0.18);
+}
+
+.film {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    linear-gradient(125deg, rgba(10, 34, 56, 0.35) 0%, transparent 45%),
+    radial-gradient(ellipse 90% 60% at 100% 100%, rgba(176, 125, 75, 0.12), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 0% 0%, rgba(255, 252, 247, 0.04), transparent 50%);
+  pointer-events: none;
+}
+
+.leaf {
+  position: absolute;
+  right: -2rem;
+  bottom: -1.5rem;
+  width: min(42vw, 220px);
+  height: min(38vw, 200px);
+  opacity: 0.18;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200' fill='none'%3E%3Cpath d='M160 20c-40 20-70 55-80 100-5 25-2 50 8 70M90 30c-25 35-40 80-35 120M130 50c-15 30-20 65-10 100' stroke='%23c9a27a' stroke-width='1.2' stroke-linecap='round'/%3E%3Cpath d='M45 140c25-15 55-20 85-10' stroke='%23c9a27a' stroke-width='0.9' opacity='0.7'/%3E%3C/svg%3E")
+    no-repeat 50% 50% / contain;
+  pointer-events: none;
+  transform: rotate(-8deg);
+}
+
+.layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: clamp(2rem, 4vw, 2.75rem);
+  padding: clamp(1.85rem, 4vw, 2.75rem) clamp(1.35rem, 4vw, 2.5rem);
+  align-items: start;
+
+  @media (min-width: 960px) {
+    grid-template-columns: minmax(0, 0.42fr) minmax(0, 1fr);
+    gap: clamp(1.75rem, 4vw, 3rem);
+    padding: clamp(2.25rem, 4.5vw, 3.25rem) clamp(1.75rem, 4vw, 2.75rem);
+  }
+}
+
+.lead {
+  min-width: 0;
+}
+
+.eyebrow {
+  margin: 0 0 0.85rem;
+  font-family: $font-sans;
+  font-size: $text-xs;
+  font-weight: 600;
+  letter-spacing: $tracking-widest;
+  text-transform: uppercase;
+  color: $color-accent-soft;
+}
+
+.title {
+  margin: 0 0 1rem;
+  font-size: clamp(1.65rem, 3.5vw, 2.35rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: $tracking-tight;
+  color: rgba(255, 252, 247, 0.96);
+}
+
+.sub {
+  margin: 0 0 1.45rem;
+  font-family: $font-sans;
+  font-size: $text-md;
+  font-weight: 400;
+  line-height: $leading-loose;
+  letter-spacing: $tracking-wide;
+  color: $nav-on-dark-muted;
+  max-width: 28rem;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.72rem 1.5rem;
+  font-family: $font-sans;
+  font-size: $text-xs;
+  font-weight: 600;
+  letter-spacing: $tracking-widest;
+  text-transform: uppercase;
+  color: $header-surface;
+  background: linear-gradient(145deg, $color-accent-soft, #a88458);
+  border: 1px solid rgba(176, 125, 75, 0.45);
+  border-radius: 2px;
+  transition:
+    transform 0.25s $ease-out-expo,
+    box-shadow 0.25s $ease-out-expo,
+    filter 0.25s $ease-out-expo;
+
+  &:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.06);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-glow;
+    outline-offset: 3px;
+  }
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.35rem;
+
+  @media (min-width: 560px) and (max-width: 959px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem 1rem;
+  }
+
+  @media (min-width: 960px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+    align-items: stretch;
+    border-inline-start: 1px solid rgba(255, 252, 247, 0.1);
+  }
+}
+
+.pillar {
+  position: relative;
+  padding: 0;
+
+  @media (max-width: 959px) {
+    padding: 1.15rem 1.1rem;
+    border-radius: $radius-md;
+    background: rgba(255, 252, 247, 0.04);
+    border: 1px solid rgba(255, 252, 247, 0.06);
+  }
+
+  @media (min-width: 960px) {
+    padding: 0.35rem 0.85rem 0 1.15rem;
+    border-inline-start: 1px solid rgba(255, 252, 247, 0.1);
+    margin-inline-start: -1px;
+
+    &:first-child {
+      border-inline-start: none;
+      padding-inline-start: 1.25rem;
+      margin-inline-start: 0;
+    }
+  }
+}
+
+.iconRing {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-bottom: 0.85rem;
+  border-radius: 50%;
+  border: 1px solid rgba(201, 162, 122, 0.35);
+  background: rgba(255, 252, 247, 0.04);
+  color: $color-accent-soft;
+}
+
+.icon {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.pillarTitle {
+  margin: 0 0 0.45rem;
+  font-family: $font-sans;
+  font-size: $text-sm;
+  font-weight: 600;
+  letter-spacing: $tracking-snug;
+  line-height: $leading-snug;
+  color: rgba(255, 252, 247, 0.95);
+}
+
+.pillarBody {
+  margin: 0;
+  font-family: $font-sans;
+  font-size: $text-xs;
+  line-height: $leading-relaxed;
+  letter-spacing: $tracking-wide;
+  color: $nav-on-dark-muted;
+}
+
+[dir="rtl"] .pillarTitle,
+[dir="rtl"] .pillarBody {
+  text-align: right;
+}
+
+[dir="rtl"] .pillars {
+  direction: rtl;
+}
+
+[dir="rtl"] .title {
+  font-family: $font-arabic, serif;
+}
+
+[dir="rtl"] .sub {
+  font-family: $font-arabic, $font-sans, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta:hover {
+    transform: none;
+  }
+}

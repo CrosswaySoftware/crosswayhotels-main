@@ -15,7 +15,7 @@ export type NavItem = {
 
 export const secondaryLinks: NavItem[] = [
   { label: "Mail Us: contact@crosswayhotels.com", href: "mailto:contact@crosswayhotels.com" },
-  { label: "India: +91 6383752850", href: "tel:+916383752850" },
+  { label: "India: +91 97512 77770", href: "tel:+919751277770" },
   { label: "UAE: +97 1503858270", href: "tel:+971503858270" },
 ];
 
@@ -57,6 +57,10 @@ export const brandsSubmenu: NavItem[] = [
 export const primaryNav: { label: string; href?: string; children?: NavItem[] }[] = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about-us" },
+  { label: "Accommodations", href: "/accommodations" },
+  { label: "Dining", href: "/dining" },
+  { label: "Banquets", href: "/banquets" },
+  { label: "Wellness", href: "/wellness" },
   { label: "Our Hotels", children: hotelsSubmenu },
   { label: "Our Brands", children: brandsSubmenu },
   { label: "Partner With Us", href: "/partner-with-us" },

@@ -10,7 +10,7 @@ export async function BrandSignatureSection() {
     <section className={styles.section} id="brand-promise" aria-labelledby="brand-promise-heading">
       <div className={styles.inner}>
         <Reveal>
-          <SectionTitle align="center" variant="onDark" eyebrow={t("brandVoiceEyebrow")}>
+          <SectionTitle align="center" eyebrow={t("brandVoiceEyebrow")}>
             <span id="brand-promise-heading">{t("brandVoiceTitle")}</span>
           </SectionTitle>
         </Reveal>

@@ -39,21 +39,26 @@ export function HotelsShowcaseCarousel({
     [locale, reduceMotion],
   );
 
-  const plugins = useMemo(() => {
-    if (reduceMotion) return [];
-    return [
+  const plugins = useMemo(
+    () => [
       Autoplay({
-        delay: 1500,
+        delay: reduceMotion ? 8000 : 4500,
         playOnInit: true,
-        /* Embla only wires `mouseleave` (and focus resume) when this is false — otherwise hover stops forever. */
         stopOnInteraction: false,
-        stopOnMouseEnter: true,
-        stopOnFocusIn: true,
+        stopOnMouseEnter: false,
+        stopOnFocusIn: false,
+        stopOnLastSnap: false,
       }),
-    ];
-  }, [reduceMotion]);
+    ],
+    [reduceMotion],
+  );
 
   const [emblaRef, emblaApi] = useEmblaCarousel(options, plugins);
+
+  const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
+
+  const navDisabled = slides.length <= 1;
 
   return (
     <div
@@ -62,6 +67,28 @@ export function HotelsShowcaseCarousel({
       aria-roledescription="carousel"
       aria-label={t("hotelsShowcaseEyebrow")}
     >
+      <button
+        type="button"
+        className={`${styles.carouselArrow} ${styles.carouselArrowPrev}`}
+        onClick={scrollPrev}
+        disabled={navDisabled}
+        aria-label={t("hotelCarouselPrev")}
+      >
+        <span className={styles.carouselArrowIcon} aria-hidden>
+          ‹
+        </span>
+      </button>
+      <button
+        type="button"
+        className={`${styles.carouselArrow} ${styles.carouselArrowNext}`}
+        onClick={scrollNext}
+        disabled={navDisabled}
+        aria-label={t("hotelCarouselNext")}
+      >
+        <span className={styles.carouselArrowIcon} aria-hidden>
+          ›
+        </span>
+      </button>
       <div className={styles.emblaViewport} ref={emblaRef}>
         <div className={styles.emblaContainer}>
           {slides.map((hotel, i) => (
@@ -73,18 +100,18 @@ export function HotelsShowcaseCarousel({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className={styles.watermark} aria-hidden>
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
                   <div className={styles.visual}>
                     <Image
                       src={hotel.image}
                       alt=""
                       fill
                       className={styles.img}
-                      sizes="(max-width: 559px) 100vw, (max-width: 899px) 50vw, 33vw"
+                      sizes="(max-width: 639px) 92vw, (max-width: 899px) 56vw, (max-width: 1319px) 38vw, 30vw"
                     />
                     <div className={styles.visualShade} aria-hidden />
+                    <span className={styles.watermark} aria-hidden>
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
                   </div>
                   <div className={styles.meta}>
                     <h3 className={`${styles.hotelName} ${display.className}`}>

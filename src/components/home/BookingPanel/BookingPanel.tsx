@@ -1,6 +1,6 @@
 "use client";
 
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { addDays, format, startOfDay } from "date-fns";
 import { arSA, enUS, fr } from "date-fns/locale";
 import { useEffect, useId, useRef, useState } from "react";
@@ -196,6 +196,7 @@ function ThemedDatePicker({
 
 export function BookingPanel({ labels, prominent = false }: { labels: BookingPanelLabels; prominent?: boolean }) {
   const intlLocale = useLocale();
+  const t = useTranslations("Booking");
   const dir: "ltr" | "rtl" = intlLocale === "ar" ? "rtl" : "ltr";
   const dateLocale = intlLocale === "ar" ? arSA : intlLocale === "fr" ? fr : enUS;
 
@@ -226,13 +227,19 @@ export function BookingPanel({ labels, prominent = false }: { labels: BookingPan
     value: String(n),
     label: String(n),
   }));
-  const adultOptions: SelectOption[] = Array.from({ length: 10 }, (_, i) => ({
-    value: String(i + 1),
-    label: String(i + 1),
-  }));
+  const adultOptions: SelectOption[] = Array.from({ length: 10 }, (_, i) => {
+    const n = i + 1;
+    return {
+      value: String(n),
+      label: t("adultsCount", { count: n }),
+    };
+  });
   const childOptions: SelectOption[] = [
-    { value: "0", label: labels.childNone },
-    ...[1, 2, 3, 4, 5].map((n) => ({ value: String(n), label: String(n) })),
+    { value: "0", label: t("childrenCountZero") },
+    ...[1, 2, 3, 4, 5].map((n) => ({
+      value: String(n),
+      label: t("childrenCount", { count: n }),
+    })),
   ];
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {

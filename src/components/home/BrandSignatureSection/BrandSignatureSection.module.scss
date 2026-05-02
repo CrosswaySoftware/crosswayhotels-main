@@ -2,9 +2,9 @@
 
 .section {
   position: relative;
-  padding: clamp(3.5rem, 10vw, 6rem) 0;
-  background: $color-canvas-deep;
-  color: $color-white;
+  padding: $space-section 0;
+  background: $color-canvas;
+  color: $color-ink;
   overflow: hidden;
 
   &::before {
@@ -12,17 +12,13 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 80% 55% at 20% 20%, rgba(176, 125, 75, 0.22), transparent 55%),
-      radial-gradient(ellipse 70% 50% at 85% 80%, rgba(201, 162, 122, 0.12), transparent 50%);
+      radial-gradient(ellipse 80% 55% at 20% 20%, rgba(176, 125, 75, 0.08), transparent 55%),
+      radial-gradient(ellipse 70% 50% at 85% 80%, rgba(201, 162, 122, 0.05), transparent 50%);
     pointer-events: none;
   }
 
   &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(8, 7, 6, 0.2) 0%, transparent 35%, transparent 65%, rgba(8, 7, 6, 0.35) 100%);
-    pointer-events: none;
+    display: none;
   }
 }
 
@@ -40,7 +36,7 @@
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(2.5rem, 6vw, 3.75rem);
   line-height: 1;
-  color: rgba(201, 162, 122, 0.55);
+  color: rgba(176, 125, 75, 0.45);
   margin-bottom: 0.25rem;
   user-select: none;
 }
@@ -57,7 +53,7 @@
   font-style: italic;
   line-height: $leading-relaxed;
   letter-spacing: $tracking-wide;
-  color: rgba(255, 254, 249, 0.92);
+  color: $color-ink;
 }
 
 .rule {
@@ -74,7 +70,7 @@
   font-weight: 600;
   letter-spacing: $tracking-widest;
   text-transform: uppercase;
-  color: rgba(255, 254, 249, 0.55);
+  color: $color-ink-muted;
 }
 
 [dir="rtl"] .quote {

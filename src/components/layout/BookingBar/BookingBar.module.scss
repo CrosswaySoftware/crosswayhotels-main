@@ -1,0 +1,35 @@
+@use "@/styles/tokens" as *;
+
+.shell {
+  position: relative;
+  z-index: 15;
+  width: 100%;
+  scroll-margin-top: clamp(5rem, 14vw, 7.5rem);
+  /* Overlap hero edge — tuned to match ServicePortfolio + home hero gutters */
+  margin-top: clamp(-4rem, -9.5vw, -2.75rem);
+  margin-bottom: clamp(0.35rem, 1.5vw, 0.75rem);
+  padding: 0 1.25rem;
+  max-width: $container-max;
+  margin-inline: auto;
+  box-sizing: border-box;
+
+  @media (max-width: 1199px) {
+    margin-top: 0;
+  }
+}
+
+.shell > * {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Homepage hero booking — full-bleed strip (no max-width / side gutters on shell) */
+.shellDock {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-inline: 0;
+  padding-inline: 0;
+  padding-bottom: 0;
+  max-width: none;
+  width: 100%;
+}
