@@ -4,11 +4,14 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow-x: clip;
+  /* Don’t set overflow-x here — it breaks viewport `position:sticky` inside <main>. */
+  max-width: 100%;
 }
 
 .main {
   flex: 1;
+  min-width: 0;
+  max-width: 100%;
   /* Offset fixed SiteHeader (ribbon + bar) — homepage hero pulls back up with negative margin */
   padding-top: var(--crossway-site-header-h, 92px);
 }

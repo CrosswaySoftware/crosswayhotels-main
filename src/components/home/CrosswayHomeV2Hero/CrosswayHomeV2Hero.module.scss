@@ -216,23 +216,6 @@
   background: var(--ds-ink);
 }
 
-.btnGhost {
-  display: inline-flex;
-  align-items: center;
-  padding: 14px 22px;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 500;
-  border: 1px solid rgba(255, 252, 246, 0.35);
-  color: var(--ds-paper);
-  transition: border-color 0.25s var(--ds-ease);
-  text-decoration: none;
-}
-
-.btnGhost:hover {
-  border-color: var(--ds-paper);
-}
-
 .foot {
   display: flex;
   flex-direction: column;

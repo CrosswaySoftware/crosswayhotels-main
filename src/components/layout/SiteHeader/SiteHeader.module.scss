@@ -1,6 +1,6 @@
 @use "@/styles/tokens" as *;
 
-/* Fixed stack: ribbon (corporate) + Palomar-style main bar (pill nav, phone, book, locale, sheet). */
+/* Fixed stack: ribbon (corporate) + Palomar-style main bar (pill nav, phone, locale, sheet). */
 .headerRoot {
   --ds-paper: #{$color-white};
   --ds-ink: #{$color-canvas-deep};
@@ -89,6 +89,10 @@
   align-items: center;
   flex-shrink: 0;
   filter: brightness(1.08);
+
+  img {
+    transition: opacity 0.28s var(--ds-ease);
+  }
 }
 
 .headerRoot.barSolid .logo,
@@ -199,25 +203,6 @@
   background: rgba(255, 252, 246, 0.72);
 }
 
-.book {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 15px;
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  background: var(--ds-clay);
-  color: #fff;
-  border: 1px solid transparent;
-  transition: background 0.25s var(--ds-ease);
-  text-decoration: none;
-}
-
-.book:hover {
-  background: var(--ds-ink);
-}
-
 .locale {
   display: flex;
   align-items: center;
@@ -289,10 +274,6 @@
   .actions {
     min-width: 0;
     flex-shrink: 1;
-  }
-
-  .actions .book {
-    display: none;
   }
 
   .mobileBackdrop {
@@ -380,32 +361,6 @@
   :global(html[dir="rtl"]) .mobileLink {
     justify-content: flex-end;
     text-align: right;
-  }
-
-  .mobileBook {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 16px;
-    padding: 14px 20px;
-    border-radius: 999px;
-    font-family: $font-sans;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: var(--ds-clay);
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 6px 18px rgba(176, 125, 75, 0.28);
-    transition:
-      background 0.22s var(--ds-ease),
-      transform 0.18s var(--ds-ease);
-  }
-
-  .mobileBook:active {
-    transform: scale(0.98);
   }
 }
 

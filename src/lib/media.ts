@@ -1,7 +1,10 @@
 /** Paths under `public/` for static images and documents. */
 
 export const layout = {
+  /** Light mark over dark hero / transparent header */
   logoHeader: "/images/layout/logo.png",
+  /** Navy mark for frosted header after hero scroll & inner pages (`viewBox` 155×58) */
+  logoHeaderSolid: "/images/logoblue.svg",
   logoFooter: "/images/layout/logo.png",
 } as const;
 

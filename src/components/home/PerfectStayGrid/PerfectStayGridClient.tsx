@@ -37,11 +37,14 @@ export function PerfectStayGridClient() {
 
   useEffect(() => {
     if (!open) return;
-    const prev = document.body.style.overflow;
+    const prevBody = document.body.style.overflow;
+    const prevHtml = document.documentElement.style.overflow;
     document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
     const tmr = window.setTimeout(() => closeRef.current?.focus(), 80);
     return () => {
-      document.body.style.overflow = prev;
+      document.body.style.overflow = prevBody;
+      document.documentElement.style.overflow = prevHtml;
       window.clearTimeout(tmr);
     };
   }, [open]);

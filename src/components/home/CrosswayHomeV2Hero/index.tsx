@@ -131,9 +131,6 @@ export function CrosswayHomeV2Hero({ bookingSlot }: { bookingSlot: ReactNode }) 
             <a href="#our-hotels" className={styles.btnPrimary}>
               {t("ctaExplore")}
             </a>
-            <a href="#book" className={styles.btnGhost}>
-              {t("ctaBook")}
-            </a>
           </div>
         </div>
 

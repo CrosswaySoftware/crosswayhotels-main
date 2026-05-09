@@ -8,6 +8,7 @@
   align-items: flex-end;
   justify-content: center;
   padding: 0;
+  overscroll-behavior: contain;
   background: rgba(20, 18, 16, 0.35);
   backdrop-filter: blur(14px) saturate(1.1);
   -webkit-backdrop-filter: blur(14px) saturate(1.1);
@@ -23,6 +24,7 @@
   width: 100%;
   max-width: 1180px;
   max-height: min(92vh, 880px);
+  min-width: 0;
   display: flex;
   flex-direction: column;
   border-radius: $radius-lg $radius-lg 0 0;
@@ -130,6 +132,7 @@
   position: relative;
   z-index: 1;
   flex: 1;
+  min-width: 0;
   min-height: 0;
   padding: 1.25rem 0 1.75rem;
   display: flex;
@@ -156,9 +159,14 @@
 .scroller {
   display: flex;
   gap: 1rem;
+  min-width: 0;
   overflow-x: auto;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
   padding: 0.25rem 1.25rem 1rem;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x pinch-zoom;
   scrollbar-width: thin;
   scrollbar-color: rgba(176, 125, 75, 0.45) transparent;
 

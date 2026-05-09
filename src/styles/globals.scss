@@ -14,10 +14,15 @@
 html {
   scroll-behavior: smooth;
   font-size: 100%;
+  /* Avoid overflow-x on root — it breaks `position:sticky` stacking (e.g. HomeFeatureRows). */
+  max-width: 100%;
 }
 
 body {
   margin: 0;
+  /* Single horizontal clip so wide sections don’t scroll the page; `hidden` breaks sticky in WebKit. */
+  overflow-x: clip;
+  max-width: 100%;
   font-family: $font-sans;
   font-size: $text-base;
   font-weight: 400;

@@ -26,6 +26,8 @@ export default function HomePage() {
   return (
     <>
       <HeroWithBooking />
+      {/* Sentinel for SiteHeader: switch frosted bar + brand logo once user scrolls past hero */}
+      <div id="home-hero-end" aria-hidden style={{ height: 1, width: "100%", pointerEvents: "none" }} />
       <DiscoverSection />
       <HotelsShowcase />
       <PerfectStayGrid />

@@ -106,7 +106,7 @@ export function HotelsShowcaseCarousel({
                       alt=""
                       fill
                       className={styles.img}
-                      sizes="(max-width: 639px) 92vw, (max-width: 899px) 56vw, (max-width: 1319px) 38vw, 30vw"
+                      sizes="(max-width: 639px) 96vw, (max-width: 899px) 74vw, (max-width: 1319px) 52vw, 42vw"
                     />
                     <div className={styles.visualShade} aria-hidden />
                     <span className={styles.watermark} aria-hidden>

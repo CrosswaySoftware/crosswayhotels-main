@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useEffect, useState, useSyncExternalStore } from "react";
-import { BookNavLink } from "@/components/layout/BookNavLink/BookNavLink";
 import { Link, usePathname } from "@/i18n/navigation";
 import { LocaleSwitcher } from "@/components/layout/LocaleSwitcher/LocaleSwitcher";
 import { SITE_HEADER_VARIANT, type SiteHeaderVariant } from "@/config/siteHeaderVariant";
@@ -15,6 +14,9 @@ const HEADER_LOGO: Record<SiteHeaderVariant, { w: number; h: number }> = {
   classic: { w: 168, h: 38 },
   split: { w: 158, h: 36 },
 };
+
+/** `logoHeaderSolid` is `logoblue.svg` with viewBox 155×58 — keep height in sync with variant, derive width */
+const SOLID_LOGO_RATIO = 155 / 58;
 
 /** Primary rail — same destinations as before; layout matches Palomar V2 header. */
 const PRIMARY_NAV = [
@@ -46,20 +48,35 @@ function parseHref(href: string) {
 
 export function SiteHeader() {
   const pathname = usePathname() ?? "/";
+  const isHome = pathname === "/" || pathname === "";
   const t = useTranslations("Nav");
-  const tb = useTranslations("Booking");
   const [open, setOpen] = useState(false);
-  const [solid, setSolid] = useState(false);
+  /** Homepage: false over hero; true once `#home-hero-end` intersects. Other pages: always true. */
+  const [pastHero, setPastHero] = useState(() => !isHome);
   const hash = useSyncExternalStore(subscribeHash, readHash, () => "");
-  const logo = HEADER_LOGO[SITE_HEADER_VARIANT];
   const localeDensity = SITE_HEADER_VARIANT === "classic" ? "comfortable" : "compact";
 
   useEffect(() => {
-    const onScroll = () => setSolid(window.scrollY > 40);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    if (!isHome) {
+      setPastHero(true);
+      return;
+    }
+    setPastHero(false);
+    const el = document.getElementById("home-hero-end");
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        const r = entry.boundingClientRect;
+        /* Sentinel sits right after the hero. While it intersects the viewport we're past the hero top.
+           Once it scrolls fully above the viewport, IntersectionObserver stops reporting intersecting —
+           without `r.bottom <= 0` the bar would flip back to transparent. */
+        setPastHero(entry.isIntersecting || r.bottom <= 0);
+      },
+      { threshold: 0 },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [isHome]);
 
   useEffect(() => {
     if (!open) return;
@@ -79,9 +96,13 @@ export function SiteHeader() {
     return () => window.removeEventListener("keydown", onKey);
   }, [open]);
 
-  const isHome = pathname === "/" || pathname === "";
-  const barSolid = solid || !isHome;
+  const barSolid = !isHome || pastHero;
   const headerSolid = barSolid || open;
+
+  const logoBase = HEADER_LOGO[SITE_HEADER_VARIANT];
+  const logo = headerSolid
+    ? { w: Math.round(logoBase.h * SOLID_LOGO_RATIO), h: logoBase.h }
+    : logoBase;
 
   const linkActive = (href: string) => {
     const { path, hash: hrefHash } = parseHref(href);
@@ -120,7 +141,13 @@ export function SiteHeader() {
       <div className={styles.mainBar}>
         <div className={styles.mainBarInner}>
           <Link href="/" className={styles.logo} onClick={() => setOpen(false)}>
-            <Image src={layout.logoHeader} alt="Crossway Hotels and Resorts" width={logo.w} height={logo.h} priority />
+            <Image
+              src={headerSolid ? layout.logoHeaderSolid : layout.logoHeader}
+              alt="Crossway Hotels and Resorts"
+              width={logo.w}
+              height={logo.h}
+              priority
+            />
           </Link>
 
           <nav className={styles.desktopNav} aria-label="Primary">
@@ -141,9 +168,6 @@ export function SiteHeader() {
             <a className={styles.phone} href="tel:+919751277770">
               +91 97512 77770
             </a>
-            <BookNavLink className={styles.book} onClick={() => setOpen(false)}>
-              {tb("bookHeader")}
-            </BookNavLink>
             <div className={styles.locale}>
               <LocaleSwitcher density={localeDensity} variant="dark" tone={headerSolid ? "onLight" : "onDark"} />
             </div>
@@ -173,9 +197,6 @@ export function SiteHeader() {
                 </Link>
               ))}
             </nav>
-            <BookNavLink className={styles.mobileBook} onClick={() => setOpen(false)}>
-              {tb("bookHeader")}
-            </BookNavLink>
           </div>
         </>
       ) : null}
