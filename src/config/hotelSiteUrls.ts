@@ -11,18 +11,22 @@ type AppLocale = (typeof routing.locales)[number];
  * - The Palomar ECR Chennai → https://palomarbycrossway.com/
  * - Lifotel (property page) → https://lifotel.com/kkinn/ · brand CTAs → https://lifotel.com/
  * - Revostay Royel Chennai → https://royel.revostay.com/
+ * - Petit Palais by Crossway, Puducherry → replace with production microsite when live.
  *
  * History — hardcoded staging examples (all `en`):
  * - https://crosswaysdays-hotels.vercel.app/en
  * - https://palomar-five.vercel.app/en
  * - https://lifotel.vercel.app/en
  * - https://revostay.vercel.app/en
+ * - https://petitpalais-next.vercel.app/en
  */
 
-export const HOTEL_SITE_ORIGIN_CROSSWAY_DAYS = "https://crosswaysdays-hotels.vercel.app";
-export const HOTEL_SITE_ORIGIN_PALOMAR = "https://palomar-five.vercel.app";
-export const HOTEL_SITE_ORIGIN_LIFOTEL = "https://lifotel.vercel.app";
-export const HOTEL_SITE_ORIGIN_REVOSTAY_ROYEL = "https://revostay.vercel.app";
+export const HOTEL_SITE_ORIGIN_CROSSWAY_DAYS = "https://crosswaydayshotel.com";
+export const HOTEL_SITE_ORIGIN_PALOMAR = "https://palomarbycrossway.com";
+export const HOTEL_SITE_ORIGIN_LIFOTEL = "https://lifotel.com";
+export const HOTEL_SITE_ORIGIN_REVOSTAY_ROYEL = "https://revostay.com/";
+/** Staging Vercel preview — swap for canonical domain when deployed. */
+export const HOTEL_SITE_ORIGIN_PETIT_PALAIS = "https://petitpalaiscrossway.com";
 
 /** Maps the app locale segment onto microsite URLs (`/en`, `/ar`, `/fr`). Unknown values fall back to the default locale. */
 export function normalizeHotelMicrositeLocale(locale: string): AppLocale {

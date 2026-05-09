@@ -6,10 +6,11 @@
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 3rem;
-  color: $color-white;
+  color: $color-ink;
   display: flex;
   align-items: flex-end;
   border: 1px solid $color-line;
+  background: $color-white;
 }
 
 .featuredBg {
@@ -21,7 +22,7 @@
 .featuredOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.85));
+  background: linear-gradient(180deg, rgba(248, 244, 236, 0.02) 20%, rgba(248, 244, 236, 0.92));
 }
 
 .featuredInner {
@@ -36,7 +37,7 @@
   margin: 0 0 0.75rem;
 
   a {
-    color: $color-white !important;
+    color: $color-ink !important;
 
     &:hover {
       color: $color-gold !important;
@@ -46,7 +47,7 @@
 
 .excerpt {
   font-size: 15px;
-  opacity: 0.92;
+  color: $color-ink-muted;
   margin-bottom: 1.25rem;
 }
 

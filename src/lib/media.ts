@@ -7,21 +7,13 @@ export const layout = {
 
 export const home = {
   heroBg: "/images/home/hero.jpg",
-  /** Full-bleed homepage hero carousel — order shown in rotation */
+  /** Full-bleed homepage hero — 5 slides (slides 6–10 removed); includes `public/images/banner/`. Order matches `Home.heroV2.slides`. */
   heroSlides: [
-    "/images/home/feature-rooms.jpeg",
     "/images/home/hero.jpg",
-    "/images/home/discover.jpg",
-    "/images/home/feature-dining.jpeg",
-    "/images/home/feature-banquet.jpeg",
-    "/images/home/feature-spa.jpeg",
-    "/images/home/stay-family.jpeg",
-    "/images/home/stay-business.jpeg",
-    "/images/home/stay-food.jpeg",
-    "/images/home/stay-wellness.jpeg",
-    // "/images/home/brand-crossway-front.jpg",
-    // "/images/home/brand-lifotel-front.jpg",
-    // "/images/home/brand-revostay-front.jpg",
+    "/images/banner/banner-1.jpg",
+    "/images/banner/banner-2.jpg",
+    "/images/banner/banner-3.jpg",
+    "/images/home/feature-rooms.jpeg",
   ] as const,
   discover: "/images/home/discover.jpg",
   perfectStay: {
@@ -36,12 +28,13 @@ export const home = {
     banquet: "/images/home/feature-banquet.jpeg",
     spa: "/images/home/feature-spa.jpeg",
   },
-  /** Distinct shots per property for the homepage hotels showcase */
+  /** Distinct shots per property — files under `public/images/Our Hotels/` (spaces URL-encoded for Next/Image). */
   hotelsShowcase: {
-    days: "/images/home/feature-banquet.jpeg",
-    palomar: "/images/home/discover.jpg",
-    lifotel: "/images/home/stay-family.jpeg",
-    royel: "/images/home/feature-rooms.jpeg",
+    days: "/images/Our%20Hotels/Crossway%20Days%20Hotel.jpg",
+    palomar: "/images/Our%20Hotels/The%20Palomar%20by%20Crossway.jpg",
+    lifotel: "/images/Our%20Hotels/Lifotel%20KK%20inn.jpg",
+    royel: "/images/Our%20Hotels/Revostay%20Royel%20by%20Crossway.jpg",
+    petitpalais: "/images/Our%20Hotels/Petit%20Palais%20by%20Crossway.jpg",
   },
   brands: {
     crossway: {

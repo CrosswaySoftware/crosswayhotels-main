@@ -37,9 +37,9 @@ export async function generateMetadata({
     fr: "Crossway Hôtels et Villégiatures",
   };
   const descriptions: Record<string, string> = {
-    en: "Best value hotels — comfortable stays, great locations, warm service.",
-    ar: "فنادق بقيمة متميزة — إقامات مريحة، مواقع ممتازة، وخدمة دافئة.",
-    fr: "Hôtels au meilleur rapport qualité-prix — séjours confortables, emplacements idéaux, accueil chaleureux.",
+    en: "Thoughtfully designed stays for modern travellers seeking comfort, clarity, and prime locations—from business hubs to coastal escapes.",
+    ar: "إقامات مدروسة للمسافرين المعاصرين الذين يبحثون عن الراحة والوضوح ومواقع مميزة—من مراكز الأعمال إلى الاستجمام الساحلي.",
+    fr: "Des séjours pensés pour les voyageurs modernes qui recherchent confort, clarté et emplacements privilégiés—des pôles d’affaires aux escapades côtières.",
   };
   return {
     title: {

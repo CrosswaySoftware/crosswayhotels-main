@@ -9,4 +9,6 @@
 
 .main {
   flex: 1;
+  /* Offset fixed SiteHeader (ribbon + bar) — homepage hero pulls back up with negative margin */
+  padding-top: var(--crossway-site-header-h, 92px);
 }

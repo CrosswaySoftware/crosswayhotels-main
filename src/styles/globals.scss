@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  /** Fixed ribbon + Palomar-style bar — used by SiteShell main offset & hero bleed */
+  --crossway-site-header-h: 92px;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 100%;

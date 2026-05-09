@@ -2,6 +2,7 @@ import {
   HOTEL_SITE_ORIGIN_CROSSWAY_DAYS,
   HOTEL_SITE_ORIGIN_LIFOTEL,
   HOTEL_SITE_ORIGIN_PALOMAR,
+  HOTEL_SITE_ORIGIN_PETIT_PALAIS,
   HOTEL_SITE_ORIGIN_REVOSTAY_ROYEL,
 } from "@/config/hotelSiteUrls";
 import { home } from "@/lib/media";
@@ -34,6 +35,13 @@ export const HOTELS_SHOWCASE_SLIDES = [
     image: home.hotelsShowcase.royel,
     nameKey: "hotel_royel" as const,
     essenceKey: "hotelShowcaseEssence_royel" as const,
+  },
+  {
+    id: "petitpalais",
+    origin: HOTEL_SITE_ORIGIN_PETIT_PALAIS,
+    image: home.hotelsShowcase.petitpalais,
+    nameKey: "hotel_petitpalais" as const,
+    essenceKey: "hotelShowcaseEssence_petitpalais" as const,
   },
 ] as const;
 

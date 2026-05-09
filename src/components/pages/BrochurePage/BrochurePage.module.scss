@@ -29,20 +29,13 @@
 }
 
 .cardA {
-  background: linear-gradient(90deg, rgba(255, 207, 109, 0.95), #ffcf6d);
+  background: linear-gradient(180deg, #fbf7ef 0%, #f2ecdf 100%);
 }
 
 .cardB {
   position: relative;
-  color: $color-white;
-  background: #3452ff center / cover no-repeat;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(52, 82, 255, 0.82);
-  }
+  color: $color-ink;
+  background: #f5efe4 center / cover no-repeat;
 }
 
 .cardInner {
@@ -71,7 +64,7 @@
   display: inline-block;
   margin-top: 0.5rem;
   padding: 0.85rem 1.75rem;
-  background: $color-navy-deep;
+  background: $color-accent;
   color: $color-white !important;
   font-weight: 600;
   font-size: 13px;
@@ -83,12 +76,12 @@
 }
 
 .downloadLight {
-  background: $color-white;
-  color: #000 !important;
-  border: 2px solid $color-white;
+  background: transparent;
+  color: $color-ink !important;
+  border: 2px solid $color-accent;
 
   &:hover {
-    background: transparent;
-    color: $color-white !important;
+    background: rgba(176, 125, 75, 0.08);
+    color: $color-ink !important;
   }
 }

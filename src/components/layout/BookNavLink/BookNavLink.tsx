@@ -21,11 +21,19 @@ function getSnapshot() {
   return window.matchMedia(`(min-width: ${BOOK_NAV_HERO_MIN_WIDTH_PX}px)`).matches ? "/#hero" : "/#book";
 }
 
-export function BookNavLink({ className, children }: { className?: string; children: React.ReactNode }) {
+export function BookNavLink({
+  className,
+  children,
+  onClick,
+}: {
+  className?: string;
+  children: React.ReactNode;
+  onClick?: () => void;
+}) {
   /* Server / first paint: phones → booking hash; client reconciles at ≥768px */
   const href = useSyncExternalStore(subscribe, getSnapshot, () => "/#book");
   return (
-    <Link href={href} className={className}>
+    <Link href={href} className={className} onClick={onClick}>
       {children}
     </Link>
   );

@@ -9,15 +9,15 @@ $hairline: rgba(20, 18, 16, 0.08);
   padding: clamp(4rem, 16vw, 9rem) 1.25rem clamp(3rem, 10vw, 5rem);
   display: flex;
   align-items: flex-end;
-  background: $color-canvas-deep center / cover no-repeat;
-  color: $color-white;
+  background: #ede7dc center / cover no-repeat;
+  color: $color-ink;
   overflow: hidden;
 
   &::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(105deg, rgba(8, 7, 6, 0.72) 0%, rgba(8, 7, 6, 0.38) 48%, rgba(8, 7, 6, 0.22) 100%);
+    background: linear-gradient(105deg, rgba(248, 244, 236, 0.92) 0%, rgba(248, 244, 236, 0.66) 52%, rgba(248, 244, 236, 0.5) 100%);
   }
 }
 
@@ -35,7 +35,7 @@ $hairline: rgba(20, 18, 16, 0.08);
   font-weight: 600;
   letter-spacing: $tracking-widest;
   text-transform: uppercase;
-  color: $color-accent-soft;
+  color: $color-accent;
   margin: 0 0 0.85rem;
 }
 
@@ -46,8 +46,8 @@ $hairline: rgba(20, 18, 16, 0.08);
   font-weight: 600;
   line-height: $leading-snug;
   letter-spacing: $tracking-tight;
-  color: $color-white;
-  text-shadow: 0 2px 28px rgba(8, 7, 6, 0.45);
+  color: $color-ink;
+  text-shadow: none;
 }
 
 .heroLead {
@@ -56,7 +56,7 @@ $hairline: rgba(20, 18, 16, 0.08);
   font-size: clamp($text-base, 2vw, $text-md);
   line-height: $leading-relaxed;
   letter-spacing: $tracking-wide;
-  color: rgba(255, 252, 246, 0.88);
+  color: rgba(20, 18, 16, 0.8);
 }
 
 /* ——— Shared kicks ——— */

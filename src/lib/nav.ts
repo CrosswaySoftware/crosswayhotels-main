@@ -2,6 +2,7 @@ import {
   HOTEL_SITE_ORIGIN_CROSSWAY_DAYS,
   HOTEL_SITE_ORIGIN_LIFOTEL,
   HOTEL_SITE_ORIGIN_PALOMAR,
+  HOTEL_SITE_ORIGIN_PETIT_PALAIS,
   HOTEL_SITE_ORIGIN_REVOSTAY_ROYEL,
   hotelMicrositeUrl,
 } from "@/config/hotelSiteUrls";
@@ -40,6 +41,11 @@ export function hotelsSubmenuForLocale(locale: string): NavItem[] {
     {
       label: "Revostay Royel by Crossway, Chennai",
       href: hotelMicrositeUrl(HOTEL_SITE_ORIGIN_REVOSTAY_ROYEL, locale),
+      external: true,
+    },
+    {
+      label: "Petit Palais by Crossway, Puducherry",
+      href: hotelMicrositeUrl(HOTEL_SITE_ORIGIN_PETIT_PALAIS, locale),
       external: true,
     },
   ];
