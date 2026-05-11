@@ -24,6 +24,7 @@ export async function ServicePortfolioPage({ variant }: { variant: ServiceVarian
 
   const heroBg = VARIANT_HERO_BG[variant];
   const crumbLabel = tm(variant);
+  const hideBookingUi = variant === "dining";
 
   return (
     <>
@@ -33,9 +34,11 @@ export async function ServicePortfolioPage({ variant }: { variant: ServiceVarian
           <h1>{t(`${variant}.heroTitle`)}</h1>
           <p className={styles.heroLead}>{t(`${variant}.heroLead`)}</p>
           <div className={styles.ctaStrip}>
-            <Link href="/#book" className={styles.ctaBtn} data-variant="primary">
-              {t("ctaBook")}
-            </Link>
+            {!hideBookingUi ? (
+              <Link href="/#book" className={styles.ctaBtn} data-variant="primary">
+                {t("ctaBook")}
+              </Link>
+            ) : null}
             <a className={styles.ctaBtn} href={RESERVATIONS_PHONE_HREF}>
               {t("ctaCall")} · {RESERVATIONS_PHONE_DISPLAY}
             </a>
@@ -46,7 +49,7 @@ export async function ServicePortfolioPage({ variant }: { variant: ServiceVarian
         </div>
       </section>
 
-      <BookingBar />
+      {hideBookingUi ? null : <BookingBar />}
 
       <PageShell>
         <Breadcrumbs items={[{ label: tc("breadcrumbHome"), href: "/" }, { label: crumbLabel }]} />
@@ -87,9 +90,11 @@ export async function ServicePortfolioPage({ variant }: { variant: ServiceVarian
                 </div>
 
                 <div className={styles.propertyCtas}>
-                  <Link href="/#book" data-accent="1">
-                    {t("ctaBook")}
-                  </Link>
+                  {!hideBookingUi ? (
+                    <Link href="/#book" data-accent="1">
+                      {t("ctaBook")}
+                    </Link>
+                  ) : null}
                   <a href={RESERVATIONS_PHONE_HREF} data-accent="2">
                     {RESERVATIONS_PHONE_DISPLAY}
                   </a>
