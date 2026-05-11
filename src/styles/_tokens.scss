@@ -68,6 +68,9 @@ $radius-xl: 40px;
 $header-surface: #03121e;
 $header-ribbon: #020d16;
 $header-elevated: #0a2238;
+/** Legacy navy strip — prefer `$header-surface` for footer + main nav bar. */
+$footer-surface: #020d16;
+$footer-surface-top: #071c2e;
 $nav-on-dark: rgba(232, 212, 188, 0.88);
 $nav-on-dark-muted: rgba(232, 212, 188, 0.65);
 $nav-on-dark-faint: rgba(255, 252, 247, 0.1);

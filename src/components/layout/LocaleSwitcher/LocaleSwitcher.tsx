@@ -9,11 +9,14 @@ export function LocaleSwitcher({
   density = "compact",
   variant = "light",
   tone,
+  bare = false,
 }: {
   density?: "compact" | "comfortable";
   variant?: "light" | "dark";
   /** Solid frosted bar (`onLight`) vs transparent over hero (`onDark`) — only affects header-style `variant="dark"` selects. */
   tone?: "onDark" | "onLight";
+  /** Transparent fill, border only — header chrome matching flat navy bar. */
+  bare?: boolean;
 }) {
   const t = useTranslations("LocaleSwitcher");
   const locale = useLocale();
@@ -25,7 +28,7 @@ export function LocaleSwitcher({
     <label className={styles.root}>
       <span className={styles.sr}>{t("label")}</span>
       <select
-        className={`${styles.select} ${density === "comfortable" ? styles.selectComfortable : ""} ${variant === "dark" ? styles.selectDark : ""} ${variant === "dark" && tone === "onLight" ? styles.selectOnLightBar : ""}`}
+        className={`${styles.select} ${density === "comfortable" ? styles.selectComfortable : ""} ${variant === "dark" ? styles.selectDark : ""} ${variant === "dark" && tone === "onLight" ? styles.selectOnLightBar : ""} ${variant === "dark" && bare ? styles.selectBareDark : ""}`}
         value={locale}
         aria-label={t("label")}
         onChange={(e) => router.replace(pathname, { locale: e.target.value })}

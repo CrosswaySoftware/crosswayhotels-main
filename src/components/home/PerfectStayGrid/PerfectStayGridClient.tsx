@@ -16,7 +16,7 @@ import { PROPERTY_ORDER, VARIANT_IMAGES } from "@/lib/servicePortfolio";
 import modalStyles from "./PerfectStayInsightsModal.module.scss";
 import styles from "./PerfectStayGrid.module.scss";
 
-/** Display order: Accommodations, Dining, Banquets, Wellness (maps to insight categories). */
+/** Display order: Accommodations, Dining, Meetings, Wellness (maps to insight categories). */
 const CARDS: { rowKey: string; category: StayCategoryId; image: string }[] = [
   { rowKey: "stay_accommodations", category: "accommodations", image: home.perfectStay.family },
   { rowKey: "stay_food", category: "food", image: home.perfectStay.food },

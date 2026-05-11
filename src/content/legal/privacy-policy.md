@@ -60,7 +60,7 @@ If you click on one of the links to third party websites, you may be taken to we
 ## Grievance Officer
 In accordance with Information Technology Act 2000 and rules made there under, the name and contact details of the Grievance Officer are provided below:
 
-Days Hotel Chennai OMR,245/1, Old Mahabalipuram Road,Padur, Chennai – 603 103.Mobile: +91 97898 77770Phone: +91 44 3000 1444Email: naveen@crosswayhotels.comIf you have any questions about this Policy or other privacy concerns, you can also email us atcontact@crosswayhotels.com
+Days Hotel Chennai OMR,245/1, Old Mahabalipuram Road,Padur, Chennai – 603 103.Phone: +91 44 3000 1444Email: naveen@crosswayhotels.comIf you have any questions about this Policy or other privacy concerns, you can also email us atcontact@crosswayhotels.com
 
 This Privacy Policy was last updated on 23.04.2018. From time to time we may change our privacy practices. We will notify you of any material changes to this policy as required by law. We will also post an updated copy on our website. Please check our site periodically for updates.
 

@@ -136,9 +136,9 @@
     }
   },
   "banquets": {
-    "metaTitle": "Banquets",
+    "metaTitle": "Réunions",
     "heroEyebrow": "Réunions et célébrations",
-    "heroTitle": "Banquets, pelouses et espaces de réunion",
+    "heroTitle": "Réunions, pelouses et espaces événementiels",
     "heroLead": "Conférences, mariages et grandes étapes — avec traiteurs qui maîtrisent le timing et le confort des invités.",
     "intro": "Chaque hôtel propose une échelle différente de salles, conseils et espaces extérieurs. Partagez effectif et dates — appelez le +91 97512 77770 — ou planifiez une visite via Contact.",
     "itemsHeading": "Espaces et formats",
@@ -152,7 +152,7 @@
             "desc": "Salles à lumière du jour, du bureau restreint aux formats plus larges — avec support technique selon besoin."
           },
           {
-            "title": "Salles de banquet et pelouses",
+            "title": "Salles de réunion et pelouses",
             "desc": "Lieux prêts pour réceptions, soirées de prix et jalons d’entreprise avec menus orchestrés."
           }
         ]
@@ -177,7 +177,7 @@
         "items": [
           {
             "title": "Formules réunion ciblées",
-            "desc": "Salles efficaces pour formations et petites réunions — avec service banquet attentif."
+            "desc": "Salles efficaces pour formations et petites réunions — avec restauration événementielle attentive."
           },
           {
             "title": "Célébrations sans alcool",

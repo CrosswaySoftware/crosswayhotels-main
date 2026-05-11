@@ -8,7 +8,7 @@ Crossway disposera de bureaux commerciaux en Inde et à l’international, avec 
 
 ## Offre F&amp;B
 
-Crossway proposera des concepts frais : menus internationaux avec options saines et cuisines locales, menus famille et enfants, un bar convivial pour se retrouver, et des menus banquet et goûters d’exception préparés par des chefs de haut niveau.
+Crossway proposera des concepts frais : menus internationaux avec options saines et cuisines locales, menus famille et enfants, un bar convivial pour se retrouver, et des menus réceptions et goûters d’exception préparés par des chefs de haut niveau.
 
 ## Spas de classe mondiale
 

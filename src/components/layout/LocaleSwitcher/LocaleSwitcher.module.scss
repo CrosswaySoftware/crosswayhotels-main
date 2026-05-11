@@ -69,6 +69,18 @@
   background-position: right 0.55rem center;
 }
 
+.selectBareDark {
+  background-color: transparent;
+
+  &:hover {
+    background-color: rgba(255, 252, 247, 0.06);
+  }
+}
+
+.selectComfortable.selectBareDark {
+  background-position: right 0.55rem center;
+}
+
 /* Cream / solid scrolled header — ink controls (Palomar parity) */
 .selectOnLightBar {
   color: rgba(26, 23, 20, 0.92);

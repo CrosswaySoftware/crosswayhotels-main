@@ -7,9 +7,7 @@ import { getTranslations } from "next-intl/server";
 import styles from "./ContactPage.module.scss";
 
 const MAP_IN = "https://maps.google.com/maps?q=12.803875,80.224867&z=16&output=embed";
-const MAP_AE = "https://maps.google.com/maps?q=25.264155,55.385286&z=16&output=embed";
 const MAPS_OPEN_IN = "https://www.google.com/maps/search/?api=1&query=12.803875,80.224867";
-const MAPS_OPEN_AE = "https://www.google.com/maps/search/?api=1&query=25.264155,55.385286";
 
 export async function ContactPage() {
   const t = await getTranslations("Contact");
@@ -57,46 +55,7 @@ export async function ContactPage() {
                 <div className={styles.contactRow}>
                   <dt>{t("labelPhone")}</dt>
                   <dd>
-                    <a href="tel:+919789877770">{t("officeInPhone1")}</a>
-                    <br />
                     <a href="tel:+919751277770">{t("officeInPhone2")}</a>
-                  </dd>
-                </div>
-              </dl>
-            </div>
-          </article>
-
-          <article className={`${styles.location} ${styles.locationMirror}`} aria-labelledby="office-ae-heading">
-            <div className={styles.mapCol}>
-              <MapEmbed
-                title={t("officeAeMapTitle")}
-                src={MAP_AE}
-                mapsUrl={MAPS_OPEN_AE}
-                linkLabel={t("openInMaps")}
-              />
-            </div>
-            <div className={styles.card}>
-              <p className={styles.cardEyebrow}>{t("officeAeLabel")}</p>
-              <h2 id="office-ae-heading" className={styles.cardTitle}>
-                {t("officeAeCompany")}
-              </h2>
-              <div className={styles.rule} aria-hidden />
-              <address className={styles.address}>
-                {t("officeAeLine1")}
-                <br />
-                {t("officeAeLine2")}
-              </address>
-              <dl className={styles.contactLines}>
-                <div className={styles.contactRow}>
-                  <dt>{t("labelPhone")}</dt>
-                  <dd>
-                    <a href="tel:+971503858270">{t("officeAePhone")}</a>
-                  </dd>
-                </div>
-                <div className={styles.contactRow}>
-                  <dt>{t("labelEmail")}</dt>
-                  <dd>
-                    <a href={`mailto:${t("officeAeEmail")}`}>{t("officeAeEmail")}</a>
                   </dd>
                 </div>
               </dl>
@@ -110,7 +69,7 @@ export async function ContactPage() {
               {t("formSectionTitle")}
             </SectionTitle>
             <p className={styles.formLead}>{t("formSectionLead")}</p>
-            <p className={staticForm.note}>{t("formStaticNote")}</p>
+            {/* <p className={staticForm.note}>{t("formStaticNote")}</p> */}
             <form className={staticForm.form} aria-label={t("formAria")}>
               <label>
                 {t("formName")}

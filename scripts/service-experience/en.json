@@ -86,7 +86,7 @@
             "desc": "High-energy bar nights with live sport and refreshments—paired with dependable all-day menus for busy schedules."
           },
           {
-            "title": "Banquet-driven culinary service",
+            "title": "Event-ready culinary service",
             "desc": "Kitchen teams experienced in large-format events—ideal when meetings run long and meals need to land on time."
           }
         ]
@@ -136,9 +136,9 @@
     }
   },
   "banquets": {
-    "metaTitle": "Banquets",
+    "metaTitle": "Meetings",
     "heroEyebrow": "Meetings & celebrations",
-    "heroTitle": "Banquets, lawns & meeting spaces",
+    "heroTitle": "Meetings, lawns & event spaces",
     "heroLead": "Host conferences, weddings, and milestone celebrations—with catering teams who understand clock time and guest comfort.",
     "intro": "Each hotel offers a different scale of halls, boardrooms, and outdoor pockets. Share your guest count and dates—call +91 97512 77770—or book an exploratory visit via Contact us.",
     "itemsHeading": "Spaces & formats",
@@ -152,7 +152,7 @@
             "desc": "Day-lit conference rooms that scale from intimate board meetings to larger formats—with technician support where needed."
           },
           {
-            "title": "Banquet halls & lawns",
+            "title": "Meeting halls, lawns & events",
             "desc": "Celebration-ready venues with curated menus—ideal for receptions, awards nights, and corporate milestones."
           }
         ]
@@ -177,7 +177,7 @@
         "items": [
           {
             "title": "Focused meeting packages",
-            "desc": "Efficient rooms for training sessions, reviews, and smaller gatherings—supported by attentive banquet service."
+            "desc": "Efficient rooms for training sessions, reviews, and smaller gatherings—supported by attentive catering service."
           },
           {
             "title": "Alcohol-free celebrations",

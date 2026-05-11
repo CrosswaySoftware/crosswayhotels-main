@@ -1,11 +1,10 @@
 /** Paths under `public/` for static images and documents. */
 
 export const layout = {
-  /** Light mark over dark hero / transparent header */
-  logoHeader: "/images/layout/logo.png",
-  /** Navy mark for frosted header after hero scroll & inner pages (`viewBox` 155×58) */
-  logoHeaderSolid: "/images/logoblue.svg",
-  logoFooter: "/images/layout/logo.png",
+  /** White PNG wordmark (`376×84`) — hero + solid bar + footer parity */
+  logoHeader: "/images/logowhite.png",
+  logoHeaderSolid: "/images/logowhite.png",
+  logoFooter: "/images/logowhite.png",
 } as const;
 
 export const home = {
@@ -84,6 +83,10 @@ export const brand = {
   lifotelSuites: {
     hero: "/images/brand/lifotel-suites/hero.jpeg",
     logo: "/images/brand/lifotel-suites/logo.png",
+  },
+  revostay: {
+    hero: "/images/home/brand-revostay-front.jpg",
+    logo: "/images/home/brand-revostay-front.jpg",
   },
 } as const;
 

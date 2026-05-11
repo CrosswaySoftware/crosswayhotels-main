@@ -8,7 +8,7 @@ Crossway will have its sales offices in multiple locations across India and abro
 
 ## F&amp;B Offerings
 
-Crossway will feature some of the fresh concepts in the industry The restaurant menu will feature a wide range of dishes around the world which will feature menus which has healthy offerings but still be interesting giving importance to the local cuisines. A special family menu and kids menu will be available The bar will really be an interesting concept which will allow families and friends to come together for a drink or two with some amazing drinks served by our bar tenders The banquet menus will feature rather some unique hi tea menus, lunch and dinner menus compiled from around the world. Our world class chefs will ensure that the food served is really top class.
+Crossway will feature some of the fresh concepts in the industry The restaurant menu will feature a wide range of dishes around the world which will feature menus which has healthy offerings but still be interesting giving importance to the local cuisines. A special family menu and kids menu will be available The bar will really be an interesting concept which will allow families and friends to come together for a drink or two with some amazing drinks served by our bar tenders Event and catering menus will feature rather some unique hi tea menus, lunch and dinner menus compiled from around the world. Our world class chefs will ensure that the food served is really top class.
 
 ## World Class Spas
 

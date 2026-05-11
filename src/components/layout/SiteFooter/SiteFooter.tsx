@@ -32,10 +32,15 @@ export async function SiteFooter() {
         <div className={styles.grid}>
           <div className={styles.colBrand}>
             <div className={styles.colBrandLead}>
-              <Image src={layout.logoFooter} alt="" width={260} height={58} className={styles.logo} />
+              <Image
+                src={layout.logoFooter}
+                alt=""
+                width={376}
+                height={84}
+                className={styles.logo}
+                sizes="(max-width: 480px) 72vw, 260px"
+              />
             </div>
-            <p className={styles.address}>{t("address_uae")}</p>
-            <p className={styles.phone}>+97 1503858270</p>
             <Link className={styles.cta} href="/brochure">
               {t("downloadBrochure")}
             </Link>
@@ -47,7 +52,6 @@ export async function SiteFooter() {
             <p className={styles.address}>{t("address_in")}</p>
             <ul className={styles.list}>
               <li>+91 97512 77770</li>
-              <li>+91 44 6730 1444</li>
             </ul>
             <ul className={styles.list}>
               <li>
@@ -65,9 +69,7 @@ export async function SiteFooter() {
                 <Link href="/lifotel">{t("brand_lifotel")}</Link>
               </li>
               <li>
-                <a href="https://revostay.com/" target="_blank" rel="noopener noreferrer">
-                  {t("brand_revostay")}
-                </a>
+                <Link href="/revostay">{t("brand_revostay")}</Link>
               </li>
             </ul>
           </div>

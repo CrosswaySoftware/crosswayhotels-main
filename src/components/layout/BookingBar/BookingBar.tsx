@@ -24,6 +24,7 @@ export async function BookingBar({ dockToHero = false }: { dockToHero?: boolean 
       { value: "ZGVR1115", label: tn("hotel_days") },
       { value: "VGZT0227", label: tn("hotel_royel") },
       { value: "ZZGC0307", label: tn("hotel_lifotel") },
+      { value: "TXRR0325", label: tn("hotel_petitpalais") },
     ],
   };
 

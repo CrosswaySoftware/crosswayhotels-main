@@ -28,7 +28,7 @@
 
 ## مسؤول الشكاوى
 
-وفق قانون تكنولوجيا المعلومات الهندي 2000: **Days Hotel Chennai OMR**، 245/1، Old Mahabalipuram Road، Padur، Chennai – 603 103. جوال: +91 97898 77770. هاتف: +91 44 3000 1444. بريد: naveen@crosswayhotels.com. لأسئلة الخصوصية: contact@crosswayhotels.com
+وفق قانون تكنولوجيا المعلومات الهندي 2000: **Days Hotel Chennai OMR**، 245/1، Old Mahabalipuram Road، Padur، Chennai – 603 103. هاتف: +91 44 3000 1444. بريد: naveen@crosswayhotels.com. لأسئلة الخصوصية: contact@crosswayhotels.com
 
 آخر تحديث: 23.04.2018. قد نعدّل الممارسات وسننشر تحديثات على الموقع.
 

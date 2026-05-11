@@ -31,6 +31,7 @@ const DEFAULT_HOTELS: SelectOption[] = [
   { value: "ZGVR1115", label: "Crossway Days Hotel, OMR, Chennai" },
   { value: "VGZT0227", label: "Revostay Royel by Crossway, Chennai" },
   { value: "ZZGC0307", label: "Lifotel KK Inn Suites, Chennai" },
+  { value: "TXRR0325", label: "Petit Palais by Crossway, Puducherry" },
 ];
 
 function CustomSelect({

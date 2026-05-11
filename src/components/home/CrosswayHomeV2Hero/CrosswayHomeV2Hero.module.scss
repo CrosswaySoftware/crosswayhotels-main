@@ -2,7 +2,8 @@
 
 .wrap {
   --ds-container: #{$container-max};
-  --ds-hdr-h: clamp(5rem, 12vw, 7rem);
+  /* Tight clearance below fixed header before hero copy starts */
+  --ds-hdr-h: clamp(0.5rem, 1.5vw, 1rem);
   /* Full-bleed hero under fixed header — counteracts SiteShell main padding */
   margin-top: calc(-1 * var(--crossway-site-header-h, 92px));
   --ds-paper: #{$color-white};
@@ -18,10 +19,10 @@
   min-height: 100svh;
   min-height: 100dvh;
   color: var(--ds-paper);
-  padding-top: calc(var(--crossway-site-header-h, 92px) + var(--ds-hdr-h));
+  padding-top: calc(var(--crossway-site-header-h, 92px) + var(--ds-hdr-h) + 3.5rem);
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   background-color: var(--ds-stage-warm);
 }
 
@@ -80,17 +81,17 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
+  /* Uniform dark wash so hero copy stays readable on bright photography */
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0.08) 48%, rgba(0, 0, 0, 0.26) 100%),
-    linear-gradient(
-      180deg,
-      rgba(10, 9, 8, 0.58) 0%,
-      rgba(12, 10, 8, 0.28) 32%,
-      rgba(12, 10, 8, 0.22) 52%,
-      rgba(8, 7, 6, 0.88) 100%
-    ),
-    radial-gradient(ellipse 125% 90% at 50% 108%, rgba(0, 0, 0, 0.5), transparent 52%),
-    radial-gradient(ellipse at 28% 72%, rgba(176, 125, 75, 0.12), transparent 58%);
+    linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.12) 48%, rgba(0, 0, 0, 0.32) 100%),
+    linear-gradient(180deg,
+      rgba(10, 9, 8, 0.52) 0%,
+      rgba(12, 10, 8, 0.22) 32%,
+      rgba(12, 10, 8, 0.18) 52%,
+      rgba(8, 7, 6, 0.82) 100%),
+    radial-gradient(ellipse 125% 90% at 50% 108%, rgba(0, 0, 0, 0.45), transparent 52%),
+    radial-gradient(ellipse at 28% 72%, rgba(176, 125, 75, 0.1), transparent 58%);
 }
 
 .grid {
@@ -99,47 +100,33 @@
   flex-shrink: 0;
   width: var(--ds-container);
   margin: 0 auto;
-  padding: calc(48px * var(--density, 1)) 1.25rem calc(40px * var(--density, 1));
+  padding: calc(12px * var(--density, 1)) 1.25rem calc(22px * var(--density, 1));
   display: grid;
-  gap: 44px;
+  gap: 14px;
+  /* Explicit: globals.scss sets h1 { color: ink } — override for hero legibility */
+  color: rgba(255, 252, 247, 0.98);
 }
 
-.eyeline {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  font-family: $font-sans;
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  opacity: 0.85;
-}
-
-.line {
-  flex: 0 0 60px;
-  height: 1px;
-  background: currentColor;
-  opacity: 0.5;
-}
-
-.h1seo {
-  font-family: $font-sans;
-  font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+.kicker {
   margin: 0;
-  opacity: 0.85;
-  max-width: 720px;
+  max-width: min(52rem, 100%);
+  font-family: $font-sans;
+  font-size: clamp(10px, 0.32vw + 8px, 12px);
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1.35;
+  text-transform: uppercase;
+  color: rgba(255, 252, 247, 0.88);
 }
 
 .titleBlock {
   font-family: $font-sans;
   font-weight: 500;
   font-size: clamp(1.65rem, 3.85vw, 3.35rem);
-  line-height: 1.02;
+  line-height: 0.98;
   letter-spacing: -0.032em;
   margin: 0;
+  color: rgba(255, 252, 247, 0.99);
 }
 
 .row {
@@ -154,24 +141,31 @@
 .sub {
   max-width: 560px;
   font-size: 16px;
-  line-height: 1.6;
-  opacity: 0.9;
-  margin: -16px 0 0;
+  line-height: 1.55;
+  color: rgba(255, 252, 247, 0.92);
+  opacity: 1;
+  margin: -14px 0 0;
 }
 
 .meta {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: clamp(14px, 2.5vw, 28px);
+  row-gap: clamp(12px, 2vw, 18px);
   align-items: end;
+  justify-items: center;
   border-top: 1px solid rgba(255, 255, 255, 0.18);
-  padding-top: 28px;
+  padding-top: 16px;
 }
 
 .metaCol {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  min-width: 0;
 }
 
 .metaNum {
@@ -179,6 +173,7 @@
   font-size: clamp(1.7rem, 4.2vw, 40px);
   line-height: 1;
   letter-spacing: -0.04em;
+  color: rgba(255, 252, 247, 1);
 }
 
 .metaLbl {
@@ -186,7 +181,8 @@
   font-size: 10.5px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  opacity: 0.75;
+  color: rgba(255, 252, 247, 0.82);
+  opacity: 1;
 }
 
 .metaCta {
@@ -194,6 +190,7 @@
   flex-wrap: wrap;
   gap: 8px;
   align-items: center;
+  justify-content: center;
 }
 
 .btnPrimary {
@@ -220,7 +217,7 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: clamp(1rem, 2.5vw, 1.35rem);
+  gap: clamp(0.75rem, 2.2vw, 1.15rem);
 }
 
 .footCaption {
@@ -233,17 +230,21 @@
   font-size: 10.5px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  opacity: 0.7;
+  color: rgba(255, 252, 247, 0.72);
+  opacity: 1;
 }
 
 .capText {
   font-family: $font-sans;
   font-style: italic;
   font-size: clamp(1rem, 2.15vw, 19px);
+  color: rgba(255, 252, 247, 0.95);
 }
 
 /* Single horizontal row of 01–10; scroll on narrow viewports — never wrap to a second row */
 .dotsOuter {
+  display: flex;
+  justify-content: flex-end;
   width: 100%;
   min-width: 0;
   overflow-x: auto;
@@ -251,7 +252,7 @@
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   overscroll-behavior-x: contain;
-  padding-bottom: 2px;
+  padding-bottom: clamp(0.85rem, 2.8vw, 1.65rem);
 
   &::-webkit-scrollbar {
     display: none;
@@ -339,7 +340,11 @@
   z-index: 3;
   flex-shrink: 0;
   width: var(--ds-container);
-  margin: -20px auto 0;
+  margin-top: auto;
+  margin-inline: auto;
+  margin-bottom: 0;
+  /* Nudge booking strip slightly into hero gradient (was negative margin with flex-end) */
+  transform: translateY(-1.5rem);
 }
 
 .heroBookingDock {
@@ -350,19 +355,22 @@
   box-sizing: border-box;
   padding: 0 0 clamp(0.5rem, 2vw, 1rem);
 
-  > * {
+  >* {
     pointer-events: auto;
   }
 }
 
 @media (max-width: 980px) {
   .meta {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(14px, 3vw, 22px);
+    row-gap: clamp(14px, 3vw, 20px);
   }
 
   .bookSlot {
     width: min(92vw, 1480px);
-    margin-top: 0;
+    margin-top: 1rem;
+    transform: translateY(0);
   }
 }
 
@@ -372,8 +380,8 @@
   }
 
   .grid {
-    gap: clamp(28px, 8vw, 44px);
-    padding: calc(36px * var(--density, 1)) 1rem calc(32px * var(--density, 1));
+    gap: clamp(16px, 4vw, 22px);
+    padding: calc(18px * var(--density, 1)) 1rem calc(18px * var(--density, 1));
   }
 
   .titleBlock {

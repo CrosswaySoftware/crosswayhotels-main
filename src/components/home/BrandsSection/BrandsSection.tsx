@@ -24,8 +24,8 @@ const BRANDS = [
     titleKey: "brand_revostay" as const,
     front: home.brands.revostay.front,
     back: home.brands.revostay.back,
-    href: "https://revostay.com/",
-    external: true,
+    href: "/revostay",
+    external: false,
   },
 ];
 
@@ -33,7 +33,7 @@ export async function BrandsSection() {
   const t = await getTranslations("Home");
 
   return (
-    <section className={styles.section} id="core-features">
+    <section className={styles.section} id="our-brands">
       <div className={styles.inner}>
         <SectionTitle align="center" eyebrow={t("brandsEyebrow")}>
           {t("brandsTitle")}

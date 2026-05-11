@@ -2,18 +2,18 @@
 
 .footer {
   position: relative;
-  background: $header-surface;
   color: $nav-on-dark-muted;
   padding: $space-section 0 $space-tight;
   overflow: hidden;
-  border-top: 1px solid rgba(255, 252, 247, 0.06);
+  border-top: 1px solid rgba(232, 212, 188, 0.12);
+  background: $header-surface;
 }
 
 .inner {
   position: relative;
   max-width: $container-max;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 clamp(1rem, 4vw, 1.25rem);
 }
 
 .grid {
@@ -38,20 +38,21 @@
 
 .logo {
   margin-bottom: 1.25rem;
-  opacity: 0.95;
+  width: auto;
+  max-width: min(260px, 100%);
+  height: auto;
 }
 
 .colBrandLead {
-  background: rgba(255, 252, 247, 0.05);
-  border: 1px solid rgba(255, 252, 247, 0.08);
-  padding: 1.25rem 1.25rem 1.35rem;
+  background: rgba(255, 252, 247, 0.04);
+  border: 1px solid rgba(255, 252, 247, 0.1);
+  padding: clamp(1rem, 3.5vw, 1.25rem);
   margin-bottom: 1.25rem;
   border-radius: $radius-md;
 
   .logo {
     margin-bottom: 0;
-    opacity: 1;
-    filter: brightness(1.06);
+    display: block;
   }
 }
 

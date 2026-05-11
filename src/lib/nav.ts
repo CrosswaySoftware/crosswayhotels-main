@@ -17,7 +17,6 @@ export type NavItem = {
 export const secondaryLinks: NavItem[] = [
   { label: "Mail Us: contact@crosswayhotels.com", href: "mailto:contact@crosswayhotels.com" },
   { label: "India: +91 97512 77770", href: "tel:+919751277770" },
-  { label: "UAE: +97 1503858270", href: "tel:+971503858270" },
 ];
 
 /** Hotel links follow the active locale — use {@link hotelsSubmenuForLocale} when you have the visitor locale. */
@@ -57,7 +56,7 @@ export const hotelsSubmenu = hotelsSubmenuForLocale(routing.defaultLocale);
 export const brandsSubmenu: NavItem[] = [
   { label: "Crossway", href: "/crossway" },
   { label: "Lifotel by Crossway", href: "/lifotel" },
-  { label: "Revostay by Crossway", href: "https://revostay.com/", external: true },
+  { label: "Revostay by Crossway", href: "/revostay" },
 ];
 
 export const primaryNav: { label: string; href?: string; children?: NavItem[] }[] = [
@@ -65,7 +64,7 @@ export const primaryNav: { label: string; href?: string; children?: NavItem[] }[
   { label: "About Us", href: "/about-us" },
   { label: "Accommodations", href: "/accommodations" },
   { label: "Dining", href: "/dining" },
-  { label: "Banquets", href: "/banquets" },
+  { label: "Meetings", href: "/banquets" },
   { label: "Wellness", href: "/wellness" },
   { label: "Our Hotels", children: hotelsSubmenu },
   { label: "Our Brands", children: brandsSubmenu },

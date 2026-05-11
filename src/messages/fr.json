@@ -11,6 +11,7 @@
     "nav_offers": "Offres",
     "nav_about": "À propos",
     "nav_contact": "Contact",
+    "nav_careers": "Carrières",
     "home": "Accueil",
     "about": "À propos",
     "ourHotels": "Nos hôtels",
@@ -21,14 +22,14 @@
     "contact": "Contact",
     "accommodations": "Hébergement",
     "dining": "Restauration",
-    "banquets": "Banquets",
+    "banquets": "Réunions",
     "wellness": "Bien-être",
     "menuToggle": "Ouvrir le menu",
     "menuClose": "Fermer le menu",
     "menuTitle": "Menu principal",
     "mailUs": "Écrivez-nous : contact@crosswayhotels.com",
     "indiaPhone": "Inde : +91 97512 77770",
-    "uaePhone": "Émirats : +971 50 385 8270",
+    "bookNow": "Réserver",
     "hotel_palomar": "The Palomar by Crossway, ECR, Chennai",
     "hotel_days": "Crossway Days Hotel OMR Chennai",
     "hotel_lifotel": "Lifotel KK INN by Crossway, Chennai",
@@ -47,7 +48,6 @@
     "brand_lifotel": "Lifotel by Crossway",
     "brand_revostay": "Revostay by Crossway",
     "copyright": "© {year} Crossway Hotels and Resorts. Tous droits réservés.",
-    "address_uae": "Crossway Hotel Management LLC, Sigma Business Centre, Iridium, Al Barsha 1, Dubaï, Émirats arabes unis",
     "address_in": "Days Hotel Chennai OMR, 245/1, Old Mahabalipuram Road, Padur, Chennai – 603103, Tamil Nadu, Inde.",
     "link_news": "Actualités",
     "link_about": "À propos",
@@ -74,7 +74,7 @@
     "perfectTitle": "Expériences de séjour sélectionnées",
     "stay_accommodations_title": "Hébergement",
     "stay_accommodations_desc": "Chambres et suites axées sur le confort, pour le repos, la productivité et des séjours sans friction.",
-    "stay_business_title": "Banquets et événements",
+    "stay_business_title": "Réunions et événements",
     "stay_business_desc": "Des lieux polyvalents pour mariages, réunions et célébrations — avec précision et soin.",
     "stay_food_title": "Restauration",
     "stay_food_desc": "Des saveurs locales aux cuisines du monde — des restaurants pensés pour chaque palais et chaque occasion.",
@@ -125,7 +125,8 @@
       "ariaLabel": "Accueil",
       "coord": "Crossway",
       "place": "Hôtels et Villégiatures",
-      "titleSeo": "Hôtels de luxe à Chennai et dans le sud de l’Inde | Crossway Hotels & Resorts",
+      "titleSeo": "Crossway Hotels & Resorts",
+      "kicker": "Hôtels de luxe | Crossway Hotels & Resorts",
       "line1": "Là où le rythme du business",
       "line2": "rencontre le calme,",
       "line3": "le confort",
@@ -143,7 +144,7 @@
         { "area": "Accueil", "caption": "Crossway Hôtels et Villégiatures — hospitalité pensée autour de votre façon de voyager." },
         { "area": "Portefeuille", "caption": "De grands hôtels dans des lieux accueillants en Inde et aux Émirats." },
         { "area": "Expérience", "caption": "Service chaleureux, espaces réfléchis et séjours qui comptent." },
-        { "area": "Signature", "caption": "Restauration, réceptions et bien-être — un même calme exigeant." },
+        { "area": "Signature", "caption": "Restauration, réunions et bien-être — un même calme exigeant." },
         { "area": "Chambres", "caption": "Intérieurs spacieux—design apaisant pour des nuits réparatrices." }
       ]
     }
@@ -172,7 +173,7 @@
     "roomsBody": "Chambres et suites axées sur le confort, pour le repos, la productivité et des séjours sans friction.",
     "diningTitle": "Restauration",
     "diningBody": "Des saveurs locales aux cuisines du monde — des restaurants pensés pour chaque palais et chaque occasion.",
-    "banquetTitle": "Banquets et événements",
+    "banquetTitle": "Réunions et événements",
     "banquetBody": "Des lieux polyvalents pour mariages, réunions et célébrations — avec précision et soin.",
     "spaTitle": "Bien-être",
     "spaBody": "Thérapies spa primées et espaces bien-être pour retrouver équilibre et énergie."
@@ -180,35 +181,27 @@
   "Contact": {
     "heroEyebrow": "Nous joindre",
     "heroTitle": "Contact",
-    "heroLead": "Deux bureaux, une seule équipe — Chennai et Dubaï. Itinéraires, numéros ou laissez-nous un message.",
+    "heroLead": "Itinéraires et numéros de notre siège à Chennai, ou laissez-nous un message.",
     "officeInLabel": "Inde · Siège",
     "officeInCompany": "Crossway Hotels and Resorts Pvt Ltd.",
     "officeInLine1": "Days Hotel Chennai OMR",
     "officeInLine2": "245/1, Old Mahabalipuram Road, Padur",
     "officeInLine3": "Chennai – 603103, Tamil Nadu",
-    "officeInPhone1": "+91 9789877770",
     "officeInPhone2": "+91 97512 77770",
     "officeInMapTitle": "Days Hotel Chennai OMR",
-    "officeAeLabel": "Émirats · Bureau de gestion",
-    "officeAeCompany": "Crossway Hotel Management LLC",
-    "officeAeLine1": "Bureau 111, Arzoo Building, Al Tawar",
-    "officeAeLine2": "Dubaï, Émirats arabes unis",
-    "officeAePhone": "+971 50 385 8270",
-    "officeAeEmail": "contact@crosswayhotels.com",
-    "officeAeMapTitle": "Bureau Crossway Dubaï",
     "labelPhone": "Téléphone",
     "labelEmail": "E-mail",
     "openInMaps": "Ouvrir dans Google Maps",
     "formSectionEyebrow": "Écrivez-nous",
     "formSectionTitle": "Envoyer un message",
-    "formSectionLead": "Nous lisons chaque demande. Pour une réponse plus rapide, appelez ou écrivez au bureau le plus proche.",
+    "formSectionLead": "Nous lisons chaque demande. Pour une réponse plus rapide, appelez ou écrivez à notre équipe.",
     "formName": "Votre nom",
     "formEmail": "Votre e-mail",
     "formSubject": "Objet",
     "formMessage": "Votre message (facultatif)",
     "formSubmit": "Envoyer",
     "formAria": "Formulaire de contact",
-    "formStaticNote": "Ce site est une reconstruction front-end statique — l’envoi du formulaire est désactivé. Veuillez écrire à contact@crosswayhotels.com avec les mêmes informations ; nous répondrons depuis le bureau concerné."
+    "formStaticNote": "Ce site est une reconstruction front-end statique — l’envoi du formulaire est désactivé. Veuillez écrire à contact@crosswayhotels.com avec les mêmes informations ; nous vous répondrons dès que possible."
   },
   "PerfectStayInsights": {
     "modalEyebrow": "Fil d’aperçus",
@@ -296,7 +289,7 @@
     "contentMissing": "Contenu indisponible."
   },
   "Metadata": {
-    "homeTitle": "Hôtels de luxe à Chennai et dans le sud de l’Inde | Crossway Hotels & Resorts",
+    "homeTitle": "Crossway Hotels & Resorts",
     "homeDescription": "Des séjours pensés pour les voyageurs modernes qui recherchent confort, clarté et emplacements privilégiés—des pôles d’affaires aux escapades côtières.",
     "aboutUsDocumentTitle": "À propos de Crossway Hotels & Resorts | Hospitalité de luxe en Inde",
     "aboutUs": "À propos",
@@ -311,6 +304,7 @@
     "crossway": "Crossway",
     "lifotel": "Lifotel",
     "lifotelSuites": "Lifotel Suites",
+    "revostay": "Revostay",
     "tagAwards": "Prix",
     "tagEvent": "Événement",
     "tagUpdates": "Actualités",
@@ -320,7 +314,7 @@
     "contactUs": "Contact",
     "accommodations": "Hébergement",
     "dining": "Restauration",
-    "banquets": "Banquets",
+    "banquets": "Réunions",
     "wellness": "Bien-être"
   },
   "Forms": {
@@ -440,6 +434,14 @@
     "title": "Lifotel Suites",
     "subtitle": "Résidences serviced sans alcool",
     "p1": "Les Lifotel Suites sont des résidences serviced dans de grands emplacements. Des intérieurs modernes pour vous sentir comme chez vous. Détendez-vous pour des vacances ou des voyages d’affaires plus chaleureux : chambres spacieuses, qualité de vie, cuisine et blanchisserie. Un lieu pour vivre et ressentir la chaleur du foyer—idéal aussi pour les longs séjours.",
+    "ctaDiscover": "Découvrir"
+  },
+  "BrandRevostay": {
+    "breadcrumb": "Revostay",
+    "title": "REVOSTAY BY CROSSWAY",
+    "subtitle": "Marque lifestyle & long séjour",
+    "p1": "Revostay by Crossway rassemble des résidences et hôtels pensés pour les séjours prolongés : plus d’espace, une expérience régulière et la liberté de prendre ses marques—mission professionnelle, installation ou découverte de la ville.",
+    "p2": "Des suites pratiques avec coin cuisine à un accueil attentif qui respecte votre autonomie : Revostay est conçu pour les visites plus longues—plans intelligents, équipements fiables et emplacements qui vous gardent connecté à l’essentiel. Des séjours qui ressemblent moins à une étape de passage… et plus à un lieu où vous vous sentez chez vous.",
     "ctaDiscover": "Découvrir"
   },
   "Team": {
@@ -595,9 +597,9 @@
       }
     },
     "banquets": {
-      "metaTitle": "Banquets",
+      "metaTitle": "Réunions",
       "heroEyebrow": "Réunions et célébrations",
-      "heroTitle": "Banquets, pelouses et espaces de réunion",
+      "heroTitle": "Réunions, pelouses et espaces événementiels",
       "heroLead": "Conférences, mariages et grandes étapes — avec traiteurs qui maîtrisent le timing et le confort des invités.",
       "intro": "Chaque hôtel propose une échelle différente de salles, conseils et espaces extérieurs. Partagez effectif et dates — appelez le +91 97512 77770 — ou planifiez une visite via Contact.",
       "itemsHeading": "Espaces et formats",
@@ -611,7 +613,7 @@
               "desc": "Salles à lumière du jour, du bureau restreint aux formats plus larges — avec support technique selon besoin."
             },
             {
-              "title": "Salles de banquet et pelouses",
+              "title": "Salles de réunion et pelouses",
               "desc": "Lieux prêts pour réceptions, soirées de prix et jalons d’entreprise avec menus orchestrés."
             }
           ]
@@ -636,7 +638,7 @@
           "items": [
             {
               "title": "Formules réunion ciblées",
-              "desc": "Salles efficaces pour formations et petites réunions — avec service banquet attentif."
+              "desc": "Salles efficaces pour formations et petites réunions — avec restauration événementielle attentive."
             },
             {
               "title": "Célébrations sans alcool",

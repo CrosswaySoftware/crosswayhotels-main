@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { StaticFormNote } from "@/components/forms/StaticFormNote/StaticFormNote";
+// import { StaticFormNote } from "@/components/forms/StaticFormNote/StaticFormNote";
 import { PageShell } from "@/components/layout/PageShell/PageShell";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs/Breadcrumbs";
 import { SectionTitle } from "@/components/ui/SectionTitle/SectionTitle";
@@ -14,7 +14,7 @@ export async function FeedbackPage() {
     <PageShell>
       <Breadcrumbs items={[{ label: tc("breadcrumbHome"), href: "/" }, { label: t("title") }]} />
       <SectionTitle align="center">{t("title")}</SectionTitle>
-      <StaticFormNote />
+      {/* <StaticFormNote /> */}
       <form className={formStyles.form} aria-label={t("formAria")}>
         <label>
           {tf("fieldName")}

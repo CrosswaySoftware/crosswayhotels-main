@@ -1,4 +1,4 @@
-﻿key,en,ar,fr
+key,en,ar,fr
 AboutUs.heroEyebrow,Crossway Hotels and Resorts,كروسواي للفنادق والمنتجعات,Crossway Hotels and Resorts
 AboutUs.heroLead,"Warm service, considered spaces, and locations that work for how you travel.",خدمة دافئة، مساحات مدروسة، ومواقع تناسب أسلوب سفرك.,"Un accueil chaleureux, des espaces pensés et des emplacements adaptés à votre façon de voyager."
 AboutUs.heroTitle,We make your stay more comfortable,نجعل إقامتك أكثر راحة,Nous rendons votre séjour plus confortable
@@ -90,34 +90,26 @@ Contact.formEmail,Your email,البريد الإلكتروني,Votre e-mail
 Contact.formMessage,Your message (optional),الرسالة (اختياري),Votre message (facultatif)
 Contact.formName,Your name,الاسم,Votre nom
 Contact.formSectionEyebrow,Write to us,راسلنا,Écrivez-nous
-Contact.formSectionLead,"We read every enquiry. For faster help, call or email the office nearest you.",نقرأ كل استفسار. للمساعدة الأسرع، اتصل أو راسل المكتب الأقرب إليك.,"Nous lisons chaque demande. Pour une réponse plus rapide, appelez ou écrivez au bureau le plus proche."
+Contact.formSectionLead,"We read every enquiry. For faster help, call or email our team.",نقرأ كل استفسار. للمساعدة الأسرع، اتصل أو راسل فريقنا.,"Nous lisons chaque demande. Pour une réponse plus rapide, appelez ou écrivez à notre équipe."
 Contact.formSectionTitle,Send a message,أرسل رسالة,Envoyer un message
-Contact.formStaticNote,This site is a static front-end rebuild—form submissions are disabled. Please email contact@crosswayhotels.com with the same details and we will respond from the appropriate office.,هذا الموقع نسخة ثابتة أمامية—النموذج معطّل. يرجى مراسلة contact@crosswayhotels.com بنفس التفاصيل وسنرد من المكتب المناسب.,Ce site est une reconstruction front-end statique — l’envoi du formulaire est désactivé. Veuillez écrire à contact@crosswayhotels.com avec les mêmes informations ; nous répondrons depuis le bureau concerné.
+Contact.formStaticNote,This site is a static front-end rebuild—form submissions are disabled. Please email contact@crosswayhotels.com with the same details and we will respond as soon as we can.,هذا الموقع نسخة ثابتة أمامية—النموذج معطّل. يرجى مراسلة contact@crosswayhotels.com بنفس التفاصيل وسنرد في أقرب وقت.,Ce site est une reconstruction front-end statique — l’envoi du formulaire est désactivé. Veuillez écrire à contact@crosswayhotels.com avec les mêmes informations ; nous vous répondrons dès que possible.
 Contact.formSubject,Subject,الموضوع,Objet
 Contact.formSubmit,Submit,إرسال,Envoyer
 Contact.heroEyebrow,Reach us,تواصل معنا,Nous joindre
-Contact.heroLead,"Two offices, one team—Chennai and Dubai. Find directions, numbers, or send us a note.",مكتبان، فريق واحد—تشيناي ودبي. الاتجاهات والأرقام أو أرسل لنا رسالة.,"Deux bureaux, une seule équipe — Chennai et Dubaï. Itinéraires, numéros ou laissez-nous un message."
+Contact.heroLead,"Find directions and numbers for our Chennai headquarters, or send us a note.",الاتجاهات والأرقام لمقرنا في تشيناي، أو أرسل لنا رسالة.,"Itinéraires et numéros de notre siège à Chennai, ou laissez-nous un message."
 Contact.heroTitle,Contact,اتصل بنا,Contact
 Contact.labelEmail,Email,البريد,E-mail
 Contact.labelPhone,Phone,الهاتف,Téléphone
-Contact.officeAeCompany,Crossway Hotel Management LLC,كروسواي لإدارة الفنادق ذ.م.م.,Crossway Hotel Management LLC
-Contact.officeAeEmail,contact@crosswayhotels.com,contact@crosswayhotels.com,contact@crosswayhotels.com
-Contact.officeAeLabel,UAE · Management office,الإمارات · مكتب الإدارة,Émirats · Bureau de gestion
-Contact.officeAeLine1,"Suite #111, Arzoo Building, Al Tawar",جناح 111، مبنى أرزو، الطوار,"Bureau 111, Arzoo Building, Al Tawar"
-Contact.officeAeLine2,"Dubai, United Arab Emirates",دبي، الإمارات العربية المتحدة,"Dubaï, Émirats arabes unis"
-Contact.officeAeMapTitle,Crossway Dubai office,مكتب كروسواي دبي,Bureau Crossway Dubaï
-Contact.officeAePhone,+971 50 385 8270,‎+971 50 385 8270,+971 50 385 8270
 Contact.officeInCompany,Crossway Hotels and Resorts Pvt Ltd.,كروسواي للفنادق والمنتجعات ش.ذ.م.م.,Crossway Hotels and Resorts Pvt Ltd.
 Contact.officeInLabel,India · Headquarters,الهند · المقر,Inde · Siège
 Contact.officeInLine1,Days Hotel Chennai OMR,دايز هوتيل تشيناي أوم آر,Days Hotel Chennai OMR
 Contact.officeInLine2,"245/1, Old Mahabalipuram Road, Padur",245/1، طريق ماهاباليپورام القديم، بادور,"245/1, Old Mahabalipuram Road, Padur"
 Contact.officeInLine3,"Chennai – 603103, Tamil Nadu",تشيناي – 603103، تاميل نادو,"Chennai – 603103, Tamil Nadu"
 Contact.officeInMapTitle,Days Hotel Chennai OMR,دايز هوتيل تشيناي أوم آر,Days Hotel Chennai OMR
-Contact.officeInPhone1,+91 9789877770,‎+91 9789877770,+91 9789877770
 Contact.officeInPhone2,+91 97512 77770,‎+91 97512 77770,+91 97512 77770
 Contact.openInMaps,Open in Google Maps,فتح في خرائط جوجل,Ouvrir dans Google Maps
-Features.banquetBody,"Meeting rooms, banquet halls, and manicured lawns—with cuisine and service worthy of the moment.",قاعات اجتماعات وولائم ومساحات خضراء—مع مأكولات وخدمة تليق بالمناسبة.,"Salles de réunion, salles de banquet et pelouses soignées — avec une cuisine et un service à la hauteur du moment."
-Features.banquetTitle,"Gatherings, elevated",تجمعات برفعة,Des réceptions élevées
+Features.banquetBody,"Versatile venues for weddings, meetings, and celebrations—delivered with precision and care.",أماكن متعددة الاستخدامات للزفاف والاجتماعات والاحتفالات—بدقة وعناية.,Des lieux polyvalents pour mariages, réunions et célébrations — avec précision et soin.
+Features.banquetTitle,"Meetings & events",الاجتماعات والفعاليات,Réunions et événements
 Features.diningBody,"Authentic, seasonal menus that honour place and palate.",قوائم موسمية أصيلة تحترم المكان والذوق.,Des menus authentiques et de saison qui honorent le lieu et le palais.
 Features.diningTitle,Dining as destination,المطعم كوجهة,La restauration comme destination
 Features.roomsBody,Spacious interiors and calm design. Our teams anticipate needs so your stay stays effortless.,تصاميم واسعة وهادئة. فرقنا تتوقع احتياجاتك لتبقى إقامتك سهلة.,Des volumes généreux et un design apaisant. Nos équipes anticipent vos besoins pour que le séjour reste fluide.
@@ -129,7 +121,6 @@ Features.stickySectionTitleBefore,"Hospitality in motion,",ضيافة تتحرك
 Feedback.formAria,Feedback,نموذج الملاحظات,Formulaire d’avis
 Feedback.title,Feedback,ملاحظات,Avis
 Footer.address_in,"Days Hotel Chennai OMR, 245/1, Old Mahabalipuram Road, Padur, Chennai – 603103, Tamil Nadu, India.",دايز هوتيل تشيناي أوم آر، 245/1، طريق ماهاباليپورام القديم، بادور، تشيناي – 603103، تاميل نادو، الهند.,"Days Hotel Chennai OMR, 245/1, Old Mahabalipuram Road, Padur, Chennai – 603103, Tamil Nadu, Inde."
-Footer.address_uae,"Crossway Hotel Management LLC, Sigma Business Centre, Iridium, Al Barsha 1, Dubai, UAE",كروسواي لإدارة الفنادق ذ.م.م، مركز سيجما للأعمال، إيريديوم، البرشاء 1، دبي، الإمارات,"Crossway Hotel Management LLC, Sigma Business Centre, Iridium, Al Barsha 1, Dubaï, Émirats arabes unis"
 Footer.brand_crossway,Crossway,كروسواي,Crossway
 Footer.brand_lifotel,Lifotel by Crossway,ليفوتيل باي كروسواي,Lifotel by Crossway
 Footer.brand_revostay,Revostay by Crossway,ريفوستاي باي كروسواي,Revostay by Crossway
@@ -239,13 +230,13 @@ Nav.hotel_days,Crossway Days Hotel OMR Chennai,كروسواي دايز هوتي�
 Nav.hotel_lifotel,"Lifotel KK INN by Crossway, Chennai",ليفوتيل كي كي إن باي كروسواي، تشيناي,"Lifotel KK INN by Crossway, Chennai"
 Nav.hotel_palomar,"The Palomar by Crossway, ECR, Chennai",ذا بالومار باي كروسواي، إي سي آر، تشيناي,"The Palomar by Crossway, ECR, Chennai"
 Nav.hotel_royel,"Revostay Royel by Crossway, Chennai",ريفوستاي رويل باي كروسواي، تشيناي,"Revostay Royel by Crossway, Chennai"
+Nav.hotel_petitpalais,"Petit Palais by Crossway, Puducherry",بيتي باليه باي كروسواي، بودوتشيري,"Petit Palais by Crossway, Pondichéry"
 Nav.indiaPhone,India: +91 97512 77770,الهند: ‎+91 97512 77770,Inde : +91 97512 77770
 Nav.mailUs,Mail Us: contact@crosswayhotels.com,راسلنا: contact@crosswayhotels.com,Écrivez-nous : contact@crosswayhotels.com
 Nav.news,News and Updates,الأخبار والتحديثات,Actualités
 Nav.ourBrands,Our Brands,علاماتنا,Nos marques
 Nav.ourHotels,Our Hotels,فنادقنا,Nos hôtels
 Nav.partner,Partner With Us,الشراكة معنا,Devenir partenaire
-Nav.uaePhone,UAE: +97 1503858270,الإمارات: ‎+97 1503858270,Émirats : +971 50 385 8270
 News.breadcrumb,News and Updates,الأخبار والتحديثات,Actualités
 News.moreStories,More stories,المزيد من القصص,Autres articles
 PerfectStayInsights.business_airport_rhythm_body,We coordinate with approved transport partners and keep night arrivals frictionless.,ننسّق مع شركاء نقل معتمدين ونحافظ على وصول الليل بلا احتكاك.,Coordination avec partenaires transport agréés et arrivées de nuit sans friction.

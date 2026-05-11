@@ -27,7 +27,7 @@
 .ribbonInner {
   max-width: $container-max;
   margin: 0 auto;
-  padding: 0.35rem 1.25rem;
+  padding: 0.25rem 1.25rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -54,7 +54,7 @@
 }
 
 .mainBar {
-  padding: 7px 0;
+  padding: 5px 0;
   background: transparent;
   color: $color-white;
   transition:
@@ -66,141 +66,272 @@
 
 .headerRoot.barSolid .mainBar,
 .headerRoot.menuOpen .mainBar {
-  color: $color-ink;
-  background: linear-gradient(180deg, rgba(250, 246, 238, 0.94) 0%, rgba(239, 233, 221, 0.88) 100%);
-  backdrop-filter: saturate(1.06) blur(14px);
-  -webkit-backdrop-filter: saturate(1.06) blur(14px);
-  border-bottom-color: rgba(26, 23, 20, 0.08);
-  box-shadow: 0 10px 36px rgba(26, 23, 20, 0.06);
+  color: rgba(255, 252, 247, 0.94);
+  background: $header-surface;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-bottom-color: rgba(232, 212, 188, 0.12);
+  box-shadow: none;
 }
 
 .mainBarInner {
   width: var(--ds-container);
+  max-width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
-  gap: 22px;
-  padding: 0 1.1rem;
+  gap: clamp(10px, 1.4vw, 18px);
+  padding: 0 clamp(0.75rem, 2vw, 1.15rem);
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .logo {
   display: inline-flex;
   align-items: center;
   flex-shrink: 0;
-  filter: brightness(1.08);
 
   img {
     transition: opacity 0.28s var(--ds-ease);
+    width: auto !important;
+    height: auto !important;
+    max-height: clamp(26px, 3vw, 34px);
   }
-}
-
-.headerRoot.barSolid .logo,
-.headerRoot.menuOpen .logo {
-  filter: none;
 }
 
 .desktopNav {
   display: flex;
-  gap: 2px;
-  justify-self: center;
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 999px;
-  padding: 3px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  justify-self: stretch;
+  align-self: center;
+  gap: clamp(8px, 1vw, 14px);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  background: none;
+  backdrop-filter: none;
+  border: none;
+  border-radius: 0;
+  padding: 4px 2px;
 }
 
-.headerRoot.barSolid .desktopNav,
-.headerRoot.menuOpen .desktopNav {
-  background: rgba(255, 252, 246, 0.92);
-  border-color: rgba(26, 23, 20, 0.1);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+/* overflow-y:hidden clipped the Company dropdown; allow it to extend below the rail */
+.desktopNav:has(.navDropdownOpen),
+.desktopNav:has(.navDropdown:hover),
+.desktopNav:has(.navDropdown:focus-within) {
+  overflow: visible;
 }
 
 .navLink {
   position: relative;
-  padding: 5px 11px;
-  border-radius: 999px;
-  font-size: 12px;
-  letter-spacing: 0.02em;
+  flex: 0 1 auto;
+  min-width: 0;
+  padding: 6px clamp(4px, 0.5vw, 8px) 7px;
+  border-radius: 0;
+  font-size: clamp(8px, 0.28vw + 7px, 10px);
+  font-weight: 500;
+  letter-spacing: 0.07em;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  transition: all 0.3s var(--ds-ease);
+  justify-content: center;
+  text-align: center;
+  white-space: normal;
+  transition:
+    color 0.25s var(--ds-ease),
+    border-color 0.25s var(--ds-ease);
   color: inherit;
   text-decoration: none;
+  border-bottom: 2px solid transparent;
 }
 
-.navDot {
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: currentColor;
-  opacity: 0;
-  transition: opacity 0.3s var(--ds-ease);
+.navLabel {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  text-wrap: balance;
+  max-width: 100%;
+  line-height: 1.2;
 }
 
-.navLink:hover .navDot {
-  opacity: 0.5;
+.navLink:hover {
+  color: rgba(255, 252, 247, 1);
+}
+
+.headerRoot:not(.barSolid):not(.menuOpen) .navLink:hover {
+  color: rgba(255, 252, 247, 1);
 }
 
 .navLinkActive {
-  background: var(--ds-ink);
-  color: var(--ds-paper);
+  font-weight: 600;
+  border-bottom-color: currentColor;
+}
+
+.navDropdown {
+  position: relative;
+  flex: 0 1 auto;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.navDropdown.navDropdownOpen {
+  z-index: 50;
+}
+
+.navDropdownTrigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  width: auto;
+  max-width: 100%;
+  min-width: 0;
+  cursor: pointer;
+  border: 0;
+  margin: 0;
+  padding: 6px clamp(3px, 0.35vw, 6px) 7px;
+  font-family: $font-sans;
+  font-size: clamp(8px, 0.28vw + 7px, 10px);
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  line-height: 1.2;
+  background: transparent;
+  appearance: none;
+  color: inherit;
+  white-space: normal;
+  text-align: center;
+}
+
+.navDropdownCaret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-inline-start: 1px;
+  border-inline-start: 4px solid transparent;
+  border-inline-end: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  opacity: 0.82;
+  transform: translateY(1px);
+}
+
+.navDropdownPanel {
+  position: absolute;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  /* Align to trigger; bridge hover gap with ::before so pointer doesn’t leave .navDropdown */
+  top: 100%;
+  padding-top: 10px;
+  z-index: 30;
+  min-width: min(240px, calc(100vw - 32px));
+  padding-bottom: 8px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  list-style: none;
+  border-radius: 14px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.2s var(--ds-ease),
+    visibility 0.2s var(--ds-ease);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 10px;
+  }
+}
+
+.navDropdownPanelInner {
+  padding: 8px 0;
+  border-radius: 14px;
+  background: rgba(26, 23, 20, 0.97);
+  border: 1px solid rgba(255, 252, 247, 0.12);
+  box-shadow:
+    0 18px 44px rgba(10, 9, 8, 0.45),
+    0 1px 0 rgba(255, 252, 247, 0.06) inset;
+}
+
+.navDropdown:hover .navDropdownPanel,
+.navDropdown:focus-within .navDropdownPanel,
+.navDropdown.navDropdownOpen .navDropdownPanel {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.navDropdownLink {
+  display: block;
+  padding: 11px 18px;
+  font-family: $font-sans;
+  font-size: clamp(9px, 0.33vw + 8px, 11px);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255, 252, 247, 0.92);
+  white-space: nowrap;
+  transition:
+    background 0.18s var(--ds-ease),
+    color 0.18s var(--ds-ease);
+}
+
+.navDropdownLink:hover {
+  background: rgba(255, 252, 247, 0.08);
+  color: rgba(255, 252, 247, 1);
+}
+
+.navDropdownLinkActive {
+  font-weight: 600;
+  background: rgba(255, 252, 247, 0.1);
+  color: rgba(255, 252, 247, 1);
+}
+
+.headerRoot.barSolid .navDropdownPanelInner {
+  background: rgba(35, 31, 27, 0.98);
+  border-color: rgba(255, 252, 247, 0.1);
+}
+
+.headerRoot:not(.barSolid):not(.menuOpen) .navDropdownPanelInner {
+  background: rgba(18, 16, 14, 0.96);
+}
+
+.headerRoot.barSolid .navLink:hover,
+.headerRoot.menuOpen .navLink:hover {
+  color: rgba(255, 252, 247, 1);
 }
 
 .headerRoot:not(.barSolid):not(.menuOpen) .navLinkActive {
-  background: var(--ds-paper);
-  color: var(--ds-ink);
+  border-bottom-color: rgba(255, 252, 247, 1);
+  color: rgba(255, 252, 247, 1);
 }
 
 .actions {
   display: flex;
   align-items: center;
-  gap: 8px;
-}
-
-.phone {
-  display: inline-flex;
-  align-items: center;
-  padding: 6px 12px;
-  font-size: 11px;
-  letter-spacing: 0.02em;
-  border-radius: 999px;
-  color: inherit;
-  text-decoration: none;
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(14px) saturate(1.15);
-  -webkit-backdrop-filter: blur(14px) saturate(1.15);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  box-shadow: inset 0 1px 0 rgba(255, 252, 246, 0.08);
-  transition:
-    border-color 0.25s var(--ds-ease),
-    background 0.25s var(--ds-ease),
-    box-shadow 0.25s var(--ds-ease);
-}
-
-.phone:hover {
-  border-color: rgba(255, 252, 246, 0.32);
-  background: rgba(255, 255, 255, 0.11);
-}
-
-.headerRoot.barSolid .phone,
-.headerRoot.menuOpen .phone {
-  background: rgba(255, 252, 246, 0.52);
-  border-color: rgba(26, 23, 20, 0.11);
-  backdrop-filter: blur(12px) saturate(1.08);
-  -webkit-backdrop-filter: blur(12px) saturate(1.08);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.65),
-    0 1px 0 rgba(255, 255, 255, 0.35);
-}
-
-.headerRoot.barSolid .phone:hover,
-.headerRoot.menuOpen .phone:hover {
-  border-color: rgba(26, 23, 20, 0.18);
-  background: rgba(255, 252, 246, 0.72);
+  gap: clamp(6px, 1vw, 10px);
+  flex-shrink: 0;
 }
 
 .locale {
@@ -215,8 +346,8 @@
 }
 
 @media (max-width: 1100px) {
-  .desktopNav,
-  .actions .phone {
+
+  .desktopNav {
     display: none;
   }
 
@@ -322,6 +453,24 @@
     padding: 4px 2px 0;
   }
 
+  .mobileGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 6px;
+    margin-top: 2px;
+    border-top: 1px solid rgba(26, 23, 20, 0.08);
+  }
+
+  .mobileGroupLabel {
+    font-size: clamp(11px, 2.8vw, 12px);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(26, 23, 20, 0.48);
+    padding: 4px 8px 0;
+  }
+
   .mobileLink {
     display: flex;
     align-items: center;
@@ -330,9 +479,10 @@
     min-height: 52px;
     padding: 14px 16px;
     border-radius: 14px;
-    font-size: clamp(14px, 3.6vw, 15px);
+    font-size: clamp(13px, 3.4vw, 14px);
     font-weight: 500;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     text-decoration: none;
     color: var(--ds-ink);
     border: 1px solid rgba(26, 23, 20, 0.1);
@@ -348,6 +498,13 @@
 
   .mobileLink:active {
     transform: scale(0.992);
+  }
+
+  .mobileLinkSub {
+    padding-inline-start: clamp(18px, 4vw, 26px);
+    background: rgba(255, 254, 251, 0.92);
+    border-style: dashed;
+    border-color: rgba(26, 23, 20, 0.14);
   }
 
   .mobileLinkActive {
@@ -387,6 +544,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .mobileBackdrop,
   .mobileSheet {
     animation: none !important;
@@ -394,6 +552,7 @@
 }
 
 @media (min-width: 1101px) {
+
   .mobileBackdrop,
   .mobileSheet {
     display: none !important;
@@ -412,8 +571,15 @@
   }
 
   .navLink {
-    padding: 6px 13px;
-    font-size: 13px;
+    padding: 6px clamp(4px, 0.5vw, 8px) 8px;
+    font-size: clamp(9px, 0.38vw + 8px, 11px);
+    letter-spacing: 0.08em;
+  }
+
+  .navDropdownTrigger {
+    padding: 6px clamp(4px, 0.5vw, 8px) 8px;
+    font-size: clamp(9px, 0.38vw + 8px, 11px);
+    letter-spacing: 0.08em;
   }
 
   .menuBtn {

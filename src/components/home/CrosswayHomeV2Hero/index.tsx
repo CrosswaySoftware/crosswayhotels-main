@@ -97,20 +97,13 @@ export function CrosswayHomeV2Hero({ bookingSlot }: { bookingSlot: ReactNode }) 
       </div>
 
       <div className={styles.grid}>
-        <div className={styles.eyeline}>
-          <span>{t("coord")}</span>
-          <span className={styles.line} />
-          <span>{t("place")}</span>
-        </div>
-
-        <p className={styles.h1seo}>{t("titleSeo")}</p>
-
-        <div className={styles.titleBlock}>
+        <p className={styles.kicker}>{t("kicker")}</p>
+        <h1 className={styles.titleBlock}>
           <span className={styles.row}>{t("line1")}</span>
           <span className={`${styles.row} ${styles.italic}`}>{t("line2")}</span>
           <span className={styles.row}>{t("line3")}</span>
           <span className={`${styles.row} ${styles.italic}`}>{t("line4")}</span>
-        </div>
+        </h1>
 
         <p className={styles.sub}>{t("sub")}</p>
 

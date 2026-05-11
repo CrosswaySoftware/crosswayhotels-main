@@ -28,7 +28,7 @@ Les liens externes ne sont pas couverts par cette politique—consultez leurs po
 
 ## Responsable des réclamations
 
-Conformément à la loi indienne sur les technologies de l’information 2000 : **Days Hotel Chennai OMR**, 245/1, Old Mahabalipuram Road, Padur, Chennai – 603 103. Mobile : +91 97898 77770. Tél. : +91 44 3000 1444. E-mail : naveen@crosswayhotels.com. Questions confidentialité : contact@crosswayhotels.com
+Conformément à la loi indienne sur les technologies de l’information 2000 : **Days Hotel Chennai OMR**, 245/1, Old Mahabalipuram Road, Padur, Chennai – 603 103. Tél. : +91 44 3000 1444. E-mail : naveen@crosswayhotels.com. Questions confidentialité : contact@crosswayhotels.com
 
 Dernière mise à jour : 23.04.2018. Les pratiques peuvent évoluer ; une version à jour sera publiée sur le site.
 
