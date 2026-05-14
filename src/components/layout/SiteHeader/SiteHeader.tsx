@@ -10,9 +10,9 @@ import { layout } from "@/lib/media";
 import styles from "./SiteHeader.module.scss";
 
 const HEADER_LOGO: Record<SiteHeaderVariant, { w: number; h: number }> = {
-  compact: { w: 150, h: 34 },
-  classic: { w: 168, h: 38 },
-  split: { w: 158, h: 36 },
+  compact: { w: 150, h: 42 },
+  classic: { w: 168, h: 46 },
+  split: { w: 158, h: 44 },
 };
 
 /** `logowhite.png` intrinsic 376×84 — derive width from variant logo height */
@@ -197,7 +197,7 @@ export function SiteHeader() {
               width={logo.w}
               height={logo.h}
               priority
-              sizes="(max-width: 1100px) 42vw, 260px"
+              sizes="(max-width: 1100px) 48vw, 320px"
             />
           </Link>
 
