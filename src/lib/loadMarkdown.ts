@@ -19,5 +19,8 @@ export function loadMarkdown(relativeToContent: string, locale = "en"): string {
   }
 
   const defaultPath = path.join(contentRoot, relativeToContent);
+  if (!fs.existsSync(defaultPath)) {
+    throw new Error(`Missing content file: ${defaultPath}`);
+  }
   return fs.readFileSync(defaultPath, "utf8");
 }

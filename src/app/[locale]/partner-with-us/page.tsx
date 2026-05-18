@@ -1,13 +1,16 @@
 import { LegalDocumentPage } from "@/components/pages/LegalDocumentPage/LegalDocumentPage";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "Metadata" });
   return { title: t("partnerWithUs") };
 }
 
-export default async function Page() {
+export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const tc = await getTranslations("Common");
   const tm = await getTranslations("Metadata");
   return (
