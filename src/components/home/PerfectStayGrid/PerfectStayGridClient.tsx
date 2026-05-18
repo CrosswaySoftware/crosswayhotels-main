@@ -12,11 +12,11 @@ import {
   PERFECT_STAY_INSIGHTS,
   insightTranslationId,
 } from "@/lib/perfectStayInsights";
-import { PROPERTY_ORDER, VARIANT_IMAGES } from "@/lib/servicePortfolio";
+import { BANQUETS_PROPERTY_ORDER, PROPERTY_ORDER, VARIANT_IMAGES } from "@/lib/servicePortfolio";
 import modalStyles from "./PerfectStayInsightsModal.module.scss";
 import styles from "./PerfectStayGrid.module.scss";
 
-/** Display order: Accommodations, Dining, Meetings, Wellness (maps to insight categories). */
+/** Display order: Accommodations, Dining, Meetings, Wellness. */
 const CARDS: { rowKey: string; category: StayCategoryId; image: string }[] = [
   { rowKey: "stay_accommodations", category: "accommodations", image: home.perfectStay.family },
   { rowKey: "stay_food", category: "food", image: home.perfectStay.food },
@@ -126,7 +126,11 @@ export function PerfectStayGridClient() {
                     {t(`stay_${open}_title`)}
                   </h2>
                   <p id={descId} className={modalStyles.modalLead}>
-                    {open === "accommodations" ? ti("accommodationsModalLead") : ti("modalLead")}
+                    {open === "accommodations"
+                      ? ti("accommodationsModalLead")
+                      : open === "business"
+                        ? ti("meetingsModalLead")
+                        : ti("modalLead")}
                   </p>
                 </div>
                 <button
@@ -191,6 +195,68 @@ export function PerfectStayGridClient() {
                                   <p className={modalStyles.insightTagline}>{location}</p>
                                   <span className={modalStyles.insightCta}>
                                     {ti("accommodationsCardCta")}
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden>
+                                      <path
+                                        d="M5 12h14M13 6l6 6-6 6"
+                                        stroke="currentColor"
+                                        strokeWidth="1.75"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                      />
+                                    </svg>
+                                  </span>
+                                </div>
+                              </div>
+                            </Link>
+                          </motion.div>
+                        );
+                      })}
+                    </div>
+                  </>
+                ) : open === "business" ? (
+                  <>
+                    <p className={modalStyles.rowLabel}>{ti("meetingsPropertiesLabel")}</p>
+                    <div className={modalStyles.scroller}>
+                      {BANQUETS_PROPERTY_ORDER.map((propertyId, idx) => {
+                        const previewSrc = VARIANT_IMAGES.banquets[propertyId][0];
+                        const name = ts(`banquets.props.${propertyId}.name`);
+                        const location = ts(`banquets.props.${propertyId}.location`);
+                        return (
+                          <motion.div
+                            key={propertyId}
+                            className={modalStyles.insightSlide}
+                            initial={{ opacity: 0, x: 28 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{
+                              delay: 0.08 + idx * 0.06,
+                              duration: 0.45,
+                              ease: [0.16, 1, 0.3, 1],
+                            }}
+                          >
+                            <Link
+                              href={`/banquets#property-${propertyId}`}
+                              className={modalStyles.insightLink}
+                              onClick={close}
+                            >
+                              <div className={modalStyles.insightCard}>
+                                <div className={modalStyles.insightImage}>
+                                  <Image
+                                    src={previewSrc}
+                                    alt=""
+                                    fill
+                                    sizes="(max-width: 640px) 72vw, 248px"
+                                    className={modalStyles.insightImg}
+                                  />
+                                </div>
+                                <div className={modalStyles.insightShade} aria-hidden />
+                                <span className={modalStyles.insightIndex} aria-hidden>
+                                  {String(idx + 1).padStart(2, "0")}
+                                </span>
+                                <div className={modalStyles.insightMeta}>
+                                  <h3 className={modalStyles.insightTitle}>{name}</h3>
+                                  <p className={modalStyles.insightTagline}>{location}</p>
+                                  <span className={modalStyles.insightCta}>
+                                    {ti("meetingsCardCta")}
                                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden>
                                       <path
                                         d="M5 12h14M13 6l6 6-6 6"

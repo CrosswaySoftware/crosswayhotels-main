@@ -96,3 +96,21 @@ export const news = {
   beachResort: "/images/news/beach-resort.jpg",
   rideBar: "/images/news/ride-bar.jpg",
 } as const;
+
+/** Venue-specific stills from palomar-next — corporate dining page (Capella + Spotted Deer). */
+export const palomar = {
+  capella: "/images/palomar/capella.webp",
+  spottedDeer: "/images/palomar/spotted-deer.webp",
+} as const;
+
+/** Crossway Days Hotel OMR — from crosswaysdays-hotels-nextjs. */
+export const daysHotel = {
+  nutcracker: "/images/days/nutcracker.jpg",
+  svanna: "/images/days/svanna.jpg",
+} as const;
+
+/** Petit Palais by Crossway, Puducherry — from petitpalais-next. */
+export const petitPalais = {
+  feastHouse: "/images/petitpalais/feast-house.jpg",
+  gardenCafe: "/images/petitpalais/garden-cafe.jpg",
+} as const;

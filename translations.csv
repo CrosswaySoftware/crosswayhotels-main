@@ -89,7 +89,7 @@ Contact.formAria,Contact form,نموذج الاتصال,Formulaire de contact
 Contact.formEmail,Your email,البريد الإلكتروني,Votre e-mail
 Contact.formMessage,Your message (optional),الرسالة (اختياري),Votre message (facultatif)
 Contact.formName,Your name,الاسم,Votre nom
-Contact.formSectionEyebrow,Write to us,راسلنا,Écrivez-nous
+Contact.formSectionEyebrow,Contact us,اتصل بنا,Contactez-nous
 Contact.formSectionLead,"We read every enquiry. For faster help, call or email our team.",نقرأ كل استفسار. للمساعدة الأسرع، اتصل أو راسل فريقنا.,"Nous lisons chaque demande. Pour une réponse plus rapide, appelez ou écrivez à notre équipe."
 Contact.formSectionTitle,Send a message,أرسل رسالة,Envoyer un message
 Contact.formStaticNote,This site is a static front-end rebuild—form submissions are disabled. Please email contact@crosswayhotels.com with the same details and we will respond as soon as we can.,هذا الموقع نسخة ثابتة أمامية—النموذج معطّل. يرجى مراسلة contact@crosswayhotels.com بنفس التفاصيل وسنرد في أقرب وقت.,Ce site est une reconstruction front-end statique — l’envoi du formulaire est désactivé. Veuillez écrire à contact@crosswayhotels.com avec les mêmes informations ; nous vous répondrons dès que possible.
@@ -183,7 +183,7 @@ Home.hotelShowcaseEssence_days,"Padur on OMR—where corporate pace meets compos
 Home.hotelShowcaseEssence_lifotel,"Smart, honest stays—Lifotel’s essentials-first craft with attentive service and locations that respect your itinerary.",إقامات ذكية بقيمة صادقة—أسلوب ليفوتيل يركز على الأساسيات مع خدمة مراعية ومواقع تحترم جدولك.,Des séjours intelligents et honnêtes — l’essentiel Lifotel avec un service attentif et des emplacements qui respectent votre agenda.
 Home.hotelShowcaseEssence_palomar,"ECR’s quieter edge—sea-near calm, restorative spa rituals, and interiors that invite you to exhale.",هدوء إي سي آر قرب البحر—سبا يعيد التوازن وتصاميم تدعوك لإطلاق الزفير.,"Le calme du bord de mer à l’ECR — proximité de la mer, rituels spa réparateurs et intérieurs qui invitent à souffler."
 Home.hotelShowcaseEssence_royel,Revostay Royel—contemporary suites and extended-stay ease for travellers who want home rhythm without noise.,ريفوستاي رويل—أجنحة عصرية وسهولة للإقامات الممتدة لمن يريد إيقاعاً منزلياً دون ضجيج.,"Revostay Royel — suites contemporaines et confort du long séjour pour un rythme « comme à la maison », sans le bruit."
-Home.hotelsShowcaseEyebrow,Our hotels,فنادقنا,Nos hôtels
+Home.hotelsShowcaseEyebrow,Our Hotels,فنادقنا,Nos hôtels
 Home.hotelsShowcaseLead,"Each property carries its own mood—yet every team answers to the same Crossway instinct: clarity, warmth, and stays that feel considered.",لكل عقار طابعه—وفي الوقت نفسه يلتزم فريق العمل بذات روح كروسواي: الوضوح والدفء وإقامة تشعر أنها مدروسة.,"Chaque établissement a son caractère — et chaque équipe partage la même intuition Crossway : clarté, chaleur et séjours pensés."
 Home.hotelsShowcaseTitle,"Four addresses, one calm standard",أربع وجهات، ومعيار هادئ واحد,"Quatre adresses, un même calme exigeant"
 Home.perfectEyebrow,For every journey,لكل رحلة,Pour chaque voyage

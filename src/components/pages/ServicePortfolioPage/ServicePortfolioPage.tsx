@@ -5,11 +5,11 @@ import { BookingBar } from "@/components/layout/BookingBar/BookingBar";
 import { PageShell } from "@/components/layout/PageShell/PageShell";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs/Breadcrumbs";
 import {
-  PROPERTY_ORDER,
   PROPERTY_ORIGINS,
+  propertyOrderForVariant,
   RESERVATIONS_PHONE_DISPLAY,
   RESERVATIONS_PHONE_HREF,
-  type PropertyId,
+  type DiningPropertyId,
   type ServiceVariant,
   VARIANT_HERO_BG,
   VARIANT_IMAGES,
@@ -25,6 +25,7 @@ export async function ServicePortfolioPage({ variant }: { variant: ServiceVarian
   const heroBg = VARIANT_HERO_BG[variant];
   const crumbLabel = tm(variant);
   const hideBookingUi = variant === "dining";
+  const properties = propertyOrderForVariant(variant);
 
   return (
     <>
@@ -61,7 +62,7 @@ export async function ServicePortfolioPage({ variant }: { variant: ServiceVarian
         </section>
 
         <div className={styles.properties}>
-          {PROPERTY_ORDER.map((id: PropertyId) => {
+          {properties.map((id: DiningPropertyId) => {
             const images = VARIANT_IMAGES[variant][id];
             const hotelHref = hotelMicrositeUrl(PROPERTY_ORIGINS[id], locale);
             return (

@@ -18,7 +18,7 @@ const HEADER_LOGO: Record<SiteHeaderVariant, { w: number; h: number }> = {
 /** `logowhite.png` intrinsic 376×84 — derive width from variant logo height */
 const LOGO_PNG_RATIO = 376 / 84;
 
-/** Primary rail — Our Brands first; then Company dropdown + Contact (see {@link COMPANY_MENU}). */
+/** Primary rail — Our Brands first; then Careers + Company dropdown + Contact. */
 const PRIMARY_NAV = [
   { href: "/#our-brands", key: "ourBrands" as const },
   { href: "/#our-hotels", key: "ourHotels" as const },
@@ -31,10 +31,11 @@ const PRIMARY_NAV = [
 
 const CONTACT_NAV = { href: "/contact-us", key: "contact" as const };
 
+const CAREERS_NAV = { href: "/careers", key: "nav_careers" as const };
+
 const COMPANY_MENU = [
   { href: "/partner-with-us", key: "partner" as const },
   { href: "/news-and-updates", key: "news" as const },
-  { href: "/careers", key: "nav_careers" as const },
 ] as const;
 
 function readHash() {
@@ -212,6 +213,13 @@ export function SiteHeader() {
                 <span className={styles.navLabel}>{t(item.key)}</span>
               </Link>
             ))}
+            <Link
+              href={CAREERS_NAV.href}
+              className={`${styles.navLink} ${linkActive(CAREERS_NAV.href) ? styles.navLinkActive : ""}`}
+              onClick={() => setOpen(false)}
+            >
+              <span className={styles.navLabel}>{t(CAREERS_NAV.key)}</span>
+            </Link>
             <div
               ref={companyDropdownRef}
               className={`${styles.navDropdown} ${companyDropdownOpen ? styles.navDropdownOpen : ""}`}
@@ -298,6 +306,13 @@ export function SiteHeader() {
                   {t(item.key)}
                 </Link>
               ))}
+              <Link
+                href={CAREERS_NAV.href}
+                className={`${styles.mobileLink} ${linkActive(CAREERS_NAV.href) ? styles.mobileLinkActive : ""}`}
+                onClick={() => setOpen(false)}
+              >
+                {t(CAREERS_NAV.key)}
+              </Link>
               <div className={styles.mobileGroup}>
                 <div className={styles.mobileGroupLabel}>{t("company")}</div>
                 {COMPANY_MENU.map((item) => (

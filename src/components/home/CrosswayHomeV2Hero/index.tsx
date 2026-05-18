@@ -97,34 +97,12 @@ export function CrosswayHomeV2Hero({ bookingSlot }: { bookingSlot: ReactNode }) 
       </div>
 
       <div className={styles.grid}>
-        <p className={styles.kicker}>{t("kicker")}</p>
-        <h1 className={styles.titleBlock}>
-          <span className={styles.row}>{t("line1")}</span>
-          <span className={`${styles.row} ${styles.italic}`}>{t("line2")}</span>
-          <span className={styles.row}>{t("line3")}</span>
-          <span className={`${styles.row} ${styles.italic}`}>{t("line4")}</span>
-        </h1>
-
-        <p className={styles.sub}>{t("sub")}</p>
-
-        <div className={styles.meta}>
-          <div className={styles.metaCol}>
-            <span className={styles.metaNum}>{t("numA")}</span>
-            <span className={styles.metaLbl}>{t("metaA")}</span>
-          </div>
-          <div className={styles.metaCol}>
-            <span className={styles.metaNum}>{t("numB")}</span>
-            <span className={styles.metaLbl}>{t("metaB")}</span>
-          </div>
-          <div className={styles.metaCol}>
-            <span className={styles.metaNum}>{t("numC")}</span>
-            <span className={styles.metaLbl}>{t("metaC")}</span>
-          </div>
-          <div className={`${styles.metaCol} ${styles.metaCta}`}>
-            <a href="#our-hotels" className={styles.btnPrimary}>
-              {t("ctaExplore")}
-            </a>
-          </div>
+        <div className={styles.heroBody}>
+          <p className={styles.kicker}>{t("kicker")}</p>
+          <h1 className={styles.titleBlock}>
+            <span className={styles.row}>{t("line1")}</span>
+            <span className={styles.row}>{t("line2")}</span>
+          </h1>
         </div>
 
         <div className={styles.foot}>
