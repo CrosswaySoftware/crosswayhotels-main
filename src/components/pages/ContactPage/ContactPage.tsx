@@ -2,7 +2,7 @@ import { MapEmbed } from "@/components/contact/MapEmbed/MapEmbed";
 import { PageShell } from "@/components/layout/PageShell/PageShell";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs/Breadcrumbs";
 import { SectionTitle } from "@/components/ui/SectionTitle/SectionTitle";
-import staticForm from "@/components/forms/StaticFormNote/StaticFormNote.module.scss";
+import { CrosswayContactForm } from "@/components/forms/CrosswayContactForm/CrosswayContactForm";
 import { getTranslations } from "next-intl/server";
 import styles from "./ContactPage.module.scss";
 
@@ -69,28 +69,7 @@ export async function ContactPage() {
               {t("formSectionTitle")}
             </SectionTitle>
             <p className={styles.formLead}>{t("formSectionLead")}</p>
-            {/* <p className={staticForm.note}>{t("formStaticNote")}</p> */}
-            <form className={staticForm.form} aria-label={t("formAria")}>
-              <label>
-                {t("formName")}
-                <input type="text" name="your-name" required disabled />
-              </label>
-              <label>
-                {t("formEmail")}
-                <input type="email" name="your-email" required disabled />
-              </label>
-              <label>
-                {t("formSubject")}
-                <input type="text" name="your-subject" required disabled />
-              </label>
-              <label>
-                {t("formMessage")}
-                <textarea name="your-message" disabled />
-              </label>
-              <button type="submit" disabled>
-                {t("formSubmit")}
-              </button>
-            </form>
+            <CrosswayContactForm />
           </div>
         </section>
       </PageShell>

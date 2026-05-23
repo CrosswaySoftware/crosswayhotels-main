@@ -326,7 +326,10 @@
     "fieldResume": "Résumé (PDF)",
     "fieldSubject": "Subject",
     "fieldComment": "Your comment",
-    "submit": "Submit"
+    "submit": "Submit",
+    "sending": "Sending…",
+    "success": "Thank you — your message has been sent. We will respond shortly.",
+    "error": "Something went wrong. Please try again or email contact@crosswayhotels.com."
   },
   "AboutUs": {
     "heroEyebrow": "Crossway Hotels and Resorts",

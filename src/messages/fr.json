@@ -326,7 +326,10 @@
     "fieldResume": "CV (PDF)",
     "fieldSubject": "Objet",
     "fieldComment": "Votre commentaire",
-    "submit": "Envoyer"
+    "submit": "Envoyer",
+    "sending": "Envoi en cours…",
+    "success": "Merci — votre message a bien été envoyé. Nous vous répondrons rapidement.",
+    "error": "Une erreur s’est produite. Réessayez ou écrivez à contact@crosswayhotels.com."
   },
   "AboutUs": {
     "heroEyebrow": "Crossway Hotels and Resorts",

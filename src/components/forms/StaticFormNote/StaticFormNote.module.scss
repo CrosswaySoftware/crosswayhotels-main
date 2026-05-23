@@ -67,6 +67,18 @@
     resize: vertical;
   }
 
+  .honeypot {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
   button {
     padding: 0.85rem 1.65rem;
     background: linear-gradient(120deg, $color-canvas-deep, #1f1c18);

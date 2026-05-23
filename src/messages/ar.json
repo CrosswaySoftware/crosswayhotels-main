@@ -326,7 +326,10 @@
     "fieldResume": "السيرة الذاتية (PDF)",
     "fieldSubject": "الموضوع",
     "fieldComment": "تعليقك",
-    "submit": "إرسال"
+    "submit": "إرسال",
+    "sending": "جارٍ الإرسال…",
+    "success": "شكراً — تم إرسال رسالتك. سنرد عليك قريباً.",
+    "error": "حدث خطأ. حاول مرة أخرى أو راسل contact@crosswayhotels.com."
   },
   "AboutUs": {
     "heroEyebrow": "كروسواي للفنادق والمنتجعات",
