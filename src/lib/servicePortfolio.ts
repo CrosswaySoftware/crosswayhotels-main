@@ -5,7 +5,7 @@ import {
   HOTEL_SITE_ORIGIN_PETIT_PALAIS,
   HOTEL_SITE_ORIGIN_REVOSTAY_ROYEL,
 } from "@/config/hotelSiteUrls";
-import { brand, daysHotel, home, news, pages, palomar, petitPalais } from "@/lib/media";
+import { brand, daysHotel, home, news, pages, palomar, petitPalais, revostay } from "@/lib/media";
 
 export const RESERVATIONS_PHONE_DISPLAY = "+91 97512 77770";
 export const RESERVATIONS_PHONE_HREF = "tel:+919751277770";
@@ -47,7 +47,7 @@ export const VARIANT_IMAGES: Record<ServiceVariant, Record<DiningPropertyId, rea
     days: [daysHotel.nutcracker, daysHotel.svanna],
     palomar: [palomar.capella, palomar.spottedDeer],
     lifotel: [home.perfectStay.food, home.featureRows.dining],
-    royel: [home.perfectStay.food, news.rideBar],
+    royel: [home.perfectStay.food, revostay.royelRestaurant],
     petitpalais: [petitPalais.feastHouse, petitPalais.gardenCafe],
   },
   banquets: {

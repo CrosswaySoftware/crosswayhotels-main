@@ -10,7 +10,7 @@ type AppLocale = (typeof routing.locales)[number];
  * - Crossway Days OMR Chennai → https://crosswaydayshotel.com/
  * - The Palomar ECR Chennai → https://palomarbycrossway.com/
  * - Lifotel KK Inn Guduvanchery → https://kkinn.lifotel.com/
- * - Revostay Royel Chennai → https://royal.revostay.com/
+ * - Revostay Royel Chennai → https://royel.revostay.com/
  * - Petit Palais by Crossway, Puducherry → replace with production microsite when live.
  *
  * History — hardcoded staging examples (all `en`):
@@ -24,7 +24,7 @@ type AppLocale = (typeof routing.locales)[number];
 export const HOTEL_SITE_ORIGIN_CROSSWAY_DAYS = "https://crosswaydayshotel.com";
 export const HOTEL_SITE_ORIGIN_PALOMAR = "https://palomarbycrossway.com";
 export const HOTEL_SITE_ORIGIN_LIFOTEL = "https://kkinn.lifotel.com";
-export const HOTEL_SITE_ORIGIN_REVOSTAY_ROYEL = "https://royal.revostay.com";
+export const HOTEL_SITE_ORIGIN_REVOSTAY_ROYEL = "https://royel.revostay.com";
 /** Staging Vercel preview — swap for canonical domain when deployed. */
 export const HOTEL_SITE_ORIGIN_PETIT_PALAIS = "https://petitpalaiscrossway.com";
 

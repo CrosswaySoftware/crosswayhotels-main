@@ -137,11 +137,26 @@
       "ctaExplore": "Explore hotels",
       "dotAria": "Slide {n} of {total}",
       "slides": [
-        { "area": "Welcome", "caption": "Crossway Hotels & Resorts — hospitality designed around how you travel." },
-        { "area": "Portfolio", "caption": "Great hotels at welcoming locations across India and the UAE." },
-        { "area": "Experience", "caption": "Warm service, thoughtful spaces, and stays that feel considered." },
-        { "area": "Signature", "caption": "Dining, meetings, and wellness — one calm standard." },
-        { "area": "Rooms", "caption": "Spacious interiors—calm design tuned for restorative nights." }
+        {
+          "area": "Welcome",
+          "caption": "Crossway Hotels & Resorts — hospitality designed around how you travel."
+        },
+        {
+          "area": "Portfolio",
+          "caption": "Great hotels at welcoming locations across India and the UAE."
+        },
+        {
+          "area": "Experience",
+          "caption": "Warm service, thoughtful spaces, and stays that feel considered."
+        },
+        {
+          "area": "Signature",
+          "caption": "Dining, meetings, and wellness — one calm standard."
+        },
+        {
+          "area": "Rooms",
+          "caption": "Spacious interiors—calm design tuned for restorative nights."
+        }
       ]
     }
   },
@@ -563,7 +578,7 @@
               "desc": "All-day dining with extensive international selections—warm interiors built for families and long, unhurried meals."
             },
             {
-              "title": "The Spotted Deer — gastro pub",
+              "title": "The Spotted Deer — Gastropub",
               "desc": "Crafted cocktails, live energy, and a snack menu designed for memorable evenings with friends or colleagues."
             }
           ]

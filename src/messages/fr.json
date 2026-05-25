@@ -137,11 +137,26 @@
       "ctaExplore": "Découvrir les hôtels",
       "dotAria": "Diapositive {n} sur {total}",
       "slides": [
-        { "area": "Accueil", "caption": "Crossway Hôtels et Villégiatures — hospitalité pensée autour de votre façon de voyager." },
-        { "area": "Portefeuille", "caption": "De grands hôtels dans des lieux accueillants en Inde et aux Émirats." },
-        { "area": "Expérience", "caption": "Service chaleureux, espaces réfléchis et séjours qui comptent." },
-        { "area": "Signature", "caption": "Restauration, réunions et bien-être — un même calme exigeant." },
-        { "area": "Chambres", "caption": "Intérieurs spacieux—design apaisant pour des nuits réparatrices." }
+        {
+          "area": "Accueil",
+          "caption": "Crossway Hôtels et Villégiatures — hospitalité pensée autour de votre façon de voyager."
+        },
+        {
+          "area": "Portefeuille",
+          "caption": "De grands hôtels dans des lieux accueillants en Inde et aux Émirats."
+        },
+        {
+          "area": "Expérience",
+          "caption": "Service chaleureux, espaces réfléchis et séjours qui comptent."
+        },
+        {
+          "area": "Signature",
+          "caption": "Restauration, réunions et bien-être — un même calme exigeant."
+        },
+        {
+          "area": "Chambres",
+          "caption": "Intérieurs spacieux—design apaisant pour des nuits réparatrices."
+        }
       ]
     }
   },
@@ -563,7 +578,7 @@
               "desc": "Restaurant toute la journée avec sélection internationale — intérieurs chaleureux pour familles et longs déjeuners."
             },
             {
-              "title": "The Spotted Deer — gastro pub",
+              "title": "The Spotted Deer — Gastropub",
               "desc": "Cocktails créatifs, ambiance live et snacks pour des soirées marquantes entre amis ou collègues."
             }
           ]

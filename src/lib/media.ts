@@ -114,3 +114,8 @@ export const petitPalais = {
   feastHouse: "/images/petitpalais/feast-house.jpg",
   gardenCafe: "/images/petitpalais/garden-cafe.jpg",
 } as const;
+
+/** Revostay Royel by Crossway — from revostay-next. */
+export const revostay = {
+  royelRestaurant: "/images/revostay/revostay-royel-restaurant.jpg",
+} as const;
