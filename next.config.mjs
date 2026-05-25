@@ -18,6 +18,19 @@ const nextConfig = {
       },
     ];
   },
+  async headers() {
+    return [
+      {
+        source: "/:locale/contact-us",
+        headers: [
+          {
+            key: "Vary",
+            value: "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Accept",
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);

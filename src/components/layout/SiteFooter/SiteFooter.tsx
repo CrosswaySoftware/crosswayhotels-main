@@ -78,7 +78,9 @@ export async function SiteFooter() {
             <ul className={styles.list}>
               {useful.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href}>{t(l.key)}</Link>
+                  <Link href={l.href} prefetch={l.href === "/contact-us" ? false : undefined}>
+                    {t(l.key)}
+                  </Link>
                 </li>
               ))}
             </ul>

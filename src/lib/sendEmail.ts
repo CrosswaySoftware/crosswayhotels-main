@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * Client-side email helper (axios → Lambda). Copy into each app's src/lib/sendEmail.ts
  */

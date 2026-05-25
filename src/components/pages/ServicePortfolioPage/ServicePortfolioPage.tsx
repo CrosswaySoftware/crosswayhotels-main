@@ -43,7 +43,7 @@ export async function ServicePortfolioPage({ variant }: { variant: ServiceVarian
             <a className={styles.ctaBtn} href={RESERVATIONS_PHONE_HREF}>
               {t("ctaCall")} · {RESERVATIONS_PHONE_DISPLAY}
             </a>
-            <Link href="/contact-us" className={styles.ctaBtn}>
+            <Link href="/contact-us" prefetch={false} className={styles.ctaBtn}>
               {t("ctaContact")}
             </Link>
           </div>
@@ -99,7 +99,9 @@ export async function ServicePortfolioPage({ variant }: { variant: ServiceVarian
                   <a href={RESERVATIONS_PHONE_HREF} data-accent="2">
                     {RESERVATIONS_PHONE_DISPLAY}
                   </a>
-                  <Link href="/contact-us">{t("ctaContact")}</Link>
+                  <Link href="/contact-us" prefetch={false}>
+                    {t("ctaContact")}
+                  </Link>
                   <a href={hotelHref} target="_blank" rel="noopener noreferrer">
                     {t("ctaVisitHotel")}
                   </a>

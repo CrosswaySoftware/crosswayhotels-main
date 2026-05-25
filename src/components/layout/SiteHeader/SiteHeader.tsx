@@ -261,6 +261,7 @@ export function SiteHeader() {
             </div>
             <Link
               href={CONTACT_NAV.href}
+              prefetch={false}
               className={`${styles.navLink} ${linkActive(CONTACT_NAV.href) ? styles.navLinkActive : ""}`}
               onClick={() => setOpen(false)}
             >
@@ -328,6 +329,7 @@ export function SiteHeader() {
               </div>
               <Link
                 href={CONTACT_NAV.href}
+                prefetch={false}
                 className={`${styles.mobileLink} ${linkActive(CONTACT_NAV.href) ? styles.mobileLinkActive : ""}`}
                 onClick={() => setOpen(false)}
               >
