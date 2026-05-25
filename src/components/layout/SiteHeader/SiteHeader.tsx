@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { contactUsPath } from "@/lib/contactPath";
 import { useEffect, useLayoutEffect, useRef, useState, useSyncExternalStore } from "react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { LocaleSwitcher } from "@/components/layout/LocaleSwitcher/LocaleSwitcher";
@@ -56,6 +57,8 @@ function parseHref(href: string) {
 }
 
 export function SiteHeader() {
+  const locale = useLocale();
+  const contactHref = contactUsPath(locale);
   const pathname = usePathname() ?? "/";
   const isHome = pathname === "/" || pathname === "";
   const t = useTranslations("Nav");
@@ -259,14 +262,13 @@ export function SiteHeader() {
                 </div>
               </div>
             </div>
-            <Link
-              href={CONTACT_NAV.href}
-              prefetch={false}
+            <a
+              href={contactHref}
               className={`${styles.navLink} ${linkActive(CONTACT_NAV.href) ? styles.navLinkActive : ""}`}
               onClick={() => setOpen(false)}
             >
               <span className={styles.navLabel}>{t(CONTACT_NAV.key)}</span>
-            </Link>
+            </a>
           </nav>
 
           <div className={styles.actions}>
@@ -327,14 +329,13 @@ export function SiteHeader() {
                   </Link>
                 ))}
               </div>
-              <Link
-                href={CONTACT_NAV.href}
-                prefetch={false}
+              <a
+                href={contactHref}
                 className={`${styles.mobileLink} ${linkActive(CONTACT_NAV.href) ? styles.mobileLinkActive : ""}`}
                 onClick={() => setOpen(false)}
               >
                 {t(CONTACT_NAV.key)}
-              </Link>
+              </a>
             </nav>
           </div>
         </>

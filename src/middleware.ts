@@ -1,8 +1,11 @@
 import createMiddleware from "next-intl/middleware";
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { routing } from "./i18n/routing";
 
 const intlMiddleware = createMiddleware(routing);
+
+const RSC_VARY =
+  "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Accept, Accept-Encoding";
 
 /**
  * After redirects/CDN, clients sometimes keep `Rsc: 1` but drop `?_rsc=…`.
@@ -21,8 +24,22 @@ function stripMisroutedRscHeaders(request: NextRequest): NextRequest {
   return new NextRequest(request.url, { headers, method: request.method });
 }
 
+function applyPageResponseHeaders(request: NextRequest, response: NextResponse): NextResponse {
+  const isContact = /\/contact-us\/?$/.test(request.nextUrl.pathname);
+
+  if (isContact) {
+    response.headers.set("Cache-Control", "private, no-cache, no-store, must-revalidate");
+    response.headers.set("Pragma", "no-cache");
+  }
+
+  response.headers.set("Vary", RSC_VARY);
+  return response;
+}
+
 export default function middleware(request: NextRequest) {
-  return intlMiddleware(stripMisroutedRscHeaders(request));
+  const req = stripMisroutedRscHeaders(request);
+  const response = intlMiddleware(req);
+  return applyPageResponseHeaders(req, response);
 }
 
 export const config = {

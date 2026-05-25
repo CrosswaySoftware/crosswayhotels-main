@@ -1,6 +1,7 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { hotelMicrositeUrl } from "@/config/hotelSiteUrls";
+import { contactUsPath } from "@/lib/contactPath";
 import { BookingBar } from "@/components/layout/BookingBar/BookingBar";
 import { PageShell } from "@/components/layout/PageShell/PageShell";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs/Breadcrumbs";
@@ -18,6 +19,7 @@ import styles from "./ServicePortfolioPage.module.scss";
 
 export async function ServicePortfolioPage({ variant }: { variant: ServiceVariant }) {
   const locale = await getLocale();
+  const contactHref = contactUsPath(locale);
   const t = await getTranslations("ServiceExperience");
   const tc = await getTranslations("Common");
   const tm = await getTranslations("Metadata");
@@ -43,9 +45,9 @@ export async function ServicePortfolioPage({ variant }: { variant: ServiceVarian
             <a className={styles.ctaBtn} href={RESERVATIONS_PHONE_HREF}>
               {t("ctaCall")} · {RESERVATIONS_PHONE_DISPLAY}
             </a>
-            <Link href="/contact-us" prefetch={false} className={styles.ctaBtn}>
+            <a href={contactHref} className={styles.ctaBtn}>
               {t("ctaContact")}
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -99,9 +101,7 @@ export async function ServicePortfolioPage({ variant }: { variant: ServiceVarian
                   <a href={RESERVATIONS_PHONE_HREF} data-accent="2">
                     {RESERVATIONS_PHONE_DISPLAY}
                   </a>
-                  <Link href="/contact-us" prefetch={false}>
-                    {t("ctaContact")}
-                  </Link>
+                  <a href={contactHref}>{t("ctaContact")}</a>
                   <a href={hotelHref} target="_blank" rel="noopener noreferrer">
                     {t("ctaVisitHotel")}
                   </a>

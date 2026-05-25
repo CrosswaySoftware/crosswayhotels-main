@@ -24,8 +24,13 @@ const nextConfig = {
         source: "/:locale/contact-us",
         headers: [
           {
+            key: "Cache-Control",
+            value: "private, no-cache, no-store, must-revalidate",
+          },
+          {
             key: "Vary",
-            value: "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Accept",
+            value:
+              "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Accept, Accept-Encoding",
           },
         ],
       },

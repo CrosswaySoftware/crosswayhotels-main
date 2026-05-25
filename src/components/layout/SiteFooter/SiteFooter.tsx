@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { contactUsPath } from "@/lib/contactPath";
 import { layout } from "@/lib/media";
 import styles from "./SiteFooter.module.scss";
 
@@ -23,6 +24,8 @@ const useful: { href: string; key: "link_news" | "link_about" | "link_partner" |
 ];
 
 export async function SiteFooter() {
+  const locale = await getLocale();
+  const contactHref = contactUsPath(locale);
   const t = await getTranslations("Footer");
   const year = new Date().getFullYear();
 
@@ -78,9 +81,11 @@ export async function SiteFooter() {
             <ul className={styles.list}>
               {useful.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} prefetch={l.href === "/contact-us" ? false : undefined}>
-                    {t(l.key)}
-                  </Link>
+                  {l.href === "/contact-us" ? (
+                    <a href={contactHref}>{t(l.key)}</a>
+                  ) : (
+                    <Link href={l.href}>{t(l.key)}</Link>
+                  )}
                 </li>
               ))}
             </ul>

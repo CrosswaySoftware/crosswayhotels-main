@@ -1,10 +1,18 @@
+import dynamic from "next/dynamic";
 import { MapEmbed } from "@/components/contact/MapEmbed/MapEmbed";
 import { PageShell } from "@/components/layout/PageShell/PageShell";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs/Breadcrumbs";
 import { SectionTitle } from "@/components/ui/SectionTitle/SectionTitle";
-import { CrosswayContactForm } from "@/components/forms/CrosswayContactForm/CrosswayContactForm";
 import { getTranslations } from "next-intl/server";
 import styles from "./ContactPage.module.scss";
+
+const CrosswayContactForm = dynamic(
+  () =>
+    import("@/components/forms/CrosswayContactForm/CrosswayContactForm").then((m) => ({
+      default: m.CrosswayContactForm,
+    })),
+  { ssr: false },
+);
 
 const MAP_IN = "https://maps.google.com/maps?q=12.803875,80.224867&z=16&output=embed";
 const MAPS_OPEN_IN = "https://www.google.com/maps/search/?api=1&query=12.803875,80.224867";
